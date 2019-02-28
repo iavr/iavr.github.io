@@ -250,7 +250,7 @@ a:link {
 	outline: none;
 }
 a:hover {
-	text-decoration: underline dotted;
+/* 	text-decoration: underline dotted; */
 }
 .shy {
 	opacity: .6;
@@ -487,16 +487,18 @@ h1.home {
 .home-cell .title:hover {
 	color: white;
 }
-.home-cell .home-author {
+.home-author {
 	line-height: 1.2;
 	margin-bottom: .3em;
+}
+.home-author br {
+	display: block;
+	content: " ";
+	margin-bottom: .6em;
 }
 .home-cell .author {
 	font-size: 90%;
 	color: #cc8;
-}
-.home-cell br {
-	margin-bottom: .6em;
 }
 .inria {
 	color: #8C1515;
@@ -539,6 +541,8 @@ h1.cv {
 	margin-left: 30px;
 }
 .cv-abs br {
+	display: block;
+	content: " ";
 	margin-bottom: 5px;
 }
 
@@ -573,6 +577,8 @@ h2.pub {
 	margin-left: 30px;
 }
 .pub-abs br {
+	display: block;
+	content: " ";
 	margin-bottom: 5px;
 }
 .pub-detail img {
