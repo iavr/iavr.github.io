@@ -48,7 +48,7 @@
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	background-color: #f8f9fa;
 }
-@media (min-width:992px) {
+@media (min-width:768px) {
 	.bd-sidebar {
 		border-right: 1px solid rgba(0,0,0,.1);
 	}
@@ -126,7 +126,7 @@
 	margin-left: -15px;
 }
 
-@media (min-width:992px) {
+@media (min-width:768px) {
 	@supports ((position:-webkit-sticky) or (position:sticky)) {
 		.bd-links {
 			max-height: calc(100vh - 4rem);
@@ -530,6 +530,9 @@ a .inria:hover {
 /* cv */
 /* ----------------------------------------------------------*/
 
+.cv-sidebar {
+	width: 11em;
+}
 .cv-body {
 	margin-bottom: 8px;
 }
@@ -576,6 +579,9 @@ h1.cv {
 /* pub */
 /* ----------------------------------------------------------*/
 
+.pub-sidebar {
+	width: 11em;
+}
 h1.pub {
 	margin-top: 40px;
 	margin-bottom: 10px;
@@ -623,6 +629,9 @@ h2.pub {
 /* timeline*/
 /* ----------------------------------------------------------*/
 
+.time-sidebar {
+	width: 11em;
+}
 h1.time {
 	margin-top: 25px;
 	margin-bottom: 10px;
