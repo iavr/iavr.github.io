@@ -188,11 +188,12 @@
 	text-align:center;
 	background-color:#878681
 }
-@media (min-width:576px){
-	.bd-footer{text-align:left}
-}
 .bd-footer p {
-	margin-bottom:0;
+	margin-bottom: .8em;
+}
+@media (min-width:576px){
+	.bd-footer {text-align:left}
+	.bd-footer p {margin-bottom:0}
 }
 .bd-footer a {
 	color: #eee;
@@ -249,8 +250,9 @@ p {
 a:link {
 	outline: none;
 }
-a:hover {
-/* 	text-decoration: underline dotted; */
+main a:hover {
+	text-decoration: none;
+	border-bottom: 1px dotted;
 }
 .shy {
 	opacity: .6;
@@ -277,6 +279,12 @@ a.shy:hover {
 }
 .alert.warn h2 {
 	color: #8C1515;
+}
+@media (min-width:576px){
+	.sm-show{display:none}
+}
+@media (max-width:576px){
+	.sm-hide{display:none}
 }
 
 
@@ -369,6 +377,7 @@ a:hover .fa-file-pdf2 {
 }
 .toggle:link, .toggle:visited {
 	text-decoration: none;
+	border-bottom: none;
 }
 .toggle .tog {
 	transition: .3s transform ease-in-out;
@@ -457,8 +466,8 @@ h1.home {
 	.news-row {
 		padding: 5px 0;
 	}
-	.news-date {
-		opacity: .6;
+	.news-date, .news-date-year {
+		opacity: .7;
 		font-size: 80%;
 		text-transform: uppercase;
 	}
@@ -500,6 +509,11 @@ h1.home {
 	font-size: 90%;
 	color: #cc8;
 }
+@media (max-width:768px){
+	.home-col:not(:first-child) {
+		margin-top: 20px;
+	}
+}
 .inria {
 	color: #8C1515;
 	font-weight: 500;
@@ -529,9 +543,22 @@ h1.cv {
 .cv-row-thin {
 	margin-bottom: 2px;
 }
+.cv-year-col {
+	width: 8em;
+}
 .cv-year, .cv-title {
 	font-size: 18px;
 	margin-bottom: 5px;
+}
+@media (max-width:576px) {
+	.cv-row, .cv-row-thin {
+		margin-bottom: 15px;
+	}
+	.cv-year {
+		opacity: .7;
+		font-size: 80%;
+		text-transform: uppercase;
+	}
 }
 .cv-ref {
 	font-size: 14px;
@@ -632,10 +659,10 @@ a.t-member:hover { background-color: rgba(100,100, 60,.6); }
 	border-radius: 4px;
 	padding: 2px 6px;
 }
-.tag {
+/*.tag {
 	font-size: 80%;
 	text-transform: uppercase;
-}
+}*/
 .pill {
 	color: white;
 	border-radius: 3px;
@@ -644,6 +671,7 @@ a.t-member:hover { background-color: rgba(100,100, 60,.6); }
 a.but:link, a.but:visited, a.pill:link, a.pill:visited  {
 	color: inherit;
 	text-decoration: none;
+	border-bottom: none;
 }
 a.inv:hover {
 	color: white;
