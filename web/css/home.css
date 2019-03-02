@@ -298,6 +298,10 @@ a.shy:hover {
 }
 .top-lg {top: -5.6rem;}
 .top-md {top: -4.5rem;}
+@media (max-width:768px){
+	.top-lg {top: -2rem;}
+	.top-md {top: -.5rem;}
+}
 .bottom-pad {
 	padding-bottom: 30px;
 }
@@ -668,10 +672,6 @@ a.t-member:hover { background-color: rgba(100,100, 60,.6); }
 	border-radius: 4px;
 	padding: 2px 6px;
 }
-/*.tag {
-	font-size: 80%;
-	text-transform: uppercase;
-}*/
 .pill {
 	color: white;
 	border-radius: 3px;
