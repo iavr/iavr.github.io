@@ -10,7 +10,7 @@
 
 		<!-- bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
@@ -31,6 +31,7 @@
 		<!-- scripts -->
 		<script src="../web/js/bs-docs.min.js"></script>
 		<script src="../web/js/email.js"></script>
+		<script src="../web/js/scroll.js"></script>
 
 	</head>
 	<body data-spy="scroll" data-target="#nav">
@@ -90,92 +91,83 @@
 
 
 
-<div class="container-fluid">
-	<div class="row flex-xl-nowrap">
+<div class="container-fluid" id="cv">
+	<div class="row">
 
-		<div class="col-12 col-md-auto bd-sidebar cv-sidebar">
-			<nav class="bd-links" id="nav">
-				<div class="bd-sidenav bd-sidenav1">
+		<div class="col-12 col-md-auto side-bar">
+			<nav id="nav">
+				<div class="nav side-nav">
 					<a class="nav-link" href="#summary">
-						<div class="icon"><i class="fal fa-stopwatch"></i></div>Summary
+						<span class="icon"><i class="fal fa-stopwatch"></i></span>
+						<span class="desc-md">Summary</span>
 					</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav1">
 					<a class="nav-link" href="#inter">
-						<div class="icon"><i class="fal fa-snowboarding"></i></div>Interests
+						<span class="icon"><i class="fal fa-snowboarding"></i></span>
+						<span class="desc-md">Interests</span>
 					</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav1">
 					<a class="nav-link" href="#edu">
-						<div class="icon"><i class="fal fa-university"></i></div>Education
+						<span class="icon"><i class="fal fa-university"></i></span>
+						<span class="desc-md">Education</span>
 					</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav1">
 					<a class="nav-link" href="#member">
-						<div class="icon"><i class="fal fa-address-card"></i></div>Memberships
+						<span class="icon"><i class="fal fa-address-card"></i></span>
+						<span class="desc-md">Memberships</span>
 					</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav1">
 					<a class="nav-link" href="#job">
-						<div class="icon"><i class="fal fa-briefcase"></i></div>Employment
+						<span class="icon"><i class="fal fa-briefcase"></i></span>
+						<span class="desc-md">Employment</span>
 					</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav1">
 					<a class="nav-link" href="#teach">
-						<div class="icon"><i class="fal fa-chalkboard-teacher"></i></div>Teaching
+						<span class="icon"><i class="fal fa-chalkboard-teacher"></i></span>
+						<span class="desc-md">Teaching</span>
 					</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav1">
 					<a class="nav-link" href="#talk">
-						<div class="icon"><i class="fal fa-podium"></i></div>Talks
+						<span class="icon"><i class="fal fa-podium"></i></span>
+						<span class="desc-md">Talks</span>
 					</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav1">
 					<a class="nav-link" href="#phd">
-						<div class="icon"><i class="fal fa-user-graduate"></i></div>Students
+						<span class="icon"><i class="fal fa-user-graduate"></i></span>
+						<span class="desc-md">Students</span>
 					</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav1">
 					<a class="nav-link" href="#eu">
-						<div class="icon"><i class="fal fa-euro-sign"></i></div>Grants
+						<span class="icon"><i class="fal fa-euro-sign"></i></span>
+						<span class="desc-md">Grants</span>
 					</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav1">
 					<a class="nav-link" href="#act">
-						<div class="icon"><i class="fal fa-chart-network"></i></div>Activities
+						<span class="icon"><i class="fal fa-chart-network"></i></span>
+						<span class="desc-md">Activities</span>
 					</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav1">
 					<a class="nav-link" href="#journ">
-						<div class="icon"><i class="fal fa-book-reader"></i></div>Reviewing
+						<span class="icon"><i class="fal fa-book-reader"></i></span>
+						<span class="desc-md">Reviewing</span>
 					</a>
 				</div>
 			</nav>
 		</div>
 
-		<main class="col-12 col-md col-xl-10"">
-			<div class="container-fluid bottom-pad">
+		<main class="col-12 col-md">
+			<div class="container bottom-pad">
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="summary"></a>
-				Summary
+				<a class="anchor" id="summary"></a>
+				Summary<i class="ml-3 fal fa-stopwatch"></i>
 			</h1>
 				<div class="just">
 					Dr. Yannis Avrithis is a research scientist in <a href="https://www-linkmedia.irisa.fr/">LinkMedia</a> team of <a href="http://www.inria.fr/en/centre/rennes">Inria Rennes-Bretagne Atlantique</a>, carrying out research on computer vision and machine learning. Before that he was at the <a href="https://en.uoa.gr/">National and Kapodistrian University of Athens (NKUA)</a> and at the <a href="https://www.ntua.gr/en/">National Technical University of Athens (NTUA)</a>, Greece, where he lead the <a href="http://image.ntua.gr/iva/">Image and Video Analysis (IVA)</a> team. He holds PhD and Diploma degrees from NTUA and MSc degree from Imperial College, University of London, UK. He has been involved in 15 European and 13 National research projects, he has co-supervised 10 Ph.D. theses and 12 Diploma theses, and he has published 3 theses, 3 edited volumes, 28 articles in journals, 109 in conferences and workshops, 8 book chapters and 17 technical reports in the above fields. He has contributed to the organization of 22 conferences and workshops, and is a reviewer in 15 scientific journals and 15 conferences. He is a member of <a href="http://www.ieee.org/">IEEE</a>, <a href="http://www.acm.org/">ACM</a>, <a href="http://www.eurasip.org/">EURASIP</a>, and the <a href="http://www.tee.gr/">Technical Chamber of Greece</a>.
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="inter"></a>
-				Research interests
+				<a class="anchor" id="inter"></a>
+				Research interests<i class="ml-3 fal fa-snowboarding"></i>
 			</h1>
 				<div class="just">
 					Visual feature detection, representation of visual appearance and geometry, image matching and registration, image indexing and retrieval, clustering, nearest neighbor search, visual representation learning, unsupervised and semi-supervised learning, object detection and recognition, scene classification, image/video segmentation and tracking, and video summarization.
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="edu"></a>
-				Education
+				<a class="anchor" id="edu"></a>
+				Education<i class="ml-3 fal fa-university"></i>
 			</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="edu-1996"></a>
+						<a class="anchor" id="edu-1996"></a>
 						<div class="cv-year">
 							1996-2001
 						</div>
@@ -189,7 +181,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="edu-1993"></a>
+						<a class="anchor" id="edu-1993"></a>
 						<div class="cv-year">
 							1993-1994
 						</div>
@@ -205,7 +197,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="edu-1988"></a>
+						<a class="anchor" id="edu-1988"></a>
 						<div class="cv-year">
 							1988-1993
 						</div>
@@ -218,12 +210,12 @@
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="member"></a>
-				Professional memberships
+				<a class="anchor" id="member"></a>
+				Professional memberships<i class="ml-3 fal fa-address-card"></i>
 			</h1>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="member-2001-eurasip"></a>
+						<a class="anchor" id="member-2001-eurasip"></a>
 						<div class="cv-year">
 							2001-
 						</div>
@@ -239,7 +231,7 @@
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="member-1998-acm"></a>
+						<a class="anchor" id="member-1998-acm"></a>
 						<div class="cv-year">
 							1998-
 						</div>
@@ -255,7 +247,7 @@
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="member-1996-ieee"></a>
+						<a class="anchor" id="member-1996-ieee"></a>
 						<div class="cv-year">
 							1996-
 						</div>
@@ -271,7 +263,7 @@
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="member-1994-tcg"></a>
+						<a class="anchor" id="member-1994-tcg"></a>
 						<div class="cv-year">
 							1994-
 						</div>
@@ -286,12 +278,12 @@
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="job"></a>
-				Employment history
+				<a class="anchor" id="job"></a>
+				Employment history<i class="ml-3 fal fa-briefcase"></i>
 			</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="job-2016"></a>
+						<a class="anchor" id="job-2016"></a>
 						<div class="cv-year">
 							2016-
 						</div>
@@ -309,7 +301,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="job-2015"></a>
+						<a class="anchor" id="job-2015"></a>
 						<div class="cv-year">
 							2015
 						</div>
@@ -327,7 +319,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="job-2014"></a>
+						<a class="anchor" id="job-2014"></a>
 						<div class="cv-year">
 							2014-
 						</div>
@@ -344,7 +336,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="job-2001"></a>
+						<a class="anchor" id="job-2001"></a>
 						<div class="cv-year">
 							2001-2014
 						</div>
@@ -362,7 +354,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="job-1999"></a>
+						<a class="anchor" id="job-1999"></a>
 						<div class="cv-year">
 							1999-2001
 						</div>
@@ -379,7 +371,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="job-1997"></a>
+						<a class="anchor" id="job-1997"></a>
 						<div class="cv-year">
 							1997-1999
 						</div>
@@ -396,7 +388,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="job-1995"></a>
+						<a class="anchor" id="job-1995"></a>
 						<div class="cv-year">
 							1995-1997
 						</div>
@@ -413,12 +405,12 @@
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="teach"></a>
-				Teaching / training activities
+				<a class="anchor" id="teach"></a>
+				Teaching / training activities<i class="ml-3 fal fa-chalkboard-teacher"></i>
 			</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-2019-cv"></a>
+						<a class="anchor" id="teach-2019-cv"></a>
 						<div class="cv-year">
 							2019-
 						</div>
@@ -441,7 +433,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-2018-dlcv"></a>
+						<a class="anchor" id="teach-2018-dlcv"></a>
 						<div class="cv-year">
 							2018
 						</div>
@@ -475,7 +467,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-2017-dlv"></a>
+						<a class="anchor" id="teach-2017-dlv"></a>
 						<div class="cv-year">
 							2017-
 						</div>
@@ -506,7 +498,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-2007-iva"></a>
+						<a class="anchor" id="teach-2007-iva"></a>
 						<div class="cv-year">
 							2007-2014
 						</div>
@@ -535,7 +527,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-2007-ssms"></a>
+						<a class="anchor" id="teach-2007-ssms"></a>
 						<div class="cv-year">
 							2007
 						</div>
@@ -555,7 +547,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-2006-ssms"></a>
+						<a class="anchor" id="teach-2006-ssms"></a>
 						<div class="cv-year">
 							2006
 						</div>
@@ -575,7 +567,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-2005-ss"></a>
+						<a class="anchor" id="teach-2005-ss"></a>
 						<div class="cv-year">
 							2005-2014
 						</div>
@@ -604,7 +596,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-2003-multimine"></a>
+						<a class="anchor" id="teach-2003-multimine"></a>
 						<div class="cv-year">
 							2003-2005
 						</div>
@@ -624,7 +616,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-1996-analog"></a>
+						<a class="anchor" id="teach-1996-analog"></a>
 						<div class="cv-year">
 							1996-1999
 						</div>
@@ -644,7 +636,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-1996-digital"></a>
+						<a class="anchor" id="teach-1996-digital"></a>
 						<div class="cv-year">
 							1996-1998
 						</div>
@@ -664,7 +656,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-1998-pascal"></a>
+						<a class="anchor" id="teach-1998-pascal"></a>
 						<div class="cv-year">
 							1998-2000
 						</div>
@@ -683,7 +675,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="teach-1998-c"></a>
+						<a class="anchor" id="teach-1998-c"></a>
 						<div class="cv-year">
 							1998-2000
 						</div>
@@ -701,12 +693,12 @@
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="talk"></a>
-				Invited talks
+				<a class="anchor" id="talk"></a>
+				Invited talks<i class="ml-3 fal fa-podium"></i>
 			</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2018-03"></a>
+						<a class="anchor" id="talk-2018-03"></a>
 						<div class="cv-year">
 							Mar&nbsp;2018
 						</div>
@@ -730,7 +722,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2017-09"></a>
+						<a class="anchor" id="talk-2017-09"></a>
 						<div class="cv-year">
 							Sep&nbsp;2017
 						</div>
@@ -747,7 +739,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2017-05"></a>
+						<a class="anchor" id="talk-2017-05"></a>
 						<div class="cv-year">
 							May&nbsp;2017
 						</div>
@@ -772,7 +764,7 @@ While this result is encouraging, it also shows that the learned representations
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2016-03"></a>
+						<a class="anchor" id="talk-2016-03"></a>
 						<div class="cv-year">
 							Mar&nbsp;2016
 						</div>
@@ -799,7 +791,7 @@ Code for IQ-means is available on <a href="https://github.com/iavr/iqm">github</
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2016-01"></a>
+						<a class="anchor" id="talk-2016-01"></a>
 						<div class="cv-year">
 							Jan&nbsp;2016
 						</div>
@@ -825,7 +817,7 @@ Adopting sets of local features and descriptors as an image representation, we t
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2015-11"></a>
+						<a class="anchor" id="talk-2015-11"></a>
 						<div class="cv-year">
 							Nov&nbsp;2015
 						</div>
@@ -842,7 +834,7 @@ Adopting sets of local features and descriptors as an image representation, we t
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2015-06"></a>
+						<a class="anchor" id="talk-2015-06"></a>
 						<div class="cv-year">
 							Jun&nbsp;2015
 						</div>
@@ -868,7 +860,7 @@ Adopting sets of local features and descriptors as an image representation, we t
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2015-03"></a>
+						<a class="anchor" id="talk-2015-03"></a>
 						<div class="cv-year">
 							Mar&nbsp;2015
 						</div>
@@ -894,7 +886,7 @@ We then present methods based on vector quantization, which are a natural genera
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2014-10"></a>
+						<a class="anchor" id="talk-2014-10"></a>
 						<div class="cv-year">
 							Oct&nbsp;2014
 						</div>
@@ -921,7 +913,7 @@ Since image search using either local or global descriptors boils down to approx
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2012-04"></a>
+						<a class="anchor" id="talk-2012-04"></a>
 						<div class="cv-year">
 							Apr&nbsp;2012
 						</div>
@@ -938,7 +930,7 @@ Since image search using either local or global descriptors boils down to approx
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2011-03"></a>
+						<a class="anchor" id="talk-2011-03"></a>
 						<div class="cv-year">
 							Mar&nbsp;2011
 						</div>
@@ -965,7 +957,7 @@ We then move to the more difficult problem of organizing large photo collections
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="talk-2006-09"></a>
+						<a class="anchor" id="talk-2006-09"></a>
 						<div class="cv-year">
 							Sep&nbsp;2006
 						</div>
@@ -981,12 +973,12 @@ We then move to the more difficult problem of organizing large photo collections
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="phd"></a>
-				Ph.D. students / co-supervision
+				<a class="anchor" id="phd"></a>
+				Ph.D. students / co-supervision<i class="ml-3 fal fa-user-graduate"></i>
 			</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2018-lifchitz"></a>
+						<a class="anchor" id="phd-2018-lifchitz"></a>
 						<div class="cv-year">
 							2018-
 						</div>
@@ -1000,7 +992,7 @@ We then move to the more difficult problem of organizing large photo collections
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2017-zhang"></a>
+						<a class="anchor" id="phd-2017-zhang"></a>
 						<div class="cv-year">
 							2017-
 						</div>
@@ -1014,7 +1006,7 @@ We then move to the more difficult problem of organizing large photo collections
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2016-siméoni"></a>
+						<a class="anchor" id="phd-2016-siméoni"></a>
 						<div class="cv-year">
 							2016-
 						</div>
@@ -1028,7 +1020,7 @@ We then move to the more difficult problem of organizing large photo collections
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2013-papanelopoulos"></a>
+						<a class="anchor" id="phd-2013-papanelopoulos"></a>
 						<div class="cv-year">
 							2013-
 						</div>
@@ -1042,7 +1034,7 @@ We then move to the more difficult problem of organizing large photo collections
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2014-kalantidis"></a>
+						<a class="anchor" id="phd-2014-kalantidis"></a>
 						<div class="cv-year">
 							2009-2014
 						</div>
@@ -1070,7 +1062,7 @@ The thesis concludes with two chapters. The first is a summary of other approach
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2016-varytimidis"></a>
+						<a class="anchor" id="phd-2016-varytimidis"></a>
 						<div class="cv-year">
 							2008-2016
 						</div>
@@ -1096,7 +1088,7 @@ We also propose an efficient method for describing video clips, using deep neura
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2013-tolias"></a>
+						<a class="anchor" id="phd-2013-tolias"></a>
 						<div class="cv-year">
 							2008-2013
 						</div>
@@ -1123,7 +1115,7 @@ In contrast to the previous methods that we discussed or proposed, which all use
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2009-spyrou"></a>
+						<a class="anchor" id="phd-2009-spyrou"></a>
 						<div class="cv-year">
 							2005-2009
 						</div>
@@ -1146,7 +1138,7 @@ In contrast to the previous methods that we discussed or proposed, which all use
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2009-athanasiadis"></a>
+						<a class="anchor" id="phd-2009-athanasiadis"></a>
 						<div class="cv-year">
 							2004-2009
 						</div>
@@ -1169,7 +1161,7 @@ In contrast to the previous methods that we discussed or proposed, which all use
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2008-rapantzikos"></a>
+						<a class="anchor" id="phd-2008-rapantzikos"></a>
 						<div class="cv-year">
 							2003-2008
 						</div>
@@ -1192,7 +1184,7 @@ In contrast to the previous methods that we discussed or proposed, which all use
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2008-mylonas"></a>
+						<a class="anchor" id="phd-2008-mylonas"></a>
 						<div class="cv-year">
 							2003-2008
 						</div>
@@ -1215,7 +1207,7 @@ In contrast to the previous methods that we discussed or proposed, which all use
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="phd-2005-wallace"></a>
+						<a class="anchor" id="phd-2005-wallace"></a>
 						<div class="cv-year">
 							2001-2005
 						</div>
@@ -1241,12 +1233,12 @@ Chapter 11 summarizes conclusions drawn from this thesis and refers to direction
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="msc"></a>
-				Diploma Thesis/M.Sc. students / co-supervision
+				<a class="anchor" id="msc"></a>
+				Diploma Thesis/M.Sc. students / co-supervision<i class="ml-3 fal fa-user-graduate"></i>
 			</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2016-kervadec"></a>
+						<a class="anchor" id="msc-2016-kervadec"></a>
 						<div class="cv-year">
 							2015-2016
 						</div>
@@ -1269,7 +1261,7 @@ Chapter 11 summarizes conclusions drawn from this thesis and refers to direction
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2015-mitsis"></a>
+						<a class="anchor" id="msc-2015-mitsis"></a>
 						<div class="cv-year">
 							2014-2015
 						</div>
@@ -1294,7 +1286,7 @@ We compare those different approaches and the best ones are compared with the st
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2015-chatzipanos"></a>
+						<a class="anchor" id="msc-2015-chatzipanos"></a>
 						<div class="cv-year">
 							2014-2015
 						</div>
@@ -1317,7 +1309,7 @@ We compare those different approaches and the best ones are compared with the st
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2014-papadopoulos"></a>
+						<a class="anchor" id="msc-2014-papadopoulos"></a>
 						<div class="cv-year">
 							2013-2014
 						</div>
@@ -1340,7 +1332,7 @@ We compare those different approaches and the best ones are compared with the st
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2014-perakis"></a>
+						<a class="anchor" id="msc-2014-perakis"></a>
 						<div class="cv-year">
 							2013-2014
 						</div>
@@ -1363,7 +1355,7 @@ We compare those different approaches and the best ones are compared with the st
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2012-arvanitis"></a>
+						<a class="anchor" id="msc-2012-arvanitis"></a>
 						<div class="cv-year">
 							2011-2012
 						</div>
@@ -1386,7 +1378,7 @@ We compare those different approaches and the best ones are compared with the st
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2012-delvinioti"></a>
+						<a class="anchor" id="msc-2012-delvinioti"></a>
 						<div class="cv-year">
 							2011-2012
 						</div>
@@ -1411,7 +1403,7 @@ Due to the nature of local features and their use in invariant matching, the met
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2012-leonardos"></a>
+						<a class="anchor" id="msc-2012-leonardos"></a>
 						<div class="cv-year">
 							2011-2012
 						</div>
@@ -1435,7 +1427,7 @@ Several criteria were examined and tested. First, we use medial axis saddle poin
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2012-moustafelos"></a>
+						<a class="anchor" id="msc-2012-moustafelos"></a>
 						<div class="cv-year">
 							2011-2012
 						</div>
@@ -1458,7 +1450,7 @@ Several criteria were examined and tested. First, we use medial axis saddle poin
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2009-koumoulos"></a>
+						<a class="anchor" id="msc-2009-koumoulos"></a>
 						<div class="cv-year">
 							2008-2009
 						</div>
@@ -1483,7 +1475,7 @@ The efficiency of local features is testified in the image retrieval system with
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2009-kalantidis"></a>
+						<a class="anchor" id="msc-2009-kalantidis"></a>
 						<div class="cv-year">
 							2007-2009
 						</div>
@@ -1497,7 +1489,7 @@ The efficiency of local features is testified in the image retrieval system with
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2008-varytimidis"></a>
+						<a class="anchor" id="msc-2008-varytimidis"></a>
 						<div class="cv-year">
 							2007-2008
 						</div>
@@ -1520,7 +1512,7 @@ The efficiency of local features is testified in the image retrieval system with
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2007-tolias"></a>
+						<a class="anchor" id="msc-2007-tolias"></a>
 						<div class="cv-year">
 							2006-2007
 						</div>
@@ -1543,7 +1535,7 @@ The efficiency of local features is testified in the image retrieval system with
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2007-makrimallis"></a>
+						<a class="anchor" id="msc-2007-makrimallis"></a>
 						<div class="cv-year">
 							2006-2007
 						</div>
@@ -1566,7 +1558,7 @@ The efficiency of local features is testified in the image retrieval system with
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2006-giannekou"></a>
+						<a class="anchor" id="msc-2006-giannekou"></a>
 						<div class="cv-year">
 							2005-2006
 						</div>
@@ -1590,7 +1582,7 @@ At experimental level, a database of curves (contours) of different categories o
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="msc-2005-koumoulos"></a>
+						<a class="anchor" id="msc-2005-koumoulos"></a>
 						<div class="cv-year">
 							2004-2005
 						</div>
@@ -1614,12 +1606,12 @@ In this work, two different ways of computing curvature are compared, as well as
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="eu"></a>
-				Research grants [European]
+				<a class="anchor" id="eu"></a>
+				Research grants [European]<i class="ml-3 fal fa-euro-sign"></i>
 			</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-2008-weknowit"></a>
+						<a class="anchor" id="eu-2008-weknowit"></a>
 						<div class="cv-year">
 							2008-2011
 						</div>
@@ -1648,7 +1640,7 @@ The automatic generation of Collective Intelligence constitutes a departure from
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-2008-jumas"></a>
+						<a class="anchor" id="eu-2008-jumas"></a>
 						<div class="cv-year">
 							2008-2010
 						</div>
@@ -1677,7 +1669,7 @@ In this context, JUMAS envisages an advanced knowledge management system able to
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-2006-imagination"></a>
+						<a class="anchor" id="eu-2006-imagination"></a>
 						<div class="cv-year">
 							2006-2009
 						</div>
@@ -1708,7 +1700,7 @@ A major outcome of the project will be the new and intuitive approach of navigat
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-2006-boemie"></a>
+						<a class="anchor" id="eu-2006-boemie"></a>
 						<div class="cv-year">
 							2006-2009
 						</div>
@@ -1736,7 +1728,7 @@ A major outcome of the project will be the new and intuitive approach of navigat
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-2006-mesh"></a>
+						<a class="anchor" id="eu-2006-mesh"></a>
 						<div class="cv-year">
 							2006-2009
 						</div>
@@ -1765,7 +1757,7 @@ Encompassing all the system, dynamic usage management will be included to facili
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-2006-x-media"></a>
+						<a class="anchor" id="eu-2006-x-media"></a>
 						<div class="cv-year">
 							2006-2010
 						</div>
@@ -1794,7 +1786,7 @@ Technologies will be able to support knowledge workers in an effective way, (i) 
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-2006-k-space"></a>
+						<a class="anchor" id="eu-2006-k-space"></a>
 						<div class="cv-year">
 							2006-2008
 						</div>
@@ -1826,7 +1818,7 @@ An objective of the Network is to implement an open and expandable framework for
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-2004-muscle"></a>
+						<a class="anchor" id="eu-2004-muscle"></a>
 						<div class="cv-year">
 							2004-2007
 						</div>
@@ -1855,7 +1847,7 @@ Given the above, we feel that there is both a need and an opportunity to systema
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-2004-acemedia"></a>
+						<a class="anchor" id="eu-2004-acemedia"></a>
 						<div class="cv-year">
 							2004-2007
 						</div>
@@ -1886,7 +1878,7 @@ The ACE concept will be verified by two user focused application prototypes, ena
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-2002-mirror"></a>
+						<a class="anchor" id="eu-2002-mirror"></a>
 						<div class="cv-year">
 							2002-2004
 						</div>
@@ -1914,7 +1906,7 @@ The ACE concept will be verified by two user focused application prototypes, ena
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-2001-faethon"></a>
+						<a class="anchor" id="eu-2001-faethon"></a>
 						<div class="cv-year">
 							2001-2003
 						</div>
@@ -1943,7 +1935,7 @@ From a technical point of view, the proposed system will play the role of an int
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-1997-physta"></a>
+						<a class="anchor" id="eu-1997-physta"></a>
 						<div class="cv-year">
 							1997-2001
 						</div>
@@ -1971,7 +1963,7 @@ From a technical point of view, the proposed system will play the role of an int
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-1998-modulates"></a>
+						<a class="anchor" id="eu-1998-modulates"></a>
 						<div class="cv-year">
 							1998-1999
 						</div>
@@ -2000,7 +1992,7 @@ The project will be of 2 years duration starting in early 1998. ISDN links will 
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-1996-mcube"></a>
+						<a class="anchor" id="eu-1996-mcube"></a>
 						<div class="cv-year">
 							1996-1999
 						</div>
@@ -2030,7 +2022,7 @@ The M.CUBE contribution is to: First, contribute to the development of a whole e
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="eu-1993-manadix"></a>
+						<a class="anchor" id="eu-1993-manadix"></a>
 						<div class="cv-year">
 							1993-1996
 						</div>
@@ -2057,12 +2049,12 @@ The M.CUBE contribution is to: First, contribute to the development of a whole e
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="fr"></a>
-				Research grants [French]
+				<a class="anchor" id="fr"></a>
+				Research grants [French]<i class="ml-3 fal fa-euro-sign"></i>
 			</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="fr-2018-bnf"></a>
+						<a class="anchor" id="fr-2018-bnf"></a>
 						<div class="cv-year">
 							2018-2019
 						</div>
@@ -2091,7 +2083,7 @@ In this context, the objective of the project is to investigate automatic classi
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="fr-2018-few-shot"></a>
+						<a class="anchor" id="fr-2018-few-shot"></a>
 						<div class="cv-year">
 							2018-2021
 						</div>
@@ -2119,7 +2111,7 @@ This is a CIFRE PhD thesis project aiming to study architectures and learning me
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="fr-2018-mobilai"></a>
+						<a class="anchor" id="fr-2018-mobilai"></a>
 						<div class="cv-year">
 							2018-2020
 						</div>
@@ -2146,12 +2138,12 @@ This is a CIFRE PhD thesis project aiming to study architectures and learning me
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="el"></a>
-				Research grants [Greek]
+				<a class="anchor" id="el"></a>
+				Research grants [Greek]<i class="ml-3 fal fa-euro-sign"></i>
 			</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="el-2011-is-helleana"></a>
+						<a class="anchor" id="el-2011-is-helleana"></a>
 						<div class="cv-year">
 							2011-2014
 						</div>
@@ -2179,7 +2171,7 @@ This is a CIFRE PhD thesis project aiming to study architectures and learning me
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="el-2006-eikonognosia"></a>
+						<a class="anchor" id="el-2006-eikonognosia"></a>
 						<div class="cv-year">
 							2006-2008
 						</div>
@@ -2209,7 +2201,7 @@ Eikonognosia provides the means for organizing detailed and multidimensional inf
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="el-2006-ontomedia"></a>
+						<a class="anchor" id="el-2006-ontomedia"></a>
 						<div class="cv-year">
 							2006-2008
 						</div>
@@ -2229,7 +2221,7 @@ Eikonognosia provides the means for organizing detailed and multidimensional inf
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="el-2006-deltio"></a>
+						<a class="anchor" id="el-2006-deltio"></a>
 						<div class="cv-year">
 							2006-2007
 						</div>
@@ -2257,7 +2249,7 @@ Eikonognosia provides the means for organizing detailed and multidimensional inf
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="el-2004-visualasset"></a>
+						<a class="anchor" id="el-2004-visualasset"></a>
 						<div class="cv-year">
 							2004-2007
 						</div>
@@ -2288,7 +2280,7 @@ Eikonognosia provides the means for organizing detailed and multidimensional inf
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="el-2003-multimine"></a>
+						<a class="anchor" id="el-2003-multimine"></a>
 						<div class="cv-year">
 							2003-2005
 						</div>
@@ -2316,7 +2308,7 @@ Eikonognosia provides the means for organizing detailed and multidimensional inf
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="el-1999-panorama"></a>
+						<a class="anchor" id="el-1999-panorama"></a>
 						<div class="cv-year">
 							1999-2001
 						</div>
@@ -2345,7 +2337,7 @@ Main subjects for implementation are the content-based retrieval from multimedia
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="el-1997-vod"></a>
+						<a class="anchor" id="el-1997-vod"></a>
 						<div class="cv-year">
 							1997-2000
 						</div>
@@ -2375,7 +2367,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="el-1997-ivml"></a>
+						<a class="anchor" id="el-1997-ivml"></a>
 						<div class="cv-year">
 							1997-1999
 						</div>
@@ -2403,7 +2395,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="el-1995-nika"></a>
+						<a class="anchor" id="el-1995-nika"></a>
 						<div class="cv-year">
 							1995-1997
 						</div>
@@ -2430,12 +2422,12 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="act"></a>
-				Professional activities
+				<a class="anchor" id="act"></a>
+				Professional activities<i class="ml-3 fal fa-chart-network"></i>
 			</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2019-acm-mm"></a>
+						<a class="anchor" id="act-2019-acm-mm"></a>
 						<div class="cv-year">
 							2019
 						</div>
@@ -2455,7 +2447,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2017-acm-mm"></a>
+						<a class="anchor" id="act-2017-acm-mm"></a>
 						<div class="cv-year">
 							2017
 						</div>
@@ -2476,7 +2468,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2017-eusipco"></a>
+						<a class="anchor" id="act-2017-eusipco"></a>
 						<div class="cv-year">
 							2017
 						</div>
@@ -2497,7 +2489,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2009-jivp"></a>
+						<a class="anchor" id="act-2009-jivp"></a>
 						<div class="cv-year">
 							2009-2014
 						</div>
@@ -2516,7 +2508,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2009-civr"></a>
+						<a class="anchor" id="act-2009-civr"></a>
 						<div class="cv-year">
 							2009
 						</div>
@@ -2536,7 +2528,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2009-cbmi"></a>
+						<a class="anchor" id="act-2009-cbmi"></a>
 						<div class="cv-year">
 							2009
 						</div>
@@ -2556,7 +2548,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2009-mmm"></a>
+						<a class="anchor" id="act-2009-mmm"></a>
 						<div class="cv-year">
 							2009
 						</div>
@@ -2576,7 +2568,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2007-samt"></a>
+						<a class="anchor" id="act-2007-samt"></a>
 						<div class="cv-year">
 							2007
 						</div>
@@ -2596,7 +2588,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2007-wiamis"></a>
+						<a class="anchor" id="act-2007-wiamis"></a>
 						<div class="cv-year">
 							2007
 						</div>
@@ -2616,7 +2608,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2006-kmc/ist"></a>
+						<a class="anchor" id="act-2006-kmc/ist"></a>
 						<div class="cv-year">
 							2006
 						</div>
@@ -2637,7 +2629,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2006-boemie/ekaw"></a>
+						<a class="anchor" id="act-2006-boemie/ekaw"></a>
 						<div class="cv-year">
 							2006
 						</div>
@@ -2658,7 +2650,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2006-smar/vie"></a>
+						<a class="anchor" id="act-2006-smar/vie"></a>
 						<div class="cv-year">
 							2006
 						</div>
@@ -2679,7 +2671,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2006-siva/icann"></a>
+						<a class="anchor" id="act-2006-siva/icann"></a>
 						<div class="cv-year">
 							2006
 						</div>
@@ -2700,7 +2692,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2006-icann"></a>
+						<a class="anchor" id="act-2006-icann"></a>
 						<div class="cv-year">
 							2006
 						</div>
@@ -2720,7 +2712,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2006-samt"></a>
+						<a class="anchor" id="act-2006-samt"></a>
 						<div class="cv-year">
 							2006
 						</div>
@@ -2740,7 +2732,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2005-ewimt"></a>
+						<a class="anchor" id="act-2005-ewimt"></a>
 						<div class="cv-year">
 							2005
 						</div>
@@ -2760,7 +2752,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2005-ims/icann"></a>
+						<a class="anchor" id="act-2005-ims/icann"></a>
 						<div class="cv-year">
 							2005
 						</div>
@@ -2781,7 +2773,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2005-multimine"></a>
+						<a class="anchor" id="act-2005-multimine"></a>
 						<div class="cv-year">
 							2005
 						</div>
@@ -2801,7 +2793,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2005-mmsw/eswc"></a>
+						<a class="anchor" id="act-2005-mmsw/eswc"></a>
 						<div class="cv-year">
 							2005
 						</div>
@@ -2822,7 +2814,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2004-civr"></a>
+						<a class="anchor" id="act-2004-civr"></a>
 						<div class="cv-year">
 							2004
 						</div>
@@ -2843,7 +2835,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2003-wiaac"></a>
+						<a class="anchor" id="act-2003-wiaac"></a>
 						<div class="cv-year">
 							2003
 						</div>
@@ -2863,7 +2855,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-2001-vlbv"></a>
+						<a class="anchor" id="act-2001-vlbv"></a>
 						<div class="cv-year">
 							2001
 						</div>
@@ -2883,7 +2875,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="act-1997-wann"></a>
+						<a class="anchor" id="act-1997-wann"></a>
 						<div class="cv-year">
 							1997
 						</div>
@@ -2902,12 +2894,12 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="journ"></a>
-				Reviewer in journals
+				<a class="anchor" id="journ"></a>
+				Reviewer in journals<i class="ml-3 fal fa-book-reader"></i>
 			</h1>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2014-csur"></a>
+						<a class="anchor" id="journ-2014-csur"></a>
 						<div class="cv-year">
 							2014
 						</div>
@@ -2923,7 +2915,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2012-ivc"></a>
+						<a class="anchor" id="journ-2012-ivc"></a>
 						<div class="cv-year">
 							2012
 						</div>
@@ -2939,7 +2931,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2008-cviu"></a>
+						<a class="anchor" id="journ-2008-cviu"></a>
 						<div class="cv-year">
 							2008-
 						</div>
@@ -2955,7 +2947,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2007-neucom"></a>
+						<a class="anchor" id="journ-2007-neucom"></a>
 						<div class="cv-year">
 							2007-2016
 						</div>
@@ -2971,7 +2963,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2006-sp:ic"></a>
+						<a class="anchor" id="journ-2006-sp:ic"></a>
 						<div class="cv-year">
 							2006-2010
 						</div>
@@ -2987,7 +2979,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2006-tevc"></a>
+						<a class="anchor" id="journ-2006-tevc"></a>
 						<div class="cv-year">
 							2006
 						</div>
@@ -3003,7 +2995,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2005-tmm"></a>
+						<a class="anchor" id="journ-2005-tmm"></a>
 						<div class="cv-year">
 							2005-2009
 						</div>
@@ -3019,7 +3011,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2004-iee-vis"></a>
+						<a class="anchor" id="journ-2004-iee-vis"></a>
 						<div class="cv-year">
 							2004-2005
 						</div>
@@ -3035,7 +3027,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2004-tcsvt"></a>
+						<a class="anchor" id="journ-2004-tcsvt"></a>
 						<div class="cv-year">
 							2004-2008
 						</div>
@@ -3051,7 +3043,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2004-tpami"></a>
+						<a class="anchor" id="journ-2004-tpami"></a>
 						<div class="cv-year">
 							2004-
 						</div>
@@ -3067,7 +3059,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2004-mtap"></a>
+						<a class="anchor" id="journ-2004-mtap"></a>
 						<div class="cv-year">
 							2004-2016
 						</div>
@@ -3083,7 +3075,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2004-paa"></a>
+						<a class="anchor" id="journ-2004-paa"></a>
 						<div class="cv-year">
 							2004
 						</div>
@@ -3099,7 +3091,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2003-jasp"></a>
+						<a class="anchor" id="journ-2003-jasp"></a>
 						<div class="cv-year">
 							2003
 						</div>
@@ -3115,7 +3107,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2002-tip"></a>
+						<a class="anchor" id="journ-2002-tip"></a>
 						<div class="cv-year">
 							2002
 						</div>
@@ -3131,7 +3123,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="journ-2002-mva"></a>
+						<a class="anchor" id="journ-2002-mva"></a>
 						<div class="cv-year">
 							2002
 						</div>
@@ -3146,12 +3138,12 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="conf"></a>
-				Program Committee member in conferences
+				<a class="anchor" id="conf"></a>
+				Program Committee member in conferences<i class="ml-3 fal fa-book-reader"></i>
 			</h1>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2013-iccv"></a>
+						<a class="anchor" id="conf-2013-iccv"></a>
 						<div class="cv-year">
 							2013-
 						</div>
@@ -3167,7 +3159,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2013-cvpr"></a>
+						<a class="anchor" id="conf-2013-cvpr"></a>
 						<div class="cv-year">
 							2013-
 						</div>
@@ -3183,7 +3175,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2012-eccv"></a>
+						<a class="anchor" id="conf-2012-eccv"></a>
 						<div class="cv-year">
 							2012-
 						</div>
@@ -3199,7 +3191,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2012-bmvc"></a>
+						<a class="anchor" id="conf-2012-bmvc"></a>
 						<div class="cv-year">
 							2012-2016
 						</div>
@@ -3215,7 +3207,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2012-icmr"></a>
+						<a class="anchor" id="conf-2012-icmr"></a>
 						<div class="cv-year">
 							2012
 						</div>
@@ -3231,7 +3223,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2009-mmm"></a>
+						<a class="anchor" id="conf-2009-mmm"></a>
 						<div class="cv-year">
 							2009-2013
 						</div>
@@ -3247,7 +3239,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2009-dsp"></a>
+						<a class="anchor" id="conf-2009-dsp"></a>
 						<div class="cv-year">
 							2009
 						</div>
@@ -3263,7 +3255,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2007-acm-mm"></a>
+						<a class="anchor" id="conf-2007-acm-mm"></a>
 						<div class="cv-year">
 							2007-2016
 						</div>
@@ -3279,7 +3271,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2007-civr"></a>
+						<a class="anchor" id="conf-2007-civr"></a>
 						<div class="cv-year">
 							2007-2008
 						</div>
@@ -3295,7 +3287,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2007-eusipco"></a>
+						<a class="anchor" id="conf-2007-eusipco"></a>
 						<div class="cv-year">
 							2007
 						</div>
@@ -3311,7 +3303,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2007-icme"></a>
+						<a class="anchor" id="conf-2007-icme"></a>
 						<div class="cv-year">
 							2007-2017
 						</div>
@@ -3327,7 +3319,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2006-vie"></a>
+						<a class="anchor" id="conf-2006-vie"></a>
 						<div class="cv-year">
 							2006-2007
 						</div>
@@ -3343,7 +3335,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2005-icassp"></a>
+						<a class="anchor" id="conf-2005-icassp"></a>
 						<div class="cv-year">
 							2005-2017
 						</div>
@@ -3359,7 +3351,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2004-icip"></a>
+						<a class="anchor" id="conf-2004-icip"></a>
 						<div class="cv-year">
 							2004-2016
 						</div>
@@ -3375,7 +3367,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="conf-2002-icann"></a>
+						<a class="anchor" id="conf-2002-icann"></a>
 						<div class="cv-year">
 							2002-2009
 						</div>
@@ -3390,12 +3382,12 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 					</div>
 				</div>
 			<h1 class="cv rule">
-				<a class="anchor top-lg" id="work"></a>
-				Program Committee member in workshops
+				<a class="anchor" id="work"></a>
+				Program Committee member in workshops<i class="ml-3 fal fa-book-reader"></i>
 			</h1>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="work-2006-mtg"></a>
+						<a class="anchor" id="work-2006-mtg"></a>
 						<div class="cv-year">
 							2006
 						</div>
@@ -3411,7 +3403,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="work-2006-swamm"></a>
+						<a class="anchor" id="work-2006-swamm"></a>
 						<div class="cv-year">
 							2006
 						</div>
@@ -3427,7 +3419,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="work-2005-ewimt"></a>
+						<a class="anchor" id="work-2005-ewimt"></a>
 						<div class="cv-year">
 							2005
 						</div>
@@ -3443,7 +3435,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="work-2005-wiamis"></a>
+						<a class="anchor" id="work-2005-wiamis"></a>
 						<div class="cv-year">
 							2005-2013
 						</div>
@@ -3459,7 +3451,7 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 				</div>
 				<div class="row cv-row-thin">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor top-md" id="work-2003-cbmi"></a>
+						<a class="anchor" id="work-2003-cbmi"></a>
 						<div class="cv-year">
 							2003-2016
 						</div>
@@ -3478,12 +3470,6 @@ The system provides both VoD and NVoD channels, including broadcast TV channels,
 
 	</div>
 </div>
-
-<script type="text/javascript">
-	var h = location.hash;
-	if(h && h.length > 2 && h.includes('-') && !h.includes('#col-'))
-		$('#col-' + h.slice(1)).addClass('show');
-</script>
 
 	</body>
 </html>

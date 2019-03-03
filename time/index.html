@@ -10,7 +10,7 @@
 
 		<!-- bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
@@ -31,6 +31,7 @@
 		<!-- scripts -->
 		<script src="../web/js/bs-docs.min.js"></script>
 		<script src="../web/js/email.js"></script>
+		<script src="../web/js/scroll.js"></script>
 
 	</head>
 	<body data-spy="scroll" data-target="#nav">
@@ -90,54 +91,53 @@
 
 
 
-<div class="container-fluid">
-	<div class="row flex-xl-nowrap">
+<div class="container-fluid" id="time">
+	<div class="row">
 
-		<div class="col-12 col-md-auto bd-sidebar time-sidebar">
-			<nav class="bd-links" id="nav">
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2019">2019</a>
+		<div class="col-12 col-md-auto side-bar">
+			<nav id="nav">
+
+				<div class="show-md">
+					<div class="nav side-nav">
+						<a class="nav-link" href="#y-2019">2019</a>
+						<a class="nav-link" href="#y-2018">2018</a>
+						<a class="nav-link" href="#y-2017">2017</a>
+						<a class="nav-link" href="#y-2016">2016</a>
+						<a class="nav-link" href="#y-2015">2015</a>
+						<a class="nav-link" href="#y-2014">2014</a>
+						<a class="nav-link" href="#y-2013">2013</a>
+						<a class="nav-link" href="#y-2012">2012</a>
+						<a class="nav-link" href="#y-2011">2011</a>
+						<a class="nav-link" href="#y-2010">2010</a>
+						<a class="nav-link" href="#y-2009">2009</a>
+						<a class="nav-link" href="#y-2008">2008</a>
+					</div>
 				</div>
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2018">2018</a>
+
+				<div class="hide-md">
+					<div class="nav side-nav">
+						<a class="nav-link" href="#y-2019">19</a>
+						<a class="nav-link" href="#y-2018">18</a>
+						<a class="nav-link" href="#y-2017">17</a>
+						<a class="nav-link" href="#y-2016">16</a>
+						<a class="nav-link" href="#y-2015">15</a>
+						<a class="nav-link" href="#y-2014">14</a>
+						<a class="nav-link" href="#y-2013">13</a>
+						<a class="nav-link" href="#y-2012">12</a>
+						<a class="nav-link" href="#y-2011">11</a>
+						<a class="nav-link" href="#y-2010">10</a>
+						<a class="nav-link" href="#y-2009">09</a>
+						<a class="nav-link" href="#y-2008">08</a>
+					</div>
 				</div>
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2017">2017</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2016">2016</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2015">2015</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2014">2014</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2013">2013</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2012">2012</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2011">2011</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2010">2010</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2009">2009</a>
-				</div>
-				<div class="bd-sidenav bd-sidenav3">
-					<a class="nav-link" href="#y-2008">2008</a>
-				</div>
+
 			</nav>
 		</div>
 
-		<main class="col-12 col-md col-xl-10">
-			<div class="container-fluid bottom-pad">
+		<main class="col-12 col-md">
+			<div class="container bottom-pad">
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2019"></a>
+					<a class="anchor" id="y-2019"></a>
 					2019
 				</h1>
 				<div class="row news-row">
@@ -181,7 +181,7 @@
 				</div>
 
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2018"></a>
+					<a class="anchor" id="y-2018"></a>
 					2018
 				</h1>
 				<div class="row news-row">
@@ -325,7 +325,7 @@
 				</div>
 
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2017"></a>
+					<a class="anchor" id="y-2017"></a>
 					2017
 				</h1>
 				<div class="row news-row">
@@ -449,7 +449,7 @@
 				</div>
 
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2016"></a>
+					<a class="anchor" id="y-2016"></a>
 					2016
 				</h1>
 				<div class="row news-row">
@@ -583,7 +583,7 @@
 				</div>
 
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2015"></a>
+					<a class="anchor" id="y-2015"></a>
 					2015
 				</h1>
 				<div class="row news-row">
@@ -717,7 +717,7 @@
 				</div>
 
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2014"></a>
+					<a class="anchor" id="y-2014"></a>
 					2014
 				</h1>
 				<div class="row news-row">
@@ -811,7 +811,7 @@
 				</div>
 
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2013"></a>
+					<a class="anchor" id="y-2013"></a>
 					2013
 				</h1>
 				<div class="row news-row">
@@ -895,7 +895,7 @@
 				</div>
 
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2012"></a>
+					<a class="anchor" id="y-2012"></a>
 					2012
 				</h1>
 				<div class="row news-row">
@@ -989,7 +989,7 @@
 				</div>
 
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2011"></a>
+					<a class="anchor" id="y-2011"></a>
 					2011
 				</h1>
 				<div class="row news-row">
@@ -1073,7 +1073,7 @@
 				</div>
 
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2010"></a>
+					<a class="anchor" id="y-2010"></a>
 					2010
 				</h1>
 				<div class="row news-row">
@@ -1157,7 +1157,7 @@
 				</div>
 
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2009"></a>
+					<a class="anchor" id="y-2009"></a>
 					2009
 				</h1>
 				<div class="row news-row">
@@ -1311,7 +1311,7 @@
 				</div>
 
 				<h1 class="time rule">
-					<a class="anchor top-lg" id="y-2008"></a>
+					<a class="anchor" id="y-2008"></a>
 					2008
 				</h1>
 				<div class="row news-row">

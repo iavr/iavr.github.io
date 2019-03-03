@@ -10,7 +10,7 @@
 
 		<!-- bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
@@ -31,6 +31,7 @@
 		<!-- scripts -->
 		<script src="../web/js/bs-docs.min.js"></script>
 		<script src="../web/js/email.js"></script>
+		<script src="../web/js/scroll.js"></script>
 
 	</head>
 	<body data-spy="scroll" data-target="#nav">
@@ -90,110 +91,146 @@
 
 
 
-<div class="container-fluid">
-	<div class="row flex-xl-nowrap">
+<div class="container-fluid" id="pub">
+	<div class="row">
 
-		<div class="col-12 col-md-auto bd-sidebar pub-sidebar">
-			<nav class="bd-links" id="nav">
-				<div class="bd-toc-item">
-					<a class="rel toggle bd-toc-link" data-toggle="collapse" href="#Inria">
-						<i class="left-60 tog fas fa-chevron-down"></i>
-						Inria
-					</a>
-					<div class="collapse show nav bd-sidenav bd-sidenav2" id="Inria">
-						<a class="nav-link" href="#y-press">In&nbsp;press</a>
-						<a class="nav-link" href="#y-2019">2019</a>
-						<a class="nav-link" href="#y-2018">2018</a>
-						<a class="nav-link" href="#y-2017">2017</a>
-						<a class="nav-link" href="#y-2016">2016</a>
+		<div class="col-12 col-md-auto side-bar">
+			<nav id="nav">
+
+				<div class="show-md">
+					<div class="toc-item">
+						<a class="rel toggle" data-toggle="collapse" href="#Inria">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Inria
+						</a>
+						<div class="collapse show nav side-nav" id="Inria">
+							<a class="nav-link" href="#y-press">In&nbsp;press</a>
+							<a class="nav-link" href="#y-2019">2019</a>
+							<a class="nav-link" href="#y-2018">2018</a>
+							<a class="nav-link" href="#y-2017">2017</a>
+							<a class="nav-link" href="#y-2016">2016</a>
+						</div>
+					</div>
+					<div class="toc-item">
+						<a class="rel toggle" data-toggle="collapse" href="#UoA">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							UoA
+						</a>
+						<div class="collapse show nav side-nav" id="UoA">
+							<a class="nav-link" href="#y-2015">2015</a>
+						</div>
+					</div>
+					<div class="toc-item">
+						<a class="rel toggle" data-toggle="collapse" href="#NTUA-IVA">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							NTUA/<wbr>IVA
+						</a>
+						<div class="collapse show nav side-nav" id="NTUA-IVA">
+							<a class="nav-link" href="#y-2014">2014</a>
+							<a class="nav-link" href="#y-2013">2013</a>
+							<a class="nav-link" href="#y-2012">2012</a>
+							<a class="nav-link" href="#y-2011">2011</a>
+							<a class="nav-link" href="#y-2010">2010</a>
+							<a class="nav-link" href="#y-2009">2009</a>
+							<a class="nav-link" href="#y-2008">2008</a>
+						</div>
+					</div>
+					<div class="toc-item">
+						<a class="rel toggle" data-toggle="collapse" href="#NTUA-IVML">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							NTUA/<wbr>IVML
+						</a>
+						<div class="collapse show nav side-nav" id="NTUA-IVML">
+							<a class="nav-link" href="#y-2007">2007</a>
+							<a class="nav-link" href="#y-2006">2006</a>
+							<a class="nav-link" href="#y-2005">2005</a>
+							<a class="nav-link" href="#y-2004">2004</a>
+							<a class="nav-link" href="#y-2003">2003</a>
+							<a class="nav-link" href="#y-2002">2002</a>
+						</div>
+					</div>
+					<div class="toc-item">
+						<a class="rel toggle" data-toggle="collapse" href="#NTUA-PhD">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							NTUA/<wbr>PhD
+						</a>
+						<div class="collapse show nav side-nav" id="NTUA-PhD">
+							<a class="nav-link" href="#y-2001">2001</a>
+							<a class="nav-link" href="#y-2000">2000</a>
+							<a class="nav-link" href="#y-1999">1999</a>
+							<a class="nav-link" href="#y-1998">1998</a>
+							<a class="nav-link" href="#y-1997">1997</a>
+						</div>
+					</div>
+					<div class="toc-item">
+						<a class="rel toggle" data-toggle="collapse" href="#Earlier">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Earlier
+						</a>
+						<div class="collapse show nav side-nav" id="Earlier">
+							<a class="nav-link" href="#y-1994">1994</a>
+							<a class="nav-link" href="#y-1993">1993</a>
+						</div>
 					</div>
 				</div>
-				<div class="bd-toc-item">
-					<a class="rel toggle bd-toc-link" data-toggle="collapse" href="#UoA">
-						<i class="left-60 tog fas fa-chevron-down"></i>
-						UoA
-					</a>
-					<div class="collapse show nav bd-sidenav bd-sidenav2" id="UoA">
-						<a class="nav-link" href="#y-2015">2015</a>
+
+				<div class="hide-md">
+					<div class="nav side-nav">
+						<a class="nav-link" href="#y-2019">19</a>
+						<a class="nav-link" href="#y-2018">18</a>
+						<a class="nav-link" href="#y-2017">17</a>
+						<a class="nav-link" href="#y-2016">16</a>
+						<a class="nav-link" href="#y-2015">15</a>
+						<a class="nav-link" href="#y-2014">14</a>
+						<a class="nav-link" href="#y-2013">13</a>
+						<a class="nav-link" href="#y-2012">12</a>
+						<a class="nav-link" href="#y-2011">11</a>
+						<a class="nav-link" href="#y-2010">10</a>
+						<a class="nav-link" href="#y-2009">09</a>
+						<a class="nav-link" href="#y-2008">08</a>
+						<a class="nav-link" href="#y-2007">07</a>
+						<a class="nav-link" href="#y-2006">06</a>
+						<a class="nav-link" href="#y-2005">05</a>
+						<a class="nav-link" href="#y-2004">04</a>
+						<a class="nav-link" href="#y-2003">03</a>
+						<a class="nav-link" href="#y-2002">02</a>
+						<a class="nav-link" href="#y-2001">01</a>
+						<a class="nav-link" href="#y-2000">00</a>
+						<a class="nav-link" href="#y-1999">99</a>
+						<a class="nav-link" href="#y-1998">98</a>
+						<a class="nav-link" href="#y-1997">97</a>
+						<a class="nav-link" href="#y-1994">94</a>
+						<a class="nav-link" href="#y-1993">93</a>
 					</div>
 				</div>
-				<div class="bd-toc-item">
-					<a class="rel toggle bd-toc-link" data-toggle="collapse" href="#NTUA-IVA">
-						<i class="left-60 tog fas fa-chevron-down"></i>
-						NTUA/<wbr>IVA
-					</a>
-					<div class="collapse show nav bd-sidenav bd-sidenav2" id="NTUA-IVA">
-						<a class="nav-link" href="#y-2014">2014</a>
-						<a class="nav-link" href="#y-2013">2013</a>
-						<a class="nav-link" href="#y-2012">2012</a>
-						<a class="nav-link" href="#y-2011">2011</a>
-						<a class="nav-link" href="#y-2010">2010</a>
-						<a class="nav-link" href="#y-2009">2009</a>
-						<a class="nav-link" href="#y-2008">2008</a>
-					</div>
-				</div>
-				<div class="bd-toc-item">
-					<a class="rel toggle bd-toc-link" data-toggle="collapse" href="#NTUA-IVML">
-						<i class="left-60 tog fas fa-chevron-down"></i>
-						NTUA/<wbr>IVML
-					</a>
-					<div class="collapse show nav bd-sidenav bd-sidenav2" id="NTUA-IVML">
-						<a class="nav-link" href="#y-2007">2007</a>
-						<a class="nav-link" href="#y-2006">2006</a>
-						<a class="nav-link" href="#y-2005">2005</a>
-						<a class="nav-link" href="#y-2004">2004</a>
-						<a class="nav-link" href="#y-2003">2003</a>
-						<a class="nav-link" href="#y-2002">2002</a>
-					</div>
-				</div>
-				<div class="bd-toc-item">
-					<a class="rel toggle bd-toc-link" data-toggle="collapse" href="#NTUA-PhD">
-						<i class="left-60 tog fas fa-chevron-down"></i>
-						NTUA/<wbr>PhD
-					</a>
-					<div class="collapse show nav bd-sidenav bd-sidenav2" id="NTUA-PhD">
-						<a class="nav-link" href="#y-2001">2001</a>
-						<a class="nav-link" href="#y-2000">2000</a>
-						<a class="nav-link" href="#y-1999">1999</a>
-						<a class="nav-link" href="#y-1998">1998</a>
-						<a class="nav-link" href="#y-1997">1997</a>
-					</div>
-				</div>
-				<div class="bd-toc-item">
-					<a class="rel toggle bd-toc-link" data-toggle="collapse" href="#Earlier">
-						<i class="left-60 tog fas fa-chevron-down"></i>
-						Earlier
-					</a>
-					<div class="collapse show nav bd-sidenav bd-sidenav2" id="Earlier">
-						<a class="nav-link" href="#y-1994">1994</a>
-						<a class="nav-link" href="#y-1993">1993</a>
-					</div>
-				</div>
+
 			</nav>
 		</div>
 
-		<main class="col-12 col-md col-xl-10">
-			<div class="container-fluid ver-pad">
+		<main class="col-12 col-md">
+			<div class="container ver-pad">
 
 				<div class="alert warn">
-					<a class="anchor top-lg" id="copyright"></a>
-					<h2>Copyright notice</h2>
+					<h2>
+						<a class="anchor" id="copyright"></a>
+						Copyright notice
+					</h2>
 					<div class="just">
 						This material is presented to ensure timely dissemination of scholarly and technical work. Copyright and all rights therein are retained by authors or by other copyright holders. Anyone copying this information is expected to adhere to the terms and constraints invoked by each author's copyright. In most cases, these works may not be reposted without the explicit permission of the copyright holder.
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-press"></a>
+					<a class="anchor" id="y-press"></a>
 					In&nbsp;press
 				</h1>
 				<h2 class="pub rule">
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J28"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J28"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J28">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Graph-Based Particular Object Discovery
 						</a>
 					</div>
@@ -201,7 +238,7 @@
 						<span class="author">O. Siméoni, A. Iscen, G. Tolias, Y. Avrithis, O. Chum</span>
 						&nbsp;
 						<span class="acro but">MVA,&nbsp;In&nbsp;press</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J28.mva18.disco.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J28.mva18.disco.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J28">
@@ -224,10 +261,10 @@
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J27"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J27"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J27">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Revisiting the Medial Axis for Planar Shape Decomposition
 						</a>
 					</div>
@@ -235,7 +272,7 @@
 						<span class="author">N. Papanelopoulos, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">CVIU,&nbsp;In&nbsp;press</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J27.cviu18.cuts.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J27.cviu18.cuts.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J27">
@@ -258,17 +295,17 @@
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2019"></a>
+					<a class="anchor" id="y-2019"></a>
 					2019
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C112"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C112"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C112">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Label Propagation for Deep Semi-Supervised Learning
 						</a>
 					</div>
@@ -299,10 +336,10 @@
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C111"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C111"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C111">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Dense Classification and Implanting for Few-Shot Learning
 						</a>
 					</div>
@@ -333,10 +370,10 @@
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C110"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C110"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C110">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Local Features and Visual Words Emerge in Activations
 						</a>
 					</div>
@@ -368,17 +405,17 @@ We experimentally show that the proposed method achieves the state-of-the-art pe
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2018"></a>
+					<a class="anchor" id="y-2018"></a>
 					2018
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C109"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C109"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C109">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Hybrid Diffusion: Spectral-Temporal Graph Filtering for Manifold Ranking
 						</a>
 					</div>
@@ -386,7 +423,7 @@ We experimentally show that the proposed method achieves the state-of-the-art pe
 						<span class="author">A. Iscen, Y. Avrithis, G. Tolias, T. Furon, O. Chum</span>
 						&nbsp;
 						<span class="acro but">ACCV&nbsp;2018</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C109.accv18.hybrid.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C109.accv18.hybrid.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C109">
@@ -411,10 +448,10 @@ We experimentally show that the proposed method achieves the state-of-the-art pe
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C108"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C108"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C108">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Mining on Manifolds: Metric Learning without Labels
 						</a>
 					</div>
@@ -422,7 +459,7 @@ We experimentally show that the proposed method achieves the state-of-the-art pe
 						<span class="author">A. Iscen, G. Tolias, Y. Avrithis, O. Chum</span>
 						&nbsp;
 						<span class="acro but">CVPR&nbsp;2018</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C108.cvpr18.mom.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C108.cvpr18.mom.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C108">
@@ -448,10 +485,10 @@ The method is applied to unsupervised fine-tuning of pre-trained networks for fi
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C107"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C107"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C107">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Revisiting Oxford And Paris: Large-Scale Image Retrieval Benchmarking
 						</a>
 					</div>
@@ -459,7 +496,7 @@ The method is applied to unsupervised fine-tuning of pre-trained networks for fi
 						<span class="author">F. Radenović, A. Iscen, G. Tolias, Y. Avrithis, O. Chum</span>
 						&nbsp;
 						<span class="acro but">CVPR&nbsp;2018</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C107.cvpr18.oxford.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C107.cvpr18.oxford.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C107">
@@ -485,10 +522,10 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C106"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C106"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C106">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Fast Spectral Ranking for Similarity Search
 						</a>
 					</div>
@@ -496,7 +533,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">A. Iscen, Y. Avrithis, G. Tolias, T. Furon, O. Chum</span>
 						&nbsp;
 						<span class="acro but">CVPR&nbsp;2018</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C106.cvpr18.fsr.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C106.cvpr18.fsr.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C106">
@@ -522,10 +559,10 @@ This work introduces an explicit embedding reducing manifold search to Euclidean
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C105"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C105"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C105">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Unsupervised Object Discovery for Instance Recognition
 						</a>
 					</div>
@@ -533,7 +570,7 @@ This work introduces an explicit embedding reducing manifold search to Euclidean
 						<span class="author">O. Siméoni, A. Iscen, G. Tolias, Y. Avrithis, O. Chum</span>
 						&nbsp;
 						<span class="acro but">WACV&nbsp;2018</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C105.wacv18.disco.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C105.wacv18.disco.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C105">
@@ -560,10 +597,10 @@ This work introduces an explicit embedding reducing manifold search to Euclidean
 					Technical reports
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R17"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R17"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R17">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Hybrid Diffusion: Spectral-Temporal Graph Filtering for Manifold Ranking
 						</a>
 					</div>
@@ -571,7 +608,7 @@ This work introduces an explicit embedding reducing manifold search to Euclidean
 						<span class="author">A. Iscen, Y. Avrithis, G. Tolias, T. Furon, O. Chum</span>
 						&nbsp;
 						<span class="acro but">arXiv,&nbsp;2018</span>
-						&nbsp; <a href="../data/pub/pdf/report/R017.1807.08692.hybrid.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R017.1807.08692.hybrid.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R17">
@@ -592,10 +629,10 @@ This work introduces an explicit embedding reducing manifold search to Euclidean
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R16"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R16"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R16">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Revisiting Oxford and Paris: Large-Scale Image Retrieval Benchmarking
 						</a>
 					</div>
@@ -603,7 +640,7 @@ This work introduces an explicit embedding reducing manifold search to Euclidean
 						<span class="author">F. Radenović, A. Iscen, G. Tolias, Y. Avrithis, O. Chum</span>
 						&nbsp;
 						<span class="acro but">arXiv,&nbsp;2018</span>
-						&nbsp; <a href="../data/pub/pdf/report/R016.1803.11285.oxford.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R016.1803.11285.oxford.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R16">
@@ -625,10 +662,10 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R15"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R15"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R15">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Mining on Manifolds: Metric Learning without Labels
 						</a>
 					</div>
@@ -636,7 +673,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">A. Iscen, G. Tolias, Y. Avrithis, O. Chum</span>
 						&nbsp;
 						<span class="acro but">arXiv,&nbsp;2018</span>
-						&nbsp; <a href="../data/pub/pdf/report/R015.1803.11095.mom.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R015.1803.11095.mom.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R15">
@@ -657,10 +694,10 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R14"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R14"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R14">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Unsupervised Object Discovery for Instance Recognition
 						</a>
 					</div>
@@ -668,7 +705,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">O. Siméoni, A. Iscen, G. Tolias, Y. Avrithis, O. Chum</span>
 						&nbsp;
 						<span class="acro but">arXiv,&nbsp;2018</span>
-						&nbsp; <a href="../data/pub/pdf/report/R014.1709.04725.disco.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R014.1709.04725.disco.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R14">
@@ -689,17 +726,17 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2017"></a>
+					<a class="anchor" id="y-2017"></a>
 					2017
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C104"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C104"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C104">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Automatic Discovery of Discriminative Parts as a Quadratic Assignment Problem
 						</a>
 					</div>
@@ -707,7 +744,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">R. Sicre, J. Rabin, Y. Avrithis, T. Furon, F. Jurie, E. Kijak</span>
 						&nbsp;
 						<span class="acro but">CEFRL/ICCV&nbsp;2017</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C104.iccv-cefrl17.parts.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C104.iccv-cefrl17.parts.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C104">
@@ -733,10 +770,10 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C103"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C103"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C103">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Efficient Diffusion on Region Manifolds: Recovering Small Objects with Compact CNN Representations
 						</a>
 					</div>
@@ -744,7 +781,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">A. Iscen, G. Tolias, Y. Avrithis, T. Furon, O. Chum</span>
 						&nbsp;
 						<span class="acro but">CVPR&nbsp;2017</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C103.cvpr17.diffuse.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C103.cvpr17.diffuse.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C103">
@@ -769,10 +806,10 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C102"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C102"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C102">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Unsupervised Part Learning for Visual Recognition
 						</a>
 					</div>
@@ -780,7 +817,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">R. Sicre, J. Rabin, Y. Avrithis, T. Furon, F. Jurie</span>
 						&nbsp;
 						<span class="acro but">CVPR&nbsp;2017</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C102.cvpr17.uparts.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C102.cvpr17.uparts.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C102">
@@ -805,10 +842,10 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C101"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C101"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C101">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Panorama to Panorama Matching for Location Recognition
 						</a>
 					</div>
@@ -816,7 +853,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">A. Iscen, G. Tolias, Y. Avrithis, T. Furon, O. Chum</span>
 						&nbsp;
 						<span class="acro but">ICMR&nbsp;2017</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C101.icmr17.pano.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C101.icmr17.pano.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C101">
@@ -844,10 +881,10 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					Technical reports
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R13"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R13"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R13">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Panorama to Panorama Matching for Location Recognition
 						</a>
 					</div>
@@ -855,7 +892,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">A. Iscen, G. Tolias, Y. Avrithis, T. Furon, O. Chum</span>
 						&nbsp;
 						<span class="acro but">arXiv,&nbsp;2017</span>
-						&nbsp; <a href="../data/pub/pdf/report/R013.1704.06591.pano.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R013.1704.06591.pano.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R13">
@@ -876,10 +913,10 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R12"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R12"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R12">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Unsupervised Part Learning for Visual Recognition
 						</a>
 					</div>
@@ -887,7 +924,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">R. Sicre, J. Rabin, Y. Avrithis, T. Furon, F. Jurie</span>
 						&nbsp;
 						<span class="acro but">arXiv,&nbsp;2017</span>
-						&nbsp; <a href="../data/pub/pdf/report/R012.1704.03755.uparts.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R012.1704.03755.uparts.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R12">
@@ -908,10 +945,10 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R11"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R11"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R11">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Fast Spectral Ranking for Similarity Search
 						</a>
 					</div>
@@ -919,7 +956,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">A. Iscen, Y. Avrithis, G. Tolias, T. Furon, O. Chum</span>
 						&nbsp;
 						<span class="acro but">arXiv,&nbsp;2017</span>
-						&nbsp; <a href="../data/pub/pdf/report/R011.1703.06935.fsr.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R011.1703.06935.fsr.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R11">
@@ -940,17 +977,17 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2016"></a>
+					<a class="anchor" id="y-2016"></a>
 					2016
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C100"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C100"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C100">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							High-Dimensional Visual Similarity Search: k-d Generalized Randomized Forests
 						</a>
 					</div>
@@ -958,7 +995,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">Y. Avrithis, I. Emiris, G. Samaras</span>
 						&nbsp;
 						<span class="acro but">CGI&nbsp;2016</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C100.cgi16.geraf.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C100.cgi16.geraf.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C100">
@@ -988,10 +1025,10 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J26"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J26"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J26">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							$\alpha$-Shapes for Local Feature Detection
 						</a>
 					</div>
@@ -999,7 +1036,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">C. Varytimidis, K. Rapantzikos, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">PR,&nbsp;2016</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J26.pr16.wash.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J26.pr16.wash.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J26">
@@ -1026,10 +1063,10 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J25"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J25"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J25">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Image Search with Selective Match Kernels: Aggregation Across Single and Multiple Images
 						</a>
 					</div>
@@ -1037,7 +1074,7 @@ An extensive comparison of the state-of-the-art methods is performed on the new 
 						<span class="author">G. Tolias, Y. Avrithis, H. Jégou</span>
 						&nbsp;
 						<span class="acro but">IJCV,&nbsp;2016</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J25.ijcv15.asmk.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J25.ijcv15.asmk.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J25">
@@ -1068,10 +1105,10 @@ We show that the same aggregation procedure, originally applied per image, can e
 					Technical reports
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R10"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R10"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R10">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Efficient Diffusion on Region Manifolds: Recovering Small Objects with Compact CNN Representations
 						</a>
 					</div>
@@ -1079,7 +1116,7 @@ We show that the same aggregation procedure, originally applied per image, can e
 						<span class="author">A. Iscen, G. Tolias, Y. Avrithis, T. Furon, O. Chum</span>
 						&nbsp;
 						<span class="acro but">arXiv,&nbsp;2016</span>
-						&nbsp; <a href="../data/pub/pdf/report/R010.1611.05113.diffusion.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R010.1611.05113.diffusion.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R10">
@@ -1100,10 +1137,10 @@ We show that the same aggregation procedure, originally applied per image, can e
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R9"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R9"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R9">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Automatic Discovery of Discriminative Parts as a Quadratic Assignment Problem
 						</a>
 					</div>
@@ -1111,7 +1148,7 @@ We show that the same aggregation procedure, originally applied per image, can e
 						<span class="author">R. Sicre, J. Rabin, Y. Avrithis, T. Furon, F. Jurie</span>
 						&nbsp;
 						<span class="acro but">arXiv,&nbsp;2016</span>
-						&nbsp; <a href="../data/pub/pdf/report/R009.1611.04413.parts.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R009.1611.04413.parts.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R9">
@@ -1132,10 +1169,10 @@ We show that the same aggregation procedure, originally applied per image, can e
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R8"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R8"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R8">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							High-Dimensional Approximate Nearest Neighbor: k-d Generalized Randomized Forests
 						</a>
 					</div>
@@ -1143,7 +1180,7 @@ We show that the same aggregation procedure, originally applied per image, can e
 						<span class="author">Y. Avrithis, I. Emiris, G. Samaras</span>
 						&nbsp;
 						<span class="acro but">arXiv,&nbsp;2016</span>
-						&nbsp; <a href="../data/pub/pdf/report/R008.1603.09596v1.geraf.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R008.1603.09596v1.geraf.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R8">
@@ -1164,17 +1201,17 @@ We show that the same aggregation procedure, originally applied per image, can e
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2015"></a>
+					<a class="anchor" id="y-2015"></a>
 					2015
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C99"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C99"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C99">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Web-Scale Image Clustering Revisited
 						</a>
 					</div>
@@ -1183,7 +1220,7 @@ We show that the same aggregation procedure, originally applied per image, can e
 						&nbsp;
 						<span class="acro but">ICCV&nbsp;2015</span>
 						&nbsp; <span class="xtra but">Oral</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C099.iccv15.iqm.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C099.iccv15.iqm.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C99">
@@ -1208,10 +1245,10 @@ We show that the same aggregation procedure, originally applied per image, can e
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C98"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C98"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C98">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Planar Shape Decomposition Made Simple
 						</a>
 					</div>
@@ -1219,7 +1256,7 @@ We show that the same aggregation procedure, originally applied per image, can e
 						<span class="author">N. Papanelopoulos, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">BMVC&nbsp;2015</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C098.bmvc15.cuts.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C098.bmvc15.cuts.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C98">
@@ -1244,10 +1281,10 @@ We show that the same aggregation procedure, originally applied per image, can e
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C97"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C97"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C97">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Early Burst Detection for Memory-Efficient Image Retrieval
 						</a>
 					</div>
@@ -1255,7 +1292,7 @@ We show that the same aggregation procedure, originally applied per image, can e
 						<span class="author">M. Shi, Y. Avrithis, H. Jégou</span>
 						&nbsp;
 						<span class="acro but">CVPR&nbsp;2015</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C097.cvpr15.burst.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C097.cvpr15.burst.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C97">
@@ -1285,10 +1322,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J24"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J24"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J24">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Dithering-Based Sampling and Weighted $\alpha$-Shapes for Local Feature Detection
 						</a>
 					</div>
@@ -1296,7 +1333,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Varytimidis, C., Rapantzikos, K., Avrithis, Y., Kollias, S.</span>
 						&nbsp;
 						<span class="acro but">CVA,&nbsp;2015</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J24.cva15.accv.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J24.cva15.accv.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J24">
@@ -1326,17 +1363,17 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2014"></a>
+					<a class="anchor" id="y-2014"></a>
 					2014
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C96"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C96"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C96">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Improving Local Features by Dithering-Based Image Sampling
 						</a>
 					</div>
@@ -1344,7 +1381,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">C. Varytimidis, K. Rapantzikos, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">ACCV&nbsp;2014</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C096.accv14.dither.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C096.accv14.dither.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C96">
@@ -1369,10 +1406,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C95"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C95"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C95">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Locally Optimized Product Quantization for Approximate Nearest Neighbor Search
 						</a>
 					</div>
@@ -1380,7 +1417,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Y. Kalantidis, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">CVPR&nbsp;2014</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C095.cvpr14.lopq.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C095.cvpr14.lopq.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C95">
@@ -1408,10 +1445,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J23"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J23"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J23">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Towards Large-Scale Geometry Indexing by Feature Selection
 						</a>
 					</div>
@@ -1419,7 +1456,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">G. Tolias, Y. Kalantidis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">CVIU,&nbsp;2014</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J23.cviu14.fms.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J23.cviu14.fms.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J23">
@@ -1446,10 +1483,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J22"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J22"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J22">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Hough Pyramid Matching: Speeded-Up Geometry Re-Ranking for Large Scale Image Retrieval
 						</a>
 					</div>
@@ -1457,7 +1494,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Y. Avrithis, G. Tolias</span>
 						&nbsp;
 						<span class="acro but">IJCV,&nbsp;2014</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J22.ijcv14.hpm.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J22.ijcv14.hpm.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J22">
@@ -1484,17 +1521,17 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2013"></a>
+					<a class="anchor" id="y-2013"></a>
 					2013
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C94"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C94"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C94">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Quantize and Conquer: a Dimensionality-Recursive Solution to Clustering, Vector Quantization, and Image Retrieval
 						</a>
 					</div>
@@ -1502,7 +1539,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">ICCV&nbsp;2013</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C094.iccv13b.qc.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C094.iccv13b.qc.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C94">
@@ -1527,10 +1564,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C93"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C93"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C93">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							To Aggregate or Not to Aggregate: Selective Match Kernels for Image Search
 						</a>
 					</div>
@@ -1539,7 +1576,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						&nbsp;
 						<span class="acro but">ICCV&nbsp;2013</span>
 						&nbsp; <span class="xtra but">Oral</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C093.iccv13a.asmk.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C093.iccv13a.asmk.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C93">
@@ -1566,10 +1603,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J21"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J21"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J21">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Multimodal Saliency and Fusion for Movie Summarization Based on Aural, Visual, and Textual Attention
 						</a>
 					</div>
@@ -1577,7 +1614,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">G. Evangelopoulos, A. Zlatintsi, A. Potamianos, P. Maragos, K. Rapantzikos, G. Skoumas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">TMM,&nbsp;2013</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J21.tmm13.moviesum.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J21.tmm13.moviesum.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J21">
@@ -1604,17 +1641,17 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2012"></a>
+					<a class="anchor" id="y-2012"></a>
 					2012
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C92"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C92"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C92">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Weighted $\alpha$-Shapes for Local Feature Detection
 						</a>
 					</div>
@@ -1622,7 +1659,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">C. Varytimidis, K. Rapantzikos, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">ECCV&nbsp;2012</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C092.eccv12b.wash.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C092.eccv12b.wash.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C92">
@@ -1647,10 +1684,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C91"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C91"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C91">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Approximate Gaussian Mixtures for Large Scale Vocabularies
 						</a>
 					</div>
@@ -1658,7 +1695,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Y. Avrithis, Y. Kalantidis</span>
 						&nbsp;
 						<span class="acro but">ECCV&nbsp;2012</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C091.eccv12a.agm.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C091.eccv12a.agm.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C91">
@@ -1683,10 +1720,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C90"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C90"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C90">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							SymCity: Feature Selection by Symmetry for Large Scale Image Retrieval
 						</a>
 					</div>
@@ -1695,7 +1732,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						&nbsp;
 						<span class="acro but">ACM-MM&nbsp;2012</span>
 						&nbsp; <span class="xtra but">Full paper</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C090.acm12a.symcity.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C090.acm12a.symcity.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C90">
@@ -1721,17 +1758,17 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2011"></a>
+					<a class="anchor" id="y-2011"></a>
 					2011
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C89"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C89"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C89">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Speeded-Up, Relaxed Spatial Matching
 						</a>
 					</div>
@@ -1739,7 +1776,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">G. Tolias, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">ICCV&nbsp;2011</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C089.iccv11a.hpm.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C089.iccv11a.hpm.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C89">
@@ -1763,10 +1800,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C88"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C88"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C88">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							The Medial Feature Detector: Stable Regions from Image Boundaries
 						</a>
 					</div>
@@ -1774,7 +1811,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Y. Avrithis, K. Rapantzikos</span>
 						&nbsp;
 						<span class="acro but">ICCV&nbsp;2011</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C088.iccv11b.mfd.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C088.iccv11b.mfd.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C88">
@@ -1798,10 +1835,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C87"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C87"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C87">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Scalable Triangulation-Based Logo Recognition
 						</a>
 					</div>
@@ -1809,7 +1846,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Y. Kalantidis, LG. Pueyo, M. Trevisiol, R. van Zwol, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">ICMR&nbsp;2011</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C087.icmr11.logo.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C087.icmr11.logo.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C87">
@@ -1836,10 +1873,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J20"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J20"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J20">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Spatiotemporal Features for Action Recognition and Salient Event Detection
 						</a>
 					</div>
@@ -1847,7 +1884,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">K. Rapantzikos, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">CC,&nbsp;2011</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J20.ccj11.dense.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J20.ccj11.dense.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J20">
@@ -1875,10 +1912,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J19"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J19"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J19">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							VIRaL: Visual Image Retrieval and Localization
 						</a>
 					</div>
@@ -1886,7 +1923,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Y. Kalantidis, G. Tolias, Y. Avrithis, M. Phinikettos, E. Spyrou, P. Mylonas, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">MTAP,&nbsp;2011</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J19.mtap11.viral.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J19.mtap11.viral.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J19">
@@ -1915,10 +1952,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					Book chapters
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="B8"></a>
 					<div class="pub-title">
+						<a class="anchor" id="B8"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-B8">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Vision, Attention Control, and Goals Creation System
 						</a>
 					</div>
@@ -1926,7 +1963,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">K. Rapantzikos, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">Springer,&nbsp;2011</span>
-						&nbsp; <a href="../data/pub/pdf/book/B08.springer11.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/book/B08.springer11.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-B8">
@@ -1953,17 +1990,17 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2010"></a>
+					<a class="anchor" id="y-2010"></a>
 					2010
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C86"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C86"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C86">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Retrieving Landmark and Non-Landmark Images from Community Photo Collections
 						</a>
 					</div>
@@ -1972,7 +2009,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						&nbsp;
 						<span class="acro but">ACM-MM&nbsp;2010</span>
 						&nbsp; <span class="xtra but">Full paper</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C086.acm-mm10a.scene.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C086.acm-mm10a.scene.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C86">
@@ -1996,10 +2033,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C85"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C85"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C85">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Feature Map Hashing: Sub-Linear Indexing of Appearance and Global Geometry
 						</a>
 					</div>
@@ -2008,7 +2045,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						&nbsp;
 						<span class="acro but">ACM-MM&nbsp;2010</span>
 						&nbsp; <span class="xtra but">Full paper</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C085.acm-mm10b.fmh.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C085.acm-mm10b.fmh.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C85">
@@ -2032,10 +2069,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C84"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C84"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C84">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Detecting Regions from Single Scale Edges
 						</a>
 					</div>
@@ -2043,7 +2080,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">K. Rapantzikos, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">SGA/ECCV&nbsp;2010</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C084.eccv-sga10.edge.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C084.eccv-sga10.edge.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C84">
@@ -2068,17 +2105,17 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2009"></a>
+					<a class="anchor" id="y-2009"></a>
 					2009
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C83"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C83"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C83">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Dense Saliency-Based Spatiotemporal Feature Points for Action Recognition
 						</a>
 					</div>
@@ -2086,7 +2123,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">K. Rapantzikos, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">CVPR&nbsp;2009</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C083.cvpr09.dense.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C083.cvpr09.dense.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C83">
@@ -2110,10 +2147,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C82"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C82"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C82">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Video Event Detection and Summarization Using Audio, Visual and Text Saliency
 						</a>
 					</div>
@@ -2121,7 +2158,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">G. Evangelopoulos, A. Zlatintsi, G. Skoumas, K. Rapantzikos, A. Potamianos, P. Maragos, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">ICASSP&nbsp;2009</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C082.icassp09.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C082.icassp09.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C82">
@@ -2145,10 +2182,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C81"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C81"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C81">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Integrating Image Segmentation and Classification for Fuzzy Knowledge-Based Multimedia Indexing
 						</a>
 					</div>
@@ -2156,7 +2193,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Th. Athanasiadis, N. Simou, G. Papadopoulos, R. Benmokhtar, K. Chandramouli, V. Tzouvaras, V. Mezaris, M. Phinikettos, Y. Avrithis, Y. Kompatsiaris, B. Huet, E. Izquierdo</span>
 						&nbsp;
 						<span class="acro but">MMM&nbsp;2009</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C081.mmm09a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C081.mmm09a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C81">
@@ -2181,10 +2218,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C80"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C80"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C80">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Large Scale Concept Detection in Video Using a Region Thesaurus
 						</a>
 					</div>
@@ -2192,7 +2229,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">E. Spyrou, G. Tolias, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">MMM&nbsp;2009</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C080.mmm09b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C080.mmm09b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C80">
@@ -2216,10 +2253,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C79"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C79"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C79">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Cross Media Approach for Compound Document Analysis
 						</a>
 					</div>
@@ -2227,7 +2264,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">S. Nikolopoulos, C. Lakka, I. Kompatsiaris, C. Varytimidis, K. Rapantzikos, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">CBMI&nbsp;2009</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C079.cbmi09.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C079.cbmi09.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C79">
@@ -2251,10 +2288,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C78"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C78"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C78">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Visual Image Retrieval and Localization
 						</a>
 					</div>
@@ -2262,7 +2299,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Y. Kalantidis, G. Tolias, E. Spyrou, Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">CBMI&nbsp;2009</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C078.cbmi09.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C078.cbmi09.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C78">
@@ -2289,10 +2326,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					Edited volumes
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="V3"></a>
 					<div class="pub-title">
+						<a class="anchor" id="V3"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-V3">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							<em>Advances in Multimedia Modeling</em>
 						</a>
 					</div>
@@ -2330,10 +2367,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J18"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J18"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J18">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Spatiotemporal Saliency for Video Classification
 						</a>
 					</div>
@@ -2341,7 +2378,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">K. Rapantzikos, N. Tsapatsoulis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">SP:IC,&nbsp;2009</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J18.spic09.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J18.spic09.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J18">
@@ -2367,10 +2404,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J17"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J17"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J17">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Using Visual Context and Region Semantics for High-Level Concept Detection
 						</a>
 					</div>
@@ -2378,7 +2415,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Ph. Mylonas, E. Spyrou, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">TMM,&nbsp;2009</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J17.tmm09.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J17.tmm09.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J17">
@@ -2404,10 +2441,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J16"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J16"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J16">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Concept Detection and Keyframe Extraction Using a Visual Thesaurus
 						</a>
 					</div>
@@ -2415,7 +2452,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">E. Spyrou, G. Tolias, P. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">MTAP,&nbsp;2009</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J16.mtap09.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J16.mtap09.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J16">
@@ -2444,10 +2481,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					Book chapters
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="B7"></a>
 					<div class="pub-title">
+						<a class="anchor" id="B7"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-B7">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Knowledge Driven Segmentation and Classification
 						</a>
 					</div>
@@ -2455,7 +2492,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">Th. Athanasiadis, Ph. Mylonas, G. Papadopoulos, V. Mezaris, Y. Avrithis, I. Kompatsiaris, M. Strintzis</span>
 						&nbsp;
 						<span class="acro but">Wiley,&nbsp;2009</span>
-						&nbsp; <a href="../data/pub/pdf/book/B07.wiley09.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/book/B07.wiley09.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-B7">
@@ -2482,17 +2519,17 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2008"></a>
+					<a class="anchor" id="y-2008"></a>
 					2008
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C77"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C77"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C77">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Movie Summarization Based on Audio-Visual Saliency Detection
 						</a>
 					</div>
@@ -2500,7 +2537,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">G. Evangelopoulos, K. Rapantzikos, A. Potamianos, P. Maragos, A. Zlatintsi, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">ICIP&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C077.icip08.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C077.icip08.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C77">
@@ -2524,10 +2561,10 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C76"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C76"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C76">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Using Region Semantics and Visual Context for Scene Classification
 						</a>
 					</div>
@@ -2535,7 +2572,7 @@ Extensive experiments performed on public benchmarks for visual retrieval show t
 						<span class="author">E. Spyrou, Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">MIR/ICIP&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C076.icip.kspace08.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C076.icip.kspace08.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C76">
@@ -2561,10 +2598,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C75"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C75"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C75">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Spatiotemporal Semantic Video Segmentation
 						</a>
 					</div>
@@ -2572,7 +2609,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Galmar, Th. Athanasiadis, B. Huet, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">MMSP&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C075.mmsp08a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C075.mmsp08a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C75">
@@ -2597,10 +2634,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C74"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C74"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C74">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Regions of Interest for Accurate Object Detection
 						</a>
 					</div>
@@ -2608,7 +2645,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">P. Kapsalas, K. Rapantzikos, A. Sofou, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">CBMI&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C074.cbmi08a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C074.cbmi08a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C74">
@@ -2632,10 +2669,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C73"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C73"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C73">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Affine Invariant Curve Matching Using Normalization and Curvature Scale-Space
 						</a>
 					</div>
@@ -2643,7 +2680,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">V. Giannekou, P. Tzouveli, Y. Avrithis, S.Kollias</span>
 						&nbsp;
 						<span class="acro but">CBMI&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C073.cbmi08b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C073.cbmi08b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C73">
@@ -2667,10 +2704,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C72"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C72"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C72">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Visual Context Ontology for Multimedia High-Level Concept Detection
 						</a>
 					</div>
@@ -2678,7 +2715,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Spyrou, Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">MRC&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C072.mrc08.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C072.mrc08.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C72">
@@ -2702,10 +2739,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C71"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C71"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C71">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Semantic Multimedia Analysis Approach Utilizing a Region Thesaurus and LSA
 						</a>
 					</div>
@@ -2713,7 +2750,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Spyrou, G. Tolias, Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">WIAMIS&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C071.wiamis08.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C071.wiamis08.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C71">
@@ -2740,10 +2777,10 @@ to address computationally efficient handling of visual context and extraction o
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J15"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J15"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J15">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Semantic Representation of Multimedia Content: Knowledge Representation and Semantic Indexing
 						</a>
 					</div>
@@ -2751,7 +2788,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Ph. Mylonas, Th. Athanasiadis, M. Wallace, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">MTAP,&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J15.mtap06.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J15.mtap06.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J15">
@@ -2778,10 +2815,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J14"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J14"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J14">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Personalized Information Retrieval Based on Context and Ontological Knowledge
 						</a>
 					</div>
@@ -2789,7 +2826,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Ph. Mylonas, D. Vallet, P. Castells, M. Fernandez, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">KER,&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J14.ker08.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J14.ker08.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J14">
@@ -2818,10 +2855,10 @@ to address computationally efficient handling of visual context and extraction o
 					Book chapters
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="B6"></a>
 					<div class="pub-title">
+						<a class="anchor" id="B6"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-B6">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Audiovisual Attention Modeling and Salient Event Detection
 						</a>
 					</div>
@@ -2829,7 +2866,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">G. Evangelopoulos, K. Rapantzikos, P. Maragos, Y. Avrithis, A. Potamianos</span>
 						&nbsp;
 						<span class="acro but">Springer,&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/book/B06.springer08.muscle.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/book/B06.springer08.muscle.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-B6">
@@ -2856,10 +2893,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="B5"></a>
 					<div class="pub-title">
+						<a class="anchor" id="B5"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-B5">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Introducing Context and Reasoning in Visual Content Analysis: an Ontology-Based Framework
 						</a>
 					</div>
@@ -2867,7 +2904,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">S. Dasiopoulou, C. Saathoff, Ph. Mylonas, Y. Avrithis, Y. Kompatsiaris, S. Staab</span>
 						&nbsp;
 						<span class="acro but">Springer,&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/book/B05.springer08.ace.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/book/B05.springer08.ace.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-B5">
@@ -2900,10 +2937,10 @@ to address computationally efficient handling of visual context and extraction o
 					Technical reports
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R7"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R7"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R7">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							K-Space At TRECVID 2008
 						</a>
 					</div>
@@ -2911,7 +2948,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">G. Tolias, E. Spyrou, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">TRECVID,&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/report/R007.trecvid08a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R007.trecvid08a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R7">
@@ -2933,10 +2970,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R6"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R6"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R6">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							COST292 Experimental Framework for TRECVID 2008
 						</a>
 					</div>
@@ -2944,7 +2981,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">G. Tolias, E. Spyrou, P. Kapsalas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">TRECVID,&nbsp;2008</span>
-						&nbsp; <a href="../data/pub/pdf/report/R006.trecvid08b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R006.trecvid08b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R6">
@@ -2966,17 +3003,17 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2007"></a>
+					<a class="anchor" id="y-2007"></a>
 					2007
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C70"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C70"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C70">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							High-Level Concept Detection Based on Mid-Level Semantic Information and Contextual Adaptation
 						</a>
 					</div>
@@ -2984,7 +3021,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Ph. Mylonas, E. Spyrou, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">SMAP&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C070.smap07a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C070.smap07a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C70">
@@ -3008,10 +3045,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C69"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C69"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C69">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Keyframe Extraction Using Local Visual Semantics in the Form of a Region Thesaurus
 						</a>
 					</div>
@@ -3019,7 +3056,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Spyrou, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">SMAP&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C069.smap07b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C069.smap07b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C69">
@@ -3043,10 +3080,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C68"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C68"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C68">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Region Thesaurus Approach for High-Level Concept Detection in the Natural Disaster Domain
 						</a>
 					</div>
@@ -3054,7 +3091,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Spyrou, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">SAMT&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C068.samt07.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C068.samt07.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C68">
@@ -3078,10 +3115,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C67"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C67"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C67">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Enriching a Context Ontology with Mid-Level Features for Semantic Multimedia Analysis
 						</a>
 					</div>
@@ -3089,7 +3126,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Ph. Mylonas, E. Spyrou, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">MARESO/SAMT&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C067.samt.mareso07.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C067.samt.mareso07.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C67">
@@ -3114,10 +3151,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C66"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C66"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C66">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Towards Semantic Multimedia Indexing by Classification and Reasoning on Textual Metadata
 						</a>
 					</div>
@@ -3125,7 +3162,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Ph. Mylonas, N. Simou, V. Tzouvaras, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">KAMC/SAMT&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C066.samt.kamc07.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C066.samt.kamc07.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C66">
@@ -3150,10 +3187,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C65"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C65"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C65">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							An Audio-Visual Saliency Model for Movie Summarization
 						</a>
 					</div>
@@ -3161,7 +3198,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">K. Rapantzikos, G. Evangelopoulos, P. Maragos, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">MMSP&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C065.mmsp07.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C065.mmsp07.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C65">
@@ -3185,10 +3222,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C64"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C64"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C64">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Semantic Multimedia Analysis Based on Region Types and Visual Context
 						</a>
 					</div>
@@ -3196,7 +3233,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Spyrou, Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">AIAI&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C064.aiai07.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C064.aiai07.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C64">
@@ -3220,10 +3257,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C63"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C63"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C63">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Salienshrink: Saliency-Based Image Denoising
 						</a>
 					</div>
@@ -3231,7 +3268,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">K. Rapantzikos, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">ICIP&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C063.icip07.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C063.icip07.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C63">
@@ -3257,10 +3294,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C62"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C62"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C62">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Spatiotemporal Saliency for Event Detection and Representation in the 3D Wavelet Domain: Potential in Human Action Recognition
 						</a>
 					</div>
@@ -3268,7 +3305,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">K. Rapantzikos, Y.Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">CIVR&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C062.civr07.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C062.civr07.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C62">
@@ -3293,10 +3330,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C61"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C61"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C61">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Using Multiple Domain Visual Context in Image Analysis
 						</a>
 					</div>
@@ -3304,7 +3341,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">WIAMIS&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C061.wiamis07.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C061.wiamis07.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C61">
@@ -3331,10 +3368,10 @@ to address computationally efficient handling of visual context and extraction o
 					Edited volumes
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="V2"></a>
 					<div class="pub-title">
+						<a class="anchor" id="V2"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-V2">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							<em>Semantic Multimedia</em>
 						</a>
 					</div>
@@ -3372,10 +3409,10 @@ to address computationally efficient handling of visual context and extraction o
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J13"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J13"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J13">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Semantic Image Segmentation and Object Labeling
 						</a>
 					</div>
@@ -3383,7 +3420,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Th. Athanasiadis, Ph. Mylonas, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">CSVT,&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J13.csvt06a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J13.csvt06a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J13">
@@ -3409,10 +3446,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J12"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J12"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J12">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Personalized Content Retrieval in Context Using Ontological Knowledge
 						</a>
 					</div>
@@ -3420,7 +3457,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">D. Vallet, P. Castells, M. Fern{á}ndez, Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">CSVT,&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J12.csvt06b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J12.csvt06b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J12">
@@ -3446,10 +3483,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J10"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J10"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J10">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Bottom-Up Spatiotemporal Visual Attention Model for Video Analysis
 						</a>
 					</div>
@@ -3457,7 +3494,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">K. Rapantzikos, N. Tsapatsoulis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">IP,&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J10.iee-vis06.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J10.iee-vis06.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J10">
@@ -3486,10 +3523,10 @@ to address computationally efficient handling of visual context and extraction o
 					Technical reports
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R5"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R5"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R5">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							K-Space At TRECVID 2007
 						</a>
 					</div>
@@ -3497,7 +3534,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Evaggelos Spyrou, Yannis Avrithis</span>
 						&nbsp;
 						<span class="acro but">TRECVID,&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/report/R005.trecvid07a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R005.trecvid07a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R5">
@@ -3519,10 +3556,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R4"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R4"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R4">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							The COST292 Experimental Framework for TRECVID 2007
 						</a>
 					</div>
@@ -3530,7 +3567,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Spyrou, P. Kapsalas, G. Tolias, Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">TRECVID,&nbsp;2007</span>
-						&nbsp; <a href="../data/pub/pdf/report/R004.trecvid07b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R004.trecvid07b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R4">
@@ -3552,17 +3589,17 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2006"></a>
+					<a class="anchor" id="y-2006"></a>
 					2006
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C60"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C60"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C60">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Rule-Based Reasoning for Semantic Image Segmentation and Interpretation
 						</a>
 					</div>
@@ -3570,7 +3607,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">P. Berka, Th. Athanasiadis, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">SAMT&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C060.samt06d.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C060.samt06d.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C60">
@@ -3596,10 +3633,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C59"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C59"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C59">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Context-Based Region Labeling Approach for Semantic Image Segmentation
 						</a>
 					</div>
@@ -3607,7 +3644,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Th. Athanasiadis, Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">SAMT&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C059.samt06b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C059.samt06b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C59">
@@ -3632,10 +3669,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C58"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C58"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C58">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Using Context and a Genetic Algorithm for Knowledge-Assisted Image Analysis
 						</a>
 					</div>
@@ -3643,7 +3680,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">S. Dasiopoulou, G. Th. Papadopoulos, Ph. Mylonas, Y. Avrithis, I. Kompatsiaris</span>
 						&nbsp;
 						<span class="acro but">SAMT&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C058.samt06a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C058.samt06a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C58">
@@ -3667,10 +3704,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C57"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C57"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C57">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Using Local Region Semantics for Concept Detection in Video
 						</a>
 					</div>
@@ -3678,7 +3715,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Spyrou, G. Koumoulos, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">SAMT&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C057.samt06c.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C057.samt06c.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C57">
@@ -3702,10 +3739,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C56"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C56"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C56">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Image Analysis Using Domain Knowledge and Visual Context
 						</a>
 					</div>
@@ -3713,7 +3750,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Ph. Mylonas, Th. Athanasiadis, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">IWSSIP&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C056.iwssip06.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C056.iwssip06.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C56">
@@ -3737,10 +3774,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C55"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C55"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C55">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Priority Coding for Video-Telephony Applications Based on Visual Attention
 						</a>
 					</div>
@@ -3748,7 +3785,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">N. Tsapatsoulis, K. Rapantzikos, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">MobiMedia&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C055.mobimedia06.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C055.mobimedia06.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C55">
@@ -3772,10 +3809,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C54"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C54"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C54">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Contextual Personalization Approach Based on Ontological Knowledge
 						</a>
 					</div>
@@ -3783,7 +3820,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">D. Vallet, M. Fernández, P. Castells, Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">CO/ECAI&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C054.ecai.co06.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C054.ecai.co06.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C54">
@@ -3808,10 +3845,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C53"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C53"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C53">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Personalized Information Retrieval in Context
 						</a>
 					</div>
@@ -3819,7 +3856,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">D. Vallet, M. Fernández, P. Castells, Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">MRC/AAAI&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C053.aaai.mrc06.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C053.aaai.mrc06.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C53">
@@ -3844,10 +3881,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C52"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C52"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C52">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Ontology-Based Personalization for Multimedia Content
 						</a>
 					</div>
@@ -3855,7 +3892,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Ph. Mylonas, D. Vallet, M. Fernández, P. Castells, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">SWP/ESWC&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C052.eswc.swp06.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C052.eswc.swp06.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C52">
@@ -3880,10 +3917,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C51"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C51"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C51">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Fast Video Object Tracking Using Affine Invariant Normalization
 						</a>
 					</div>
@@ -3891,7 +3928,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">P. Tzouveli, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">AIAI&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C051.aiai06.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C051.aiai06.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C51">
@@ -3915,10 +3952,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C50"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C50"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C50">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Semantic Region Growing Approach in Image Segmentation and Annotation
 						</a>
 					</div>
@@ -3926,7 +3963,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Th. Athanasiadis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">SWAMM/WWW&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C050.swamm06.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C050.swamm06.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C50">
@@ -3951,10 +3988,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C49"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C49"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C49">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Improving Image Analysis Using a Contextual Approach
 						</a>
 					</div>
@@ -3962,7 +3999,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Ph. Mylonas, Th. Athanasiadis, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">WIAMIS&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C049.wiamis06.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C049.wiamis06.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C49">
@@ -3989,10 +4026,10 @@ to address computationally efficient handling of visual context and extraction o
 					Edited volumes
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="V1"></a>
 					<div class="pub-title">
+						<a class="anchor" id="V1"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-V1">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							<em>Semantic Multimedia</em>
 						</a>
 					</div>
@@ -4031,10 +4068,10 @@ to address computationally efficient handling of visual context and extraction o
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J11"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J11"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J11">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Knowledge-Assisted Image Analysis Based on Context and Spatial Optimization
 						</a>
 					</div>
@@ -4042,7 +4079,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">G. Th. Papadopoulos, Ph. Mylonas, V. Mezaris, Y. Avrithis, I. Kompatsiaris</span>
 						&nbsp;
 						<span class="acro but">SWIS,&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J11.ijswis06.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J11.ijswis06.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J11">
@@ -4068,10 +4105,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J9"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J9"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J9">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Knowledge Representation and Semantic Annotation of Multimedia Content
 						</a>
 					</div>
@@ -4079,7 +4116,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">K. Petridis, S. Bloehdorn, C. Saathoff, N. Simou, S. Dasiopoulou, V. Tzouvaras, S. Handschuh, Y. Avrithis, I. Kompatsiaris, S. Staab</span>
 						&nbsp;
 						<span class="acro but">VISP,&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J09.iee-vis05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J09.iee-vis05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J9">
@@ -4106,10 +4143,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J8"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J8"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J8">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Computationally Efficient sup-$t$ Transitive Closure for Sparse Fuzzy Binary Relations
 						</a>
 					</div>
@@ -4117,7 +4154,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">M. Wallace, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">FSS,&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J08.fss04.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J08.fss04.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J8">
@@ -4143,10 +4180,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J7"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J7"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J7">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Integrating Multimedia Archives: the Architecture and the Content Layer
 						</a>
 					</div>
@@ -4154,7 +4191,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">M. Wallace, Th. Athanasiadis, Y. Avrithis, A. Delopoulos, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">SMC-A,&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J07.smc04.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J07.smc04.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J7">
@@ -4183,10 +4220,10 @@ to address computationally efficient handling of visual context and extraction o
 					Book chapters
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="B4"></a>
 					<div class="pub-title">
+						<a class="anchor" id="B4"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-B4">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Semantic Processing of Color Images
 						</a>
 					</div>
@@ -4194,7 +4231,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">S. Dasiopoulou, E. Spyrou, Y. Avrithis, Y. Kompatsiaris, M.G. Strintzis</span>
 						&nbsp;
 						<span class="acro but">CRC Press,&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/book/B04.crc05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/book/B04.crc05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-B4">
@@ -4221,10 +4258,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="B3"></a>
 					<div class="pub-title">
+						<a class="anchor" id="B3"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-B3">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Automatic Thematic Categorization of Multimedia Documents Using Ontological Information and Fuzzy Algebra
 						</a>
 					</div>
@@ -4232,7 +4269,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">M. Wallace, Ph. Mylonas, G. Akrivas, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">Springer,&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/book/B03.springer05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/book/B03.springer05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-B3">
@@ -4263,10 +4300,10 @@ to address computationally efficient handling of visual context and extraction o
 					Technical reports
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R3"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R3"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R3">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							K-Space At TRECVID 2006
 						</a>
 					</div>
@@ -4274,7 +4311,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Spyrou, G. Koumoulos, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">TRECVID,&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/report/R003.trecvid06a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R003.trecvid06a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R3">
@@ -4296,10 +4333,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R2"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R2"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R2">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							COST292 Experiments for TRECVID 2006
 						</a>
 					</div>
@@ -4307,7 +4344,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Spyrou, G. Koumoulos, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">TRECVID,&nbsp;2006</span>
-						&nbsp; <a href="../data/pub/pdf/report/R002.trecvid06b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R002.trecvid06b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R2">
@@ -4329,17 +4366,17 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2005"></a>
+					<a class="anchor" id="y-2005"></a>
 					2005
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C48"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C48"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C48">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Fuzzy Support Vector Machines for Image Classification Fusing MPEG-7 Visual Descriptors
 						</a>
 					</div>
@@ -4347,7 +4384,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Spyrou, G. Stamou, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">EWIMT&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C048.ewimt05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C048.ewimt05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C48">
@@ -4371,10 +4408,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C47"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C47"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C47">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Using a Multimedia Ontology Infrastructure for Semantic Annotation of Multimedia Content
 						</a>
 					</div>
@@ -4382,7 +4419,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Th. Athanasiadis, V. Tzouvaras, K. Petridis, F. Precioso, Y. Avrithis, Y. Kompatsiaris</span>
 						&nbsp;
 						<span class="acro but">SemAnnot/ISWC&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C047.semannot05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C047.semannot05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C47">
@@ -4409,10 +4446,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C46"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C46"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C46">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Combined Domain Specific and Multimedia Ontologies for Image Understanding
 						</a>
 					</div>
@@ -4420,7 +4457,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">K. Petridis, F. Precioso, Th. Athanasiadis, Y. Avrithis, Y. Kompatsiaris</span>
 						&nbsp;
 						<span class="acro but">KI&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C046.ki05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C046.ki05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C46">
@@ -4444,10 +4481,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C45"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C45"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C45">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Self-Tuning Personalized Information Retrieval in an Ontology-Based Framework
 						</a>
 					</div>
@@ -4455,7 +4492,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">P. Castells, M. Fernández, D. Vallet, Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">SWWS&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C045.swws05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C045.swws05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C45">
@@ -4479,10 +4516,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C44"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C44"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C44">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							On the Use of Spatiotemporal Visual Attention for Video Classification
 						</a>
 					</div>
@@ -4490,7 +4527,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">K. Rapantzikos, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">VLBV&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C044.vlbv05a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C044.vlbv05a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C44">
@@ -4514,10 +4551,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C43"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C43"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C43">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							An Ontology Infrastructure for Multimedia Reasoning
 						</a>
 					</div>
@@ -4525,7 +4562,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">N. Simou, C. Saathoff, S. Dasiopoulou, E. Spyrou, N. Voisine, V. Tzouvaras, I. Kompatsiaris, Y. Avrithis, S. Staab</span>
 						&nbsp;
 						<span class="acro but">VLBV&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C043.vlbv05b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C043.vlbv05b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C43">
@@ -4549,10 +4586,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C42"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C42"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C42">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Semantically-Enhanced Personalization Framework for Knowledge-Driven Media Services 
 						</a>
 					</div>
@@ -4560,7 +4597,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">D. Vallet, Ph. Mylonas, M. A. Corella, J. M. Fuentes, P. Castells, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">ICWI&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C042.icwi05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C042.icwi05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C42">
@@ -4584,10 +4621,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C41"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C41"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C41">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Fusing MPEG-7 Visual Descriptors for Image Classification
 						</a>
 					</div>
@@ -4595,7 +4632,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">E. Spyrou, H. Le Borgne, T. Mailis, E. Cooke, Y. Avrithis, N. O'Connor</span>
 						&nbsp;
 						<span class="acro but">ICANN&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C041.icann05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C041.icann05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C41">
@@ -4619,10 +4656,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C40"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C40"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C40">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Context Modelling for Multimedia Analysis
 						</a>
 					</div>
@@ -4630,7 +4667,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Ph. Mylonas, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">CONTEXT&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C040.context05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C040.context05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C40">
@@ -4654,10 +4691,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C39"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C39"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C39">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							An Enhanced Spatiotemporal Visual Attention Model for Sports Video Analysis
 						</a>
 					</div>
@@ -4665,7 +4702,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">K. Rapantzikos, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">CBMI&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C039.cbmi05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C039.cbmi05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C39">
@@ -4689,10 +4726,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C38"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C38"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C38">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Semantic Annotation of Images and Videos for Multimedia Analysis
 						</a>
 					</div>
@@ -4700,7 +4737,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">S. Bloehdorn, K. Petridis, C. Saathoff, N. Simou, V.Tzouvaras, Y. Avrithis, S. Handschuh, Y. Kompatsiaris, S. Staab, M. G. Strintzis</span>
 						&nbsp;
 						<span class="acro but">ESWC&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C038.eswc05a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C038.eswc05a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C38">
@@ -4724,10 +4761,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C37"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C37"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C37">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Visual Descriptor Ontology for Multimedia Reasoning
 						</a>
 					</div>
@@ -4735,7 +4772,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">N. Simou, V. Tzouvaras, Y. Avrithis, G. Stamou, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">WIAMIS&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C037.wiamis05b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C037.wiamis05b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C37">
@@ -4759,10 +4796,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C36"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C36"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C36">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Knowledge-Assisted Video Analysis Using a Genetic Algorithm
 						</a>
 					</div>
@@ -4770,7 +4807,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">N. Voisine, S. Dasiopoulou, V. Mezaris, E. Spyrou, Th. Athanasiadis, I. Kompatsiaris, Y. Avrithis, M. G. Strintzis</span>
 						&nbsp;
 						<span class="acro but">WIAMIS&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C036.wiamis05a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C036.wiamis05a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C36">
@@ -4794,10 +4831,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C35"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C35"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C35">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Handling Uncertainty in Video Analysis with Spatiotemporal Visual Attention
 						</a>
 					</div>
@@ -4805,7 +4842,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">K. Rapantzikos, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">FUZZ-IEEE&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C035.fuzz-ieee05.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C035.fuzz-ieee05.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C35">
@@ -4833,10 +4870,10 @@ to address computationally efficient handling of visual context and extraction o
 					Book chapters
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="B2"></a>
 					<div class="pub-title">
+						<a class="anchor" id="B2"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-B2">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Knowledge-Based Multimedia Content Indexing and Retrieval
 						</a>
 					</div>
@@ -4844,7 +4881,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">M. Wallace, Y. Avrithis, G. Stamou, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">Wiley,&nbsp;2005</span>
-						&nbsp; <a href="../data/pub/pdf/book/B02.wiley04.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/book/B02.wiley04.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-B2">
@@ -4872,17 +4909,17 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2004"></a>
+					<a class="anchor" id="y-2004"></a>
 					2004
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C34"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C34"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C34">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Mediator System for Hetero-Lingual Audiovisual Content
 						</a>
 					</div>
@@ -4890,7 +4927,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">M. Wallace, Th. Athanasiadis, Y. Avrithis, G. Stamou, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">MPEP&nbsp;2004</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C034.mpep04.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C034.mpep04.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C34">
@@ -4914,10 +4951,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C33"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C33"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C33">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Achieving Integration of Knowledge and Content Technologies: the aceMedia Project
 						</a>
 					</div>
@@ -4925,7 +4962,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">P. Hobson, T. May, J. Tromp, Y. Kompatsiaris, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">EWIMT&nbsp;2004</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C033.ewimt04b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C033.ewimt04b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C33">
@@ -4949,10 +4986,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C32"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C32"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C32">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Knowledge Representation for Semantic Multimedia Content Analysis and Reasoning
 						</a>
 					</div>
@@ -4960,7 +4997,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">S. Bloehdorn, N. Simou, V. Tzouvaras, K. Petridis, S. Handschuh, Y. Avrithis, I. Kompatsiaris, S. Staab, M. G. Strintzis</span>
 						&nbsp;
 						<span class="acro but">EWIMT&nbsp;2004</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C032.ewimt04a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C032.ewimt04a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C32">
@@ -4984,10 +5021,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C31"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C31"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C31">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Spatiotemporal Visual Attention Architecture for Video Analysis
 						</a>
 					</div>
@@ -4995,7 +5032,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">K. Rapantzikos, N. Tsapatsoulis, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">MMSP&nbsp;2004</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C031.mmsp04.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C031.mmsp04.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C31">
@@ -5020,10 +5057,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C30"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C30"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C30">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Fuzzy Relational Knowledge Representation and Context in the Service of Semantic Information Retrieval
 						</a>
 					</div>
@@ -5031,7 +5068,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">M. Wallace, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">FUZZ-IEEE&nbsp;2004</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C030.fuzz-ieee04.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C030.fuzz-ieee04.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C30">
@@ -5055,10 +5092,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C29"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C29"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C29">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Adding Semantics to Audiovisual Content: the FAETHON Project
 						</a>
 					</div>
@@ -5066,7 +5103,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Th. Athanasiadis, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">CIVR&nbsp;2004</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C029.civr04b.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C029.civr04b.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C29">
@@ -5091,10 +5128,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C28"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C28"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C28">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Knowledge Assisted Analysis and Categorization for Semantic Video Retrieval
 						</a>
 					</div>
@@ -5102,7 +5139,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">M. Wallace, Th. Athanasiadis, Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">CIVR&nbsp;2004</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C028.civr04a.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C028.civr04a.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C28">
@@ -5127,10 +5164,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C27"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C27"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C27">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Integrating Knowledge, Semantics and Content for User-Centred Intelligent Media Services: the aceMedia Project
 						</a>
 					</div>
@@ -5138,7 +5175,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">I. Kompatsiaris, Y. Avrithis, P. Hobson, M.G. Strintzis</span>
 						&nbsp;
 						<span class="acro but">WIAMIS&nbsp;2004</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C027.wiamis04.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C027.wiamis04.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C27">
@@ -5162,17 +5199,17 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2003"></a>
+					<a class="anchor" id="y-2003"></a>
 					2003
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C26"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C26"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C26">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Intelligent Visual Descriptor Extraction from Video Sequences
 						</a>
 					</div>
@@ -5180,7 +5217,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">P. Tzouveli, G. Andreou, G. Tsechpenakis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">AMR&nbsp;2003</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C026.amr03.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C026.amr03.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C26">
@@ -5204,10 +5241,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C25"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C25"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C25">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Using Context and Fuzzy Relations to Interpret Multimedia Content
 						</a>
 					</div>
@@ -5215,7 +5252,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">M. Wallace, G. Akrivas, Ph. Mylonas, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">CBMI&nbsp;2003</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C025.cbmi03.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C025.cbmi03.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C25">
@@ -5239,10 +5276,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C24"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C24"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C24">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Unified Access to Heterogeneous Audiovisual Archives
 						</a>
 					</div>
@@ -5250,7 +5287,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Y. Avrithis, G. Stamou, M. Wallace, F. Marques, P. Salembier, X. Giro, W. Haas, H. Vallant, M. Zufferey</span>
 						&nbsp;
 						<span class="acro but">IKNOW&nbsp;2003</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C024.iknow03.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C024.iknow03.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C24">
@@ -5274,10 +5311,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C23"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C23"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C23">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Semantic Unification of Heterogenous Multimedia Archives
 						</a>
 					</div>
@@ -5285,7 +5322,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">G. Stamou, Y. Avrithis, S. Kollias, F. Marques, P. Salembier</span>
 						&nbsp;
 						<span class="acro but">WIAMIS&nbsp;2003</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C023.wiamis03.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C023.wiamis03.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C23">
@@ -5312,10 +5349,10 @@ to address computationally efficient handling of visual context and extraction o
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J6"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J6"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J6">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Unified Access to Heterogeneous Audiovisual Archives
 						</a>
 					</div>
@@ -5323,7 +5360,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Y. Avrithis, G. Stamou, M. Wallace, F. Marques, P. Salembier, X. Giro, W. Haas, H. Vallant, M. Zufferey</span>
 						&nbsp;
 						<span class="acro but">JUCS,&nbsp;2003</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J06.jucs03.iknow.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J06.jucs03.iknow.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J6">
@@ -5349,17 +5386,17 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2002"></a>
+					<a class="anchor" id="y-2002"></a>
 					2002
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C22"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C22"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C22">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Intelligent Semantic Access to Audiovisual Content
 						</a>
 					</div>
@@ -5367,7 +5404,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Y. Avrithis, G. Stamou, A. Delopoulos, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">SETN&nbsp;2002</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C022.setn02.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C022.setn02.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C22">
@@ -5394,10 +5431,10 @@ to address computationally efficient handling of visual context and extraction o
 					Book chapters
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="B1"></a>
 					<div class="pub-title">
+						<a class="anchor" id="B1"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-B1">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Fuzzy Data Fusion for Multiple Cue Image and Video Segmentation
 						</a>
 					</div>
@@ -5405,7 +5442,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">S. Ioannou, Y. Avrithis, G. Stamou, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">Springer,&nbsp;2002</span>
-						&nbsp; <a href="../data/pub/pdf/book/B01.ffip02.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/book/B01.ffip02.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-B1">
@@ -5433,17 +5470,17 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2001"></a>
+					<a class="anchor" id="y-2001"></a>
 					2001
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C21"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C21"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C21">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							An Intelligent System for Retrieval and Mining of Audiovisual Material Based on the MPEG-7 Description Schemes
 						</a>
 					</div>
@@ -5451,7 +5488,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">G. Akrivas, S. Ioannou, E. Karakoulakis, K. Karpouzis, Y. Avrithis, A. Delopoulos, S. Kollias, I. Varlamis, M. Vaziriannis</span>
 						&nbsp;
 						<span class="acro but">EUNITE&nbsp;2001</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C021.eunite01.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C021.eunite01.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C21">
@@ -5475,10 +5512,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C20"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C20"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C20">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							FAETHON: Unified Intelligent Access to Heterogeneous Audiovisual Content
 						</a>
 					</div>
@@ -5486,7 +5523,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Y. Avrithis, G. Stamou</span>
 						&nbsp;
 						<span class="acro but">VLBV&nbsp;2001</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C020.vlbv01.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C020.vlbv01.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C20">
@@ -5510,10 +5547,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C19"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C19"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C19">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Unified Intelligent Access to Heterogeneous Audiovisual Content
 						</a>
 					</div>
@@ -5521,7 +5558,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">A. Delopoulos, S. Kollias, Y. Avrithis, W.Haas, K. Majcen</span>
 						&nbsp;
 						<span class="acro but">CBMI&nbsp;2001</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C019.cbmi01.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C019.cbmi01.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C19">
@@ -5548,10 +5585,10 @@ to address computationally efficient handling of visual context and extraction o
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J5"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J5"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J5">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Facial Image Indexing in Multimedia Databases
 						</a>
 					</div>
@@ -5559,7 +5596,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">N. Tsapatsoulis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">PAA,&nbsp;2001</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J05.paa00.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J05.paa00.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J5">
@@ -5586,10 +5623,10 @@ to address computationally efficient handling of visual context and extraction o
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J4"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J4"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J4">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Affine-Invariant Curve Normalization for Object Shape Representation, Classification and Retrieval
 						</a>
 					</div>
@@ -5597,7 +5634,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Y. Avrithis, Y. Xirouhakis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">MVA,&nbsp;2001</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J04.mva00.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J04.mva00.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J4">
@@ -5626,10 +5663,10 @@ to address computationally efficient handling of visual context and extraction o
 					Theses
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="T3"></a>
 					<div class="pub-title">
+						<a class="anchor" id="T3"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-T3">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Video Sequence Analysis for Content Description, Summarization and Content-Based Retrieval
 						</a>
 					</div>
@@ -5637,7 +5674,7 @@ to address computationally efficient handling of visual context and extraction o
 						<span class="author">Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">NTUA,&nbsp;2001</span>
-						&nbsp; <a href="../data/pub/pdf/thesis/T03.phd.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/thesis/T03.phd.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-T3">
@@ -5666,17 +5703,17 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-2000"></a>
+					<a class="anchor" id="y-2000"></a>
 					2000
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C18"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C18"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C18">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Affine-Invariant Curve Normalization for Shape-Based Retrieval
 						</a>
 					</div>
@@ -5684,7 +5721,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">Y. Avrithis, Y. Xirouhakis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">ICPR&nbsp;2000</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C018.icpr00.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C018.icpr00.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C18">
@@ -5709,10 +5746,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C17"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C17"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C17">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Face Detection for Multimedia Applications
 						</a>
 					</div>
@@ -5720,7 +5757,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">N.Tsapatsoulis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">ICIP&nbsp;2000</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C017.icip00.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C017.icip00.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C17">
@@ -5744,10 +5781,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C16"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C16"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C16">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Color-Based Retrieval of Facial Images
 						</a>
 					</div>
@@ -5755,7 +5792,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">Y. Avrithis, N. Tsapatsoulis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">EUSIPCO&nbsp;2000</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C016.eusipco00.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C016.eusipco00.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C16">
@@ -5780,10 +5817,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C15"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C15"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C15">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Broadcast News Parsing Using Visual Cues: a Robust Face Detection Approach
 						</a>
 					</div>
@@ -5791,7 +5828,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">Y. Avrithis, N. Tsapatsoulis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">ICME&nbsp;2000</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C015.icme00.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C015.icme00.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C15">
@@ -5819,10 +5856,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J3"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J3"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J3">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Fuzzy Video Content Representation for Video Summarization and Content-Based Retrieval
 						</a>
 					</div>
@@ -5830,7 +5867,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">A. Doulamis, N. Doulamis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">SP,&nbsp;2000</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J03.spj99.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J03.spj99.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J3">
@@ -5857,10 +5894,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J2"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J2"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J2">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Efficient Summarization of Stereoscopic Video Sequences
 						</a>
 					</div>
@@ -5868,7 +5905,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">N. Doulamis, A. Doulamis, Y. Avrithis, K. Ntalianis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">CSVT,&nbsp;2000</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J02.csvt99.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J02.csvt99.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J2">
@@ -5895,17 +5932,17 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-1999"></a>
+					<a class="anchor" id="y-1999"></a>
 					1999
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C14"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C14"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C14">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Stochastic Framework for Optimal Key Frame Extraction from MPEG Video Databases
 						</a>
 					</div>
@@ -5913,7 +5950,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">N. Doulamis, A. Doulamis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">MMSP&nbsp;1999</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C014.mmsp99.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C014.mmsp99.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C14">
@@ -5938,10 +5975,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C13"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C13"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C13">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							An Optimal Framework for Summarization of Stereoscopic Video Sequences
 						</a>
 					</div>
@@ -5949,7 +5986,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">N. Doulamis, A. Doulamis, Y. Avrithis, K. Ntalianis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">IWSNHC3DI&nbsp;1999</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C013.iwsnhc3di99.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C013.iwsnhc3di99.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C13">
@@ -5973,10 +6010,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C12"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C12"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C12">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							On the Use of Radon Transform for Facial Expression Recognition
 						</a>
 					</div>
@@ -5984,7 +6021,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">N. Tsapatsoulis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">ISAS&nbsp;1999</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C012.isas99.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C012.isas99.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C12">
@@ -6008,10 +6045,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C11"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C11"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C11">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Affine Invariant Representation and Classification of Object Contours for Image and Video Retrieval
 						</a>
 					</div>
@@ -6019,7 +6056,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">Y. Avrithis, Y. Xirouhakis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">CSCC&nbsp;1999</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C011.cscc99.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C011.cscc99.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C11">
@@ -6043,10 +6080,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C10"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C10"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C10">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Interactive Content-Based Retrieval in Video Databases Using Fuzzy Classification and Relevance Feedback
 						</a>
 					</div>
@@ -6054,7 +6091,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">A. Doulamis, Y. Avrithis, N. Doulamis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">ICMSC&nbsp;1999</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C010.icmcs99.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C010.icmcs99.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C10">
@@ -6082,10 +6119,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					Journals
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="J1"></a>
 					<div class="pub-title">
+						<a class="anchor" id="J1"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J1">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Stochastic Framework for Optimal Key Frame Extraction from MPEG Video Databases
 						</a>
 					</div>
@@ -6093,7 +6130,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">Y. Avrithis, A. Doulamis, N. Doulamis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">CVIU,&nbsp;1999</span>
-						&nbsp; <a href="../data/pub/pdf/journ/J01.cviu99.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/journ/J01.cviu99.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-J1">
@@ -6123,10 +6160,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					Technical reports
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="R1"></a>
 					<div class="pub-title">
+						<a class="anchor" id="R1"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R1">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Verification Report of Core Experiment on Fast Block-Matching Motion Estimation Using Advanced Diamond Zonal Search with Embedded Radar
 						</a>
 					</div>
@@ -6134,7 +6171,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">G. Tsechpenakis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">ISO/IEC,&nbsp;1999</span>
-						&nbsp; <a href="../data/pub/pdf/report/R001.mpeg99.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/report/R001.mpeg99.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-R1">
@@ -6156,17 +6193,17 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-1998"></a>
+					<a class="anchor" id="y-1998"></a>
 					1998
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C9"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C9"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C9">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Image Retrieval and Classification Using Affine Invariant B-Spline Representation and Neural Networks
 						</a>
 					</div>
@@ -6174,7 +6211,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">Y. Xirouhakis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">ICNNM&nbsp;1998</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C009.iee98.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C009.iee98.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C9">
@@ -6199,10 +6236,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C8"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C8"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C8">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							An Adaptive Approach to Video Indexing and Retrieval Using Fuzzy Classification
 						</a>
 					</div>
@@ -6210,7 +6247,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">Y. Avrithis, A. Doulamis, N. Doulamis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">VLBV&nbsp;1998</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C008.vlbv98.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C008.vlbv98.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C8">
@@ -6234,10 +6271,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C7"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C7"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C7">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Video Content Representation Using Optimal Extraction of Frames and Scenes
 						</a>
 					</div>
@@ -6245,7 +6282,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">N. Doulamis, A. Doulamis, Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">ICIP&nbsp;1998</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C007.icip98.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C007.icip98.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C7">
@@ -6270,10 +6307,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C6"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C6"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C6">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Ultrasonic Array Imaging Using CDMA Techniques
 						</a>
 					</div>
@@ -6281,7 +6318,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">Y. Avrithis, A. Delopoulos, G. Papageorgiou</span>
 						&nbsp;
 						<span class="acro but">EUSIPCO&nbsp;1998</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C006.eusipco98.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C006.eusipco98.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C6">
@@ -6305,10 +6342,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C5"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C5"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C5">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							A Genetic Algorithm for Efficient Video Content Representation
 						</a>
 					</div>
@@ -6316,7 +6353,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">A. Doulamis, Y. Avrithis, N. Doulamis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">SOFTCOM&nbsp;1998</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C005.softcom98.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C005.softcom98.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C5">
@@ -6340,10 +6377,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C4"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C4"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C4">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Efficient Content Representation in MPEG Video Databases
 						</a>
 					</div>
@@ -6351,7 +6388,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">Y. Avrithis, N. Doulamis, A. Doulamis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">CBAIVL/CVPR&nbsp;1998</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C004.cvpr98.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C004.cvpr98.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C4">
@@ -6377,17 +6414,17 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-1997"></a>
+					<a class="anchor" id="y-1997"></a>
 					1997
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C3"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C3"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C3">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Fuzzy Image Classification Using Multiresolution Neural Networks with Applications to Remote Sensing
 						</a>
 					</div>
@@ -6395,7 +6432,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">Y. Avrithis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">DSP&nbsp;1997</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C003.dsp97.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C003.dsp97.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C3">
@@ -6420,10 +6457,10 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C2"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C2"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C2">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Indexing and Retrieval of the Most Characteristic Frames / Scenes in Video Databases
 						</a>
 					</div>
@@ -6431,7 +6468,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">A. Doulamis, Y. Avrithis, N. Doulamis, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">WIAMIS&nbsp;1997</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C002.wiamis97.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C002.wiamis97.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C2">
@@ -6456,17 +6493,17 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-1994"></a>
+					<a class="anchor" id="y-1994"></a>
 					1994
 				</h1>
 				<h2 class="pub rule">
 					Theses
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="T2"></a>
 					<div class="pub-title">
+						<a class="anchor" id="T2"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-T2">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Investigating the Capacity of a Cellular CDMA System
 						</a>
 					</div>
@@ -6474,7 +6511,7 @@ In the fourth part, a novel technique is proposed for temporal segmentation and 
 						<span class="author">Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">IC,&nbsp;1994</span>
-						&nbsp; <a href="../data/pub/pdf/thesis/T02.msc.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/thesis/T02.msc.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-T2">
@@ -6501,17 +6538,17 @@ The investigation carries on with the calculation of both the forward and revers
 					</div>
 				</div>
 				<h1 class="pub">
-					<a class="anchor top-lg" id="y-1993"></a>
+					<a class="anchor" id="y-1993"></a>
 					1993
 				</h1>
 				<h2 class="pub rule">
 					Conference proceedings
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="C1"></a>
 					<div class="pub-title">
+						<a class="anchor" id="C1"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C1">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							An Efficient Scheme for Invariant Optical Character Recognition Using Triple Correlations
 						</a>
 					</div>
@@ -6519,7 +6556,7 @@ The investigation carries on with the calculation of both the forward and revers
 						<span class="author">Y. Avrithis, A. Delopoulos, S. Kollias</span>
 						&nbsp;
 						<span class="acro but">DSP&nbsp;1993</span>
-						&nbsp; <a href="../data/pub/pdf/conf/C001.dsp93.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/conf/C001.dsp93.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-C1">
@@ -6546,10 +6583,10 @@ The investigation carries on with the calculation of both the forward and revers
 					Theses
 				</h2>
 				<div class="pub-entry">
-					<a class="anchor top-md" id="T1"></a>
 					<div class="pub-title">
+						<a class="anchor" id="T1"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-T1">
-							<i class="left-60 tog fas fa-chevron-down"></i>
+							<i class="left-60 tog far fa-chevron-down"></i>
 							Fuzzy Logic Processor for Control Systems
 						</a>
 					</div>
@@ -6557,7 +6594,7 @@ The investigation carries on with the calculation of both the forward and revers
 						<span class="author">Y. Avrithis</span>
 						&nbsp;
 						<span class="acro but">NTUA,&nbsp;1993</span>
-						&nbsp; <a href="../data/pub/pdf/thesis/T01.diploma.pdf"><i class="far fa-file-pdf2"></i></a>
+						&nbsp; <a class="lnk" href="../data/pub/pdf/thesis/T01.diploma.pdf"><i class="far fa-file-pdf2"></i></a>
 
 					</div>
 					<div class="collapse pub-ref" id="col-T1">
@@ -6587,12 +6624,6 @@ The investigation carries on with the calculation of both the forward and revers
 
 	</div>
 </div>
-
-<script type="text/javascript">
-	var h = location.hash;
-	if(h && h.length > 2 && !h.includes('#y-') && !h.includes('#col-'))
-		$('#col-' + h.slice(1)).addClass('show');
-</script>
 
 	</body>
 </html>
