@@ -12,10 +12,11 @@ function scroll(h) {
 	var height = $(e).outerHeight(true);
 	var margin = parseInt($(h).parent().css('margin-top'));
 	var off = $(h).offset().top - margin - height + 100;
-	$('html, body').animate({scrollTop: off}, 500);
+	$('html, body').scrollTop(off);
 }
 
-function int_hash(e) {
+function int_hash(v, e) {
+	v.preventDefault();
 	scroll($(e).attr('href'));
 }
 
@@ -31,6 +32,6 @@ function ext_hash() {
 }
 
 $(document).ready(function() {
-	$("a[href^='#']").on('click', function() {int_hash(this);});
+	$("a[href^='#']").on('click', function(v) {int_hash(v, this);});
 	ext_hash();
 });

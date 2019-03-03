@@ -145,11 +145,11 @@
 	padding: .2rem .4em;
 }
 #pub .side-nav a {
-	font-size: 80%;
+	font-size: 90%;
 	text-align: center;
 }
 #time .side-nav a {
-	font-size: 80%;
+	font-size: 90%;
 }
 @media (min-width:768px) {
 	#pub .side-nav {
@@ -158,7 +158,6 @@
 	#pub .side-nav a {
 		width: 4em;
 		padding: .2rem 0;
-		font-size: 90%;
 	}
 	#time .side-nav {
 		padding: 0 1rem;
