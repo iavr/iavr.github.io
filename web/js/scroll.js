@@ -32,6 +32,6 @@ function ext_hash() {
 }
 
 $(document).ready(function() {
-	$("a[href^='#']").on('click', function(v) {int_hash(v, this);});
+	$("a[href^='#']:not(.toggle)").on('click', function(v) {int_hash(v, this);});
 	ext_hash();
 });
