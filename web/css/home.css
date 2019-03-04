@@ -73,7 +73,9 @@
 /* 	viewport minus sidebar width minus margin between sidebar and main */
 /* 	needed because col-md does not work when containing a pre (for citations) */
 }
-
+@media (max-width:256px) {
+	.side-bar {display:none}
+}
 
 .side-bar nav {
 	padding-top: .2rem;
@@ -254,6 +256,9 @@ p {
 	width: 100%;
 	padding: 30px;
 }
+@media (max-width:575.98px){
+	.sec {padding: 30px 15px}
+}
 .high {
 	background-color: #f7f6f1;
 }
@@ -299,7 +304,7 @@ main a:hover {
 }
 
 
-/* display */
+/* display/layout */
 /* ----------------------------------------------------------*/
 
 .show-sm {display: none;}
@@ -317,6 +322,9 @@ main a:hover {
 .hide-md {display: inherit;}
 @media (min-width:768px) {
 	.hide-md {display: none;}
+}
+@media (max-width:767.98px){
+	.container {max-width:100%}
 }
 
 
@@ -581,6 +589,12 @@ a .inria:hover {
 /* cv */
 /* ----------------------------------------------------------*/
 
+@media (max-width:575.98px){
+	#cv main {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
 .cv-body {
 	margin-bottom: 8px;
 }
@@ -629,6 +643,12 @@ h1.cv {
 /* pub */
 /* ----------------------------------------------------------*/
 
+@media (max-width:575.98px){
+	#pub main {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
 h1.pub {
 	margin-top: 40px;
 	margin-bottom: 10px;
@@ -638,7 +658,10 @@ h2.pub {
 	margin-bottom: 10px;
 }
 .pub-entry {
-	margin-left: 30px;
+	margin-left: 15px;
+}
+@media (min-width:768px){
+	.pub-entry {margin-left:30px}
 }
 .pub-title {
 	font-size: 18px;
@@ -654,7 +677,10 @@ h2.pub {
 .pub-bib {}
 .pub-detail {
 	margin-top: 20px;
-	margin-left: 30px;
+	margin-left: 20px;
+}
+@media (min-width:768px){
+	.pub-detail {margin-left:30px}
 }
 .pub-abs br {
 	display: block;
@@ -676,6 +702,12 @@ h2.pub {
 /* timeline*/
 /* ----------------------------------------------------------*/
 
+@media (max-width:575.98px){
+	#time main {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
 h1.time {
 	margin-top: 25px;
 	margin-bottom: 10px;
