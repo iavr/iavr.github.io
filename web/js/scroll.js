@@ -31,7 +31,8 @@ function ext_hash() {
 		var c = $('#col-' + h.slice(1));
 		if(c) c.addClass('show');
 	}
-	setTimeout(function(){scroll(t);}, 2000);
+	for(var i=50; i<3000; i+=50)
+		setTimeout(function(){scroll(t);}, i);
 }
 
 $(document).ready(function() {
