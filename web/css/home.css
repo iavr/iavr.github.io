@@ -54,7 +54,6 @@
 		position: sticky;
 		z-index: 1000;
 		top: 0;
-/* 		height: 3.2rem; */
 	}
 }
 @media (min-width:768px) {
@@ -70,7 +69,11 @@
 	#time .side-bar {width: 6em}
 	#cv .side-bar {width: 11em}
 	#pub .side-bar {width: 11em}
+	#pub main {max-width: calc(100vw - 11em - 15px)}
+/* 	viewport minus sidebar width minus margin between sidebar and main */
+/* 	needed because col-md does not work when containing a pre (for citations) */
 }
+
 
 .side-bar nav {
 	padding-top: .2rem;
@@ -102,12 +105,14 @@
 	display: block;
 	margin: 0 1.5rem;
 	font-weight: 400;
+}
+.toc-item > a:link, .toc-item > a:visited {
 	color: rgba(0,0,0,.65);
+	text-decoration: none;
 	outline: none;
 }
 .toc-item > a:hover {
 	color: rgba(0,0,0,.85);
-	text-decoration: none;
 }
 
 .side-nav {
@@ -122,21 +127,22 @@
 }
 .side-nav a {
 	padding: .1rem .2em;
-	color: rgba(0,0,0,.65);
 	border-radius: 4px;
-	outline: none;
 }
 @media (min-width:768px) {
 	.side-nav a {
 		padding: .2rem .4em;
 	}
 }
+.side-nav a:link, .side-nav a:visited {
+	color: rgba(0,0,0,.65);
+	text-decoration: none;
+	outline: none;
+}
 .side-nav a:hover {
 	color: rgba(0,0,0,.85);
-	text-decoration: none;
-	background-color: transparent;
 }
-.side-nav .active, .side-nav .active:hover {
+.side-nav a.active, .side-nav a.active:hover {
 	font-weight: 400;
 	color: rgba(0,0,0,.85);
 	background-color: rgba(0,0,0,.1);
@@ -291,17 +297,19 @@ main a:hover {
 .alert.warn h2 {
 	color: #8C1515;
 }
-@media (min-width:576px){
-	.sm-show{display:none}
-}
-@media (max-width:576px){
-	.sm-hide{display:none}
-}
 
 
 /* display */
 /* ----------------------------------------------------------*/
 
+.show-sm {display: none;}
+@media (min-width:576px){
+	.show-sm {display:inherit}
+}
+.hide-sm {display: inherit;}
+@media (min-width:576px){
+	.hide-sm {display:none}
+}
 .show-md {display: none;}
 @media (min-width:768px) {
 	.show-md {display: inherit;}
@@ -319,7 +327,7 @@ main a:hover {
 	display: block;
 	position: relative;
 	visibility: hidden;
-	top: -70px;
+	top: -100px;
 }
 h1 .anchor, h2 .anchor {
 	top: -100px;
@@ -332,10 +340,10 @@ h1 .anchor, h2 .anchor {
 	padding-bottom: 30px;
 }
 .just {
-	text-align: justify;
+	text-align: left;
 }
-@media (max-width:576px){
-	.just {text-align: left;}
+@media (min-width:576px){
+	.just {text-align: justify;}
 }
 .rel {
 	position: relative;
@@ -365,6 +373,9 @@ h1 .anchor, h2 .anchor {
 .screen:hover {
 	opacity: 1;
 }
+.mr {
+	margin-right: .5em;
+}
 
 /* symbols/icons */
 /* ----------------------------------------------------------*/
@@ -377,11 +388,10 @@ h1 .anchor, h2 .anchor {
 }
 .desc-md {
 	margin-left: .6em;
+	display: none;
 }
-@media (max-width:768px) {
-	.desc-md {
-		display: none;
-	}
+@media (min-width:768px) {
+	.desc-md {display: initial}
 }
 .bull {
 	background-color: rgba(0,0,0,.45);
@@ -404,14 +414,21 @@ a:hover .fa-file-pdf2 {
 	color: #ff2020;
 }
 .left-60 {
-	font-size: 60%;
+	font-size: .6em;
 	position: absolute;
- 	left: -1.4em;
-	top: .7em;
+ 	left: -1.5em;
+	margin-top: .8em;
+}
+.shy .left-60 {
+	margin-top: 1.2em;
 }
 .toggle:link, .toggle:visited {
+	color: #365;
 	text-decoration: none;
 	border-bottom: none;
+}
+.toggle:hover {
+	color: #143;
 }
 .toggle .tog {
 	transition: .3s transform ease-in-out;
@@ -471,35 +488,35 @@ a.bright:hover {
 	font-family: monospace;
 }
 .home-name {
-	font-size: 44px;
+	font-size: 32px;
 }
 .home-role {
-	font-size: 26px;
+	font-size: 20px;
 	font-variant: small-caps;
 }
 .home-org {
-	font-size: 20px;
+	font-size: 18px;
 	font-style: italic;
 }
-@media (max-width:768px) {
-	.home-name {font-size: 32px;}
-	.home-role {font-size: 20px;}
-	.home-org {font-size: 18px;}
+@media (min-width:768px) {
+	.home-name {font-size: 44px;}
+	.home-role {font-size: 26px;}
+	.home-org {font-size: 20px;}
 }
 h1.home {
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
 .news-row {
-	padding: 2px 0;
+	padding: 5px 0;
+}
+@media (min-width:576px) {
+	.news-row {padding: 2px 0}
 }
 .news-date { width: 6em; }
 .news-date-year { width: 8em; }
 .news-txt {}
-@media (max-width:576px) {
-	.news-row {
-		padding: 5px 0;
-	}
+@media (max-width:575.98px) {
 	.news-date, .news-date-year {
 		opacity: .7;
 		font-size: 80%;
@@ -543,7 +560,7 @@ h1.home {
 	font-size: 90%;
 	color: #cc8;
 }
-@media (max-width:768px){
+@media (max-width:767.98px){
 	.home-col:not(:first-child) {
 		margin-top: 20px;
 	}
@@ -571,11 +588,12 @@ h1.cv {
 	margin-top: 25px;
 	margin-bottom: 20px;
 }
-.cv-row {
+.cv-row, .cv-row-thin {
 	margin-bottom: 15px;
 }
-.cv-row-thin {
-	margin-bottom: 2px;
+@media (min-width:576px) {
+	.cv-row {margin-bottom: 15px}
+	.cv-row-thin {margin-bottom: 2px}
 }
 .cv-year-col {
 	width: 8em;
@@ -584,15 +602,15 @@ h1.cv {
 	font-size: 18px;
 	margin-bottom: 5px;
 }
-@media (max-width:576px) {
-	.cv-row, .cv-row-thin {
-		margin-bottom: 15px;
-	}
+@media (max-width:575.98px) {
 	.cv-year {
 		opacity: .7;
 		font-size: 80%;
 		text-transform: uppercase;
 	}
+}
+.cv-now {
+	font-size: 14px;
 }
 .cv-ref {
 	font-size: 14px;
@@ -606,6 +624,7 @@ h1.cv {
 	content: " ";
 	margin-bottom: 5px;
 }
+
 
 /* pub */
 /* ----------------------------------------------------------*/

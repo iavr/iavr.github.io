@@ -7,31 +7,34 @@ function view() {
 	return {width: e[a+'Width'], height: e[a+'Height']}
 }
 
-function scroll(h) {
-	var e = view().width >= 768 ? 'header' : 'nav';
-	var height = $(e).outerHeight(true);
-	var margin = parseInt($(h).parent().css('margin-top'));
-	var off = $(h).offset().top - margin - height + 100;
-	$('html, body').scrollTop(off);
+function scroll(t) {
+	var header = view().width >= 768 ? 'header' : 'nav';
+	var height = $(header).outerHeight(true);
+	var margin = parseInt(t.parent().css('margin-top'));
+	var offset = t.offset().top - margin - height + 100;
+	var r = $('html,body').scrollTop(offset);
+	console.log(r);
 }
 
-function int_hash(v, e) {
-	v.preventDefault();
-	scroll($(e).attr('href'));
+function int_hash(e, a) {
+	e.preventDefault();
+	var h = $(a).attr('href');
+	var t = $(h);
+	if(t) scroll(t);
 }
 
 function ext_hash() {
 	var h = window.location.hash;
-	if(h && !h.includes('#col-')) {
-		if(!h.includes('#y-')) {
-			var e = $('#col-' + h.slice(1));
-			if(e) e.addClass('show');
-		}
-		scroll(h);
+	var t = $(h);
+	if(!t) return;
+	if(t.is('a')) {
+		var c = $('#col-' + h.slice(1));
+		if(c) c.addClass('show');
 	}
+	setTimeout(function(){scroll(t);}, 2000);
 }
 
 $(document).ready(function() {
-	$("a[href^='#']:not(.toggle)").on('click', function(v) {int_hash(v, this);});
+	$("a[href^='#']:not(.toggle)").on('click', function(e) {int_hash(e, this);});
 	ext_hash();
 });
