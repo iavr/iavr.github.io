@@ -73,9 +73,6 @@
 /* 	viewport minus sidebar width minus margin between sidebar and main */
 /* 	needed because col-md does not work when containing a pre (for citations) */
 }
-@media (max-width:256px) {
-	.side-bar {display:none}
-}
 
 .side-bar nav {
 	padding-top: .2rem;
