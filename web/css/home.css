@@ -552,14 +552,12 @@ h1.home {
 .home-cell .title:hover {
 	color: white;
 }
+.home-cell .part.mr {
+	margin-right: 0;
+	margin-bottom: .8em;
+}
 .home-author {
 	line-height: 1.2;
-	margin-bottom: .3em;
-}
-.home-author br {
-	display: block;
-	content: " ";
-	margin-bottom: .6em;
 }
 .home-cell .author {
 	font-size: 90%;
@@ -628,12 +626,10 @@ h1.cv {
 }
 .cv-detail {
 	margin-top: 10px;
-	margin-left: 30px;
+	margin-left: 20px;
 }
-.cv-abs br {
-	display: block;
-	content: " ";
-	margin-bottom: 5px;
+@media (min-width:576px){
+	.cv-detail {margin-left:30px}
 }
 
 
@@ -676,13 +672,8 @@ h2.pub {
 	margin-top: 20px;
 	margin-left: 20px;
 }
-@media (min-width:768px){
+@media (min-width:576px){
 	.pub-detail {margin-left:30px}
-}
-.pub-abs br {
-	display: block;
-	content: " ";
-	margin-bottom: 5px;
 }
 .pub-detail img {
 	margin-bottom: 20px;
@@ -693,6 +684,9 @@ h2.pub {
 }
 @media (max-width:882px){  /* (600 width + 135 margin) * 1.2 sidenav */
 	.pub-detail img { width: 100%; }
+}
+#pub .part {
+	display: inline;
 }
 
 
