@@ -618,13 +618,12 @@ h1.cv {
 		text-transform: uppercase;
 	}
 }
-.cv-now {
-	font-size: 14px;
-}
 .cv-ref {
-	font-size: 14px;
+	opacity: .8;
+	font-size: 12px;
 }
 .cv-detail {
+	font-size: 14px;
 	margin-top: 10px;
 	margin-left: 20px;
 }
@@ -665,10 +664,12 @@ h2.pub {
 	margin-bottom: 8px;
 }
 .pub-ref {
+	opacity: .7;
 	font-size: 14px;
 }
 .pub-bib {}
 .pub-detail {
+	font-size: 14px;
 	margin-top: 20px;
 	margin-left: 20px;
 }
