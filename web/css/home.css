@@ -679,7 +679,7 @@ h2.pub {
 .pub-detail img {
 	margin-bottom: 20px;
 	width: 600px;
-	max-height: 300px;
+	max-height: 400px;
 	object-fit: contain;
 	object-position: 0 0;
 }
