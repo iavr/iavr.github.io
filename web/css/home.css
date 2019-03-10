@@ -545,6 +545,7 @@ h1.home {
 }
 .home-cell .screen {
 	padding: 8px;
+	padding-bottom: 12px;
 }
 .home-cell .title:link, .home-cell .title:visited {
 	color: #ddd;
