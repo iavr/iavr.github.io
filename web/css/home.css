@@ -707,25 +707,27 @@ h1.time {
 }
 .t-pub    { background-color: rgba(  0, 80,200,.3); }
 .t-teach  { background-color: rgba(240,100,  0,.3); }
-.t-talk   { background-color: rgba(180,  0,240,.3); }
+.t-talk   { background-color: rgba(180,  0,120,.3); }
 .t-phd    { background-color: rgba(120, 60,  0,.3); }
 .t-msc    { background-color: rgba(120, 60,  0,.3); }
 .t-eu     { background-color: rgba( 20,140, 20,.3); }
 .t-fr     { background-color: rgba( 20,140, 20,.3); }
 .t-el     { background-color: rgba( 20,140, 20,.3); }
-.t-act    { background-color: rgba( 20,120,140,.3); }
+.t-act    { background-color: rgba(120, 20,200,.3); }
+.t-conf   { background-color: rgba(120, 20,200,.3); }
 .t-job    { background-color: rgba(240, 20, 20,.3); }
 .t-member { background-color: rgba(100,100, 60,.3); }
 
 a.t-pub:hover    { background-color: rgba(  0, 80,200,.6); }
 a.t-teach:hover  { background-color: rgba(240,100,  0,.6); }
-a.t-talk:hover   { background-color: rgba(180,  0,240,.6); }
+a.t-talk:hover   { background-color: rgba(180,  0,120,.6); }
 a.t-phd:hover    { background-color: rgba(120, 60,  0,.6); }
 a.t-msc:hover    { background-color: rgba(120, 60,  0,.6); }
 a.t-eu:hover     { background-color: rgba( 20,140, 20,.6); }
 a.t-fr:hover     { background-color: rgba( 20,140, 20,.6); }
 a.t-el:hover     { background-color: rgba( 20,140, 20,.6); }
-a.t-act:hover    { background-color: rgba( 20,120,140,.6); }
+a.t-act:hover    { background-color: rgba(120, 20,200,.6); }
+a.t-conf:hover   { background-color: rgba(120, 20,200,.6); }
 a.t-job:hover    { background-color: rgba(240, 20, 20,.6); }
 a.t-member:hover { background-color: rgba(100,100, 60,.6); }
 
