@@ -101,6 +101,8 @@
 							Inria
 						</a>
 						<div class="collapse show nav side-nav" id="Inria">
+							<a class="nav-link" href="#y-press">In&nbsp;press</a>
+							<a class="nav-link" href="#y-2020">2020</a>
 							<a class="nav-link" href="#y-2019">2019</a>
 							<a class="nav-link" href="#y-2018">2018</a>
 							<a class="nav-link" href="#y-2017">2017</a>
@@ -172,6 +174,7 @@
 
 				<div class="hide-md">
 					<div class="nav side-nav">
+						<a class="nav-link" href="#y-2020">20</a>
 						<a class="nav-link" href="#y-2019">19</a>
 						<a class="nav-link" href="#y-2018">18</a>
 						<a class="nav-link" href="#y-2017">17</a>
@@ -213,6 +216,101 @@
 					</h2>
 					<div class="just">
 						This material is presented to ensure timely dissemination of scholarly and technical work. Copyright and all rights therein are retained by authors or by other copyright holders. Anyone copying this information is expected to adhere to the terms and constraints invoked by each author's copyright. In most cases, these works may not be reposted without the explicit permission of the copyright holder.
+					</div>
+				</div>
+				<h1 class="pub">
+					<a class="anchor" id="y-press"></a>
+					In&nbsp;press
+				</h1>
+				<h2 class="pub rule">
+					Journals
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="J29"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-J29" id="tog-J29">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Smooth Adversarial Examples
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">H. Zhang, Y. Avrithis, T. Furon, L. Amsaleg</span>
+						</div>
+						<div class="part">
+							<span class="acro but mr">JIS,&nbsp;In&nbsp;press</span>
+							<a class="lnk" href="../data/pub/pdf/journ/J29.jis20.smooth.pdf"><i class="far fa-file-pdf2"></i></a>
+						</div>
+					</div>
+					<div class="collapse" id="col-J29">
+						<div class="pub-ref">
+							<em>EURASIP Journal on Information Security</em><br>
+							In&nbsp;press
+						</div>
+						<div class="pub-detail">
+							<div class="just">
+								<p>
+									This paper investigates the visual quality of the adversarial examples. Recent papers propose to smooth the perturbations to get rid of high frequency artefacts. In this work, smoothing has a different meaning as it perceptually shapes the perturbation according to the visual content of the image to be attacked. The perturbation becomes locally smooth on the flat areas of the input image, but it may be noisy on its textured areas and sharp across its edges.
+								</p>
+								<p>
+									This operation relies on Laplacian smoothing, well-known in graph signal processing, which we integrate in the attack pipeline. We benchmark several attacks with and without smoothing under a white-box scenario and evaluate their transferability. Despite the additional constraint of smoothness, our attack has the same probability of success at lower distortion.
+								</p>
+							</div>
+							<figure class="pub-bib highlight">
+								<pre><code>@article{J29,
+   title = {Smooth Adversarial Examples},
+   author = {H. Zhang and Y. Avrithis and T. Furon and L. Amsaleg},
+   journal = {EURASIP Journal on Information Security (JIS)},
+   year = {In press}
+}</code></pre>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<h1 class="pub">
+					<a class="anchor" id="y-2020"></a>
+					2020
+				</h1>
+				<h2 class="pub rule">
+					Preprints / technical reports
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="R26"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R26" id="tog-R26">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Few-Shot Few-Shot Learning and the Role of Spatial Attention
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">Y. Lifchitz, Y. Avrithis, S. Picard</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://arxiv.org/abs/2002.07522">arXiv,&nbsp;2020</a>
+							<a class="lnk" href="../data/pub/pdf/report/R026.2002.07522.few-att.pdf"><i class="far fa-file-pdf2"></i></a>
+						</div>
+					</div>
+					<div class="collapse" id="col-R26">
+						<div class="pub-ref">
+							<em>arXiv preprint arXiv:2002.07522</em>  <span class="bull"></span> Feb 2020
+						</div>
+						<div class="pub-detail">
+							<div class="just">
+								<p>
+									Few-shot learning is often motivated by the ability of humans to learn new tasks from few examples. However, standard few-shot classification benchmarks assume that the representation is learned on a limited amount of base class data, ignoring the amount of prior knowledge that a human may have accumulated before learning new tasks. At the same time, even if a powerful representation is available, it may happen in some domain that base class data are limited or non-existent. This motivates us to study a problem where the representation is obtained from a classifier pre-trained on a large-scale dataset of a different domain, assuming no access to its training process, while the base class data are limited to few examples per class and their role is to adapt the representation to the domain at hand rather than learn from scratch. We adapt the representation in two stages, namely on the few base class data if available and on the even fewer data of new tasks. In doing so, we obtain from the pre-trained classifier a spatial attention map that allows focusing on objects and suppressing background clutter. This is important in the new problem, because when base class data are few, the network cannot learn where to focus implicitly. We also show that a pre-trained network may be easily adapted to novel classes, without meta-learning.
+								</p>
+							</div>
+							<figure class="pub-bib highlight">
+								<pre><code>@article{R26,
+   title = {Few-Shot Few-Shot Learning and the role of Spatial Attention},
+   author = {Y. Lifchitz and Y. Avrithis and S. Picard},
+   journal = {arXiv preprint arXiv:2002.07522},
+   month = {2},
+   year = {2020}
+}</code></pre>
+							</figure>
+						</div>
 					</div>
 				</div>
 				<h1 class="pub">
@@ -442,7 +540,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					Technical reports
+					Preprints / technical reports
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
@@ -1000,7 +1098,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					Technical reports
+					Preprints / technical reports
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
@@ -1342,7 +1440,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					Technical reports
+					Preprints / technical reports
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
@@ -1610,7 +1708,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					Technical reports
+					Preprints / technical reports
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
@@ -3746,7 +3844,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					Technical reports
+					Preprints / technical reports
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
@@ -4428,7 +4526,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					Technical reports
+					Preprints / technical reports
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
@@ -5329,7 +5427,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					Technical reports
+					Preprints / technical reports
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
@@ -7497,7 +7595,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					Technical reports
+					Preprints / technical reports
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
