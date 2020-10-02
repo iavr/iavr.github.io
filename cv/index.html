@@ -162,9 +162,23 @@
 				</div>
 				<h1 class="cv rule">
 					<a class="anchor" id="edu"></a>
-					<span class="mr">Education</span>
+					<span class="mr">Education / Qualifications</span>
 					<i class="fal fa-university"></i>
 				</h1>
+				<div class="row cv-row">
+					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
+						<a class="anchor" id="edu-2020"></a>
+						<div class="cv-year">
+							2020
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="cv-title">
+							<span class="mr">HDR in <a href="https://www.univ-rennes1.fr/habilitation-diriger-des-recherches-hdr">Computer Science</a></span>
+						</div>
+						<a href="https://www.univ-rennes1.fr/">University of Rennes 1</a> <span class="bull"></span> France
+					</div>
+				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
 						<a class="anchor" id="edu-1996"></a>
@@ -1054,6 +1068,34 @@
 				</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
+						<a class="anchor" id="phd-2020-figueroa"></a>
+						<div class="cv-year">
+							2020-
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="cv-title">
+							Felipe Torres Figueroa
+						</div>
+						Learning discriminative representations to interpret image recognition models
+					</div>
+				</div>
+				<div class="row cv-row">
+					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
+						<a class="anchor" id="phd-2020-engin"></a>
+						<div class="cv-year">
+							2020-
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="cv-title">
+							<a href="http://people.rennes.inria.fr/Deniz.Engin/">Deniz Engin</a>
+						</div>
+						Semantic multimodal question answering
+					</div>
+				</div>
+				<div class="row cv-row">
+					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
 						<a class="anchor" id="phd-2018-lifchitz"></a>
 						<div class="cv-year">
 							2018-
@@ -1063,7 +1105,7 @@
 						<div class="cv-title">
 							<a href="https://www.linkedin.com/in/yannlifchitz/en">Yann-Raphaël Lifchitz</a>
 						</div>
-						Few-shot learning for object recognition in aerial images
+						Few-shot learning for object recognition
 					</div>
 				</div>
 				<div class="row cv-row">
@@ -1082,7 +1124,7 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
-						<a class="anchor" id="phd-2019-siméoni"></a>
+						<a class="anchor" id="phd-2019-simeoni"></a>
 						<div class="cv-year">
 							2016-2019
 						</div>
@@ -1090,16 +1132,13 @@
 					<div class="col-sm">
 						<div class="cv-title">
 							<a href="http://people.rennes.inria.fr/Oriane.Simeoni/">Oriane Siméoni</a>
-							<div class="cv-ref">
-								now Research Intern at
-								<a href="https://research.google/">Google Research</a>, France
-							</div>
 						</div>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-phd-2019-siméoni">
+						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-phd-2019-simeoni">
 							<i class="left-60 tog far fa-chevron-down"></i>
-							Invariance and supervision in visual learning
+							Robust image representation for classification, retrieval and object discovery
 						</a>
-						<div class="collapse" id="col-phd-2019-siméoni">
+						<a class="lnk" href="../data/cv/pdf/phd/2019.simeoni.pdf"><i class="far fa-file-pdf2 pdf-icon"></i></a>
+						<div class="collapse" id="col-phd-2019-simeoni">
 							<div class="cv-detail just">
 								<p>
 									Neural network representations have proved to be relevant for many computer vision tasks such as image classification, object detection, segmentation or instance-level image retrieval, but require a large number of labeled data. In this thesis, we propose solutions to extract the most information with the least supervision. Focusing on the classification task first, we examine active learning in the context of deep learning and show that combining it with semi-supervised and unsupervised learning greatly boosts results. We then investigate the image retrieval task, and in particular we exploit the spatial localization information available "for free" in CNN feature maps. We first propose to represent an image by a collection of affine local features detected within activation maps, which are memory-efficient and robust enough to perform spatial matching. Then, extracting information from feature maps, we discover objects of interest in images of a dataset and gather their representations in a nearest neighbor graph. Using the centrality measure on the graph, we construct a saliency map per image, which focuses on repeating objects and allows us to compute a global representation, suppressing background clutter. 
@@ -1407,6 +1446,37 @@
 					<span class="mr">Diploma Thesis/M.Sc. students / co-supervision</span>
 					<i class="fal fa-user-graduate"></i>
 				</h1>
+				<div class="row cv-row">
+					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
+						<a class="anchor" id="msc-2020-neitthoffer"></a>
+						<div class="cv-year">
+							2019-2020
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="cv-title">
+							Timothée Neitthoffer
+						</div>
+						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-msc-2020-neitthoffer">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Neural architecture growing, pruning and search
+						</a>
+						<a class="lnk" href="../data/cv/pdf/msc/2020.neitthoffer.pdf"><i class="far fa-file-pdf2 pdf-icon"></i></a>
+						<div class="collapse" id="col-msc-2020-neitthoffer">
+							<div class="cv-detail just">
+								<p>
+									The goal of neural architecture search is to automatically find the optimal network architecture, that is, the optimal succession of layers and how they are connected to each other to solve a particular learning task (for instance, image classification). This is a combinatorial optimization problem and finding the optimal set of connections over all possible combinations is intractable.
+								</p>
+								<p>
+									We address this problem by combining ideas from different fields. We define a "fully-dense" network where every layer has access to all previous ones and contains all possible connections between layers. This super-network contains different possible subsequences of layers by considering the possibility to skip unnecessary connections. We select the most important ones using a pruning criterion that removes the unnecessary connections. This way, the optimal architecture can be found within the super-network.
+								</p>
+								<p>
+									However, the number of connections in the super-network is quadratic in the number of layers. Training the super-network is not practical when it is very deep. To alleviate this problem, we devise a greedy algorithm, growing the super-network a few layers at a time, training it and pruning its connections at each iteration. This way, the number of connections at each iteration is linear in the network depth. 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
 						<a class="anchor" id="msc-2016-kervadec"></a>
