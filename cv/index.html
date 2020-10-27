@@ -1451,6 +1451,40 @@
 				</h1>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
+						<a class="anchor" id="msc-2020-psomas"></a>
+						<div class="cv-year">
+							2019-2020
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="cv-title">
+							Bill Psomas
+						</div>
+						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-msc-2020-psomas">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Metric Learning: A Deep Dive
+						</a>
+						<a class="lnk" href="../data/cv/pdf/msc/2020.psomas.pdf"><i class="far fa-file-pdf2 pdf-icon"></i></a>
+						<div class="collapse" id="col-msc-2020-psomas">
+							<div class="cv-detail just">
+								<p>
+									The objective of metric learning is to learn a distance metric that decreases the distance between similar objects and increases the distance between dissimilar ones. Similarity and dissimilarity can be subjective and thus some supervision is needed to define them. Learning a distance metric can be useful for many tasks, such as classification, retrieval and clustering. The classification and retrieval tasks can be reduced to class-level and instance-level nearest neighbor tasks respectively, while the clustering task can be made easier given the similarity matrix.
+								</p>
+								<p>
+									Before deep learning, metric learning approaches were based either on linear transformations using the Mahalanobis or/and Euclidean distance, or on non-linear transformations using kernel-based methods. Both of them, however, had limitations. Linear transformations had a limited ability to capture nonlinear feature structure. Non-linear transformations performed better, but often suffered from overfitting. Both methods were limited by their ability to process raw data and thus needed feature engineering.
+								</p>
+								<p>
+									With the remarkable success of convolutional neural networks, deep metric Learning was introduced. Neural networks are discriminatively trained to learn the non-linear mapping from raw input data to a lower dimensional embedding. This is usually done in a supervised way, where embeddings with the same class label are pushed closer and embeddings with different class labels are pulled apart. The training process involves minimizing a loss function having exactly these properties. The advantage of deep metric learning is that it jointly extracts the features and learns the embedding.
+								</p>
+								<p>
+									The contribution of this work is threefold. First, we conduct extensive experiments using the most commonly used architectures (GoogLeNet, BNInception, ResNet50) on the most commonly used datasets (CUB200-2011, CARS196, Stanford Online Products) using 10 different loss functions (Contrastive, Triplet, LiftedStructure, NPair, ProxyNCA, ArcFace, Margin, MultiSimilarity, SoftTriple, ProxyAnchor) and four different embedding sizes (64, 128, 512, 1024). We make an ablation study and draw important conclusions using the results, revealing significant flaws in the evaluation and little true progress over time. Second, we introduce and propose a new setup for training using a fixed validation set. We conduct experiments using this split, as well as a 10-fold cross validation. Our setup seems to balance perfectly between computational complexity and retrieval quality. Finally, we design, implement and experiment with a new loss function that is on a par with the state-of-the-art. 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row cv-row">
+					<div class="col-sm-auto cv-year-col">  <!-- TODO: remove condition -->
 						<a class="anchor" id="msc-2020-neitthoffer"></a>
 						<div class="cv-year">
 							2019-2020
