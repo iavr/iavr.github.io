@@ -714,6 +714,8 @@ h1.time {
 .t-fr     { background-color: rgba( 20,140, 20,.3); }
 .t-el     { background-color: rgba( 20,140, 20,.3); }
 .t-act    { background-color: rgba(120, 20,200,.3); }
+.t-eval   { background-color: rgba(120, 20,200,.3); }
+.t-edit   { background-color: rgba(120, 20,200,.3); }
 .t-conf   { background-color: rgba(120, 20,200,.3); }
 .t-job    { background-color: rgba(240, 20, 20,.3); }
 .t-member { background-color: rgba(100,100, 60,.3); }
