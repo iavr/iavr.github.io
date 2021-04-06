@@ -714,6 +714,7 @@ h1.time {
 .t-fr     { background-color: rgba( 20,140, 20,.3); }
 .t-el     { background-color: rgba( 20,140, 20,.3); }
 .t-act    { background-color: rgba(120, 20,200,.3); }
+.t-jury   { background-color: rgba(120, 20,200,.3); }
 .t-eval   { background-color: rgba(120, 20,200,.3); }
 .t-edit   { background-color: rgba(120, 20,200,.3); }
 .t-conf   { background-color: rgba(120, 20,200,.3); }
@@ -729,6 +730,9 @@ a.t-eu:hover     { background-color: rgba( 20,140, 20,.6); }
 a.t-fr:hover     { background-color: rgba( 20,140, 20,.6); }
 a.t-el:hover     { background-color: rgba( 20,140, 20,.6); }
 a.t-act:hover    { background-color: rgba(120, 20,200,.6); }
+a.t-jury:hover   { background-color: rgba(120, 20,200,.6); }
+a.t-eval:hover   { background-color: rgba(120, 20,200,.6); }
+a.t-edit:hover   { background-color: rgba(120, 20,200,.6); }
 a.t-conf:hover   { background-color: rgba(120, 20,200,.6); }
 a.t-job:hover    { background-color: rgba(240, 20, 20,.6); }
 a.t-member:hover { background-color: rgba(100,100, 60,.6); }
