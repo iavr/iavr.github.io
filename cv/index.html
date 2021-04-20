@@ -1217,21 +1217,61 @@
 						<div class="cv-title">
 							<a href="https://www.linkedin.com/in/yannlifchitz/en">Yann-Raphaël Lifchitz</a>
 						</div>
-						Few-shot learning for object recognition
+						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-phd-2021-lifchitz">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Making the most of available data: Representation and adaptation for few-shot image classification
+						</a>
+						<a class="lnk" href="../data/cv/pdf/phd/2021.lifchitz.pdf"><i class="far fa-file-pdf2 pdf-icon"></i></a>
+						<div class="collapse" id="col-phd-2021-lifchitz">
+							<div class="cv-detail just">
+								<p>
+									Deep neural networks can be used to create highly accurate image classification models. One prerequisite is to have access to large-scale datasets for training. In the context of few-shot learning, the training set is limited to few images, so training from scratch is not feasible. Instead, a first training stage leverages a distinct set of abundant data to learn generic knowledge that can be transferred to few-shot tasks. A large part of the literature focuses on meta-learning, which consists in training strategies that apply to small sets of images.
+								</p>
+								<p>
+									In this thesis, we rather follow a simpler approach. First, a task-independent representation function is learned on abundant data by solving a distinct task such as multi-class classification on a set of base classes. Then, the learned representation is combined with new data of novel classes to solve the few-shot task. In both stages, we introduce solutions that aim at leveraging available data as much as possible.
+								</p>
+								<p>
+									In particular, for representation learning, we propose dense classification training, which for the first time studies local activations in the domain of few-shot learning. We also adapt the representation function to render it task-dependent, with a second learning phase using the few-shot set. The risk of overfitting during adaptation makes it a challenging task, which is not frequently performed outside of meta-learning. We propose two solutions for adaptation. By implanting, learning is limited to a few parameters; alternatively, by few-step adaptation, learning is limited to a few gradient updates.
+								</p>
+								<p>
+									Additionally, we study alternative few-shot learning settings, in which access to data is modified. In transductive learning, multiple images need to be classified at the same time. In this context, we propose local propagation, a method that uses similarities between local representations of images to propagate class information, effectively leveraging the distribution the extra unlabeled data. We also introduce few-shot few-shot learning, a new setting, where only few or no in-domain data is accessible for representation learning. In this context, we take advantage of a representation obtained from a classifier that is pre-trained on a large-scale dataset of a different domain, which can still be adapted to the domain if data is available.
+								</p>
+								<p>
+									In few-shot learning, because data is so scarce, we show that selecting relevant regions with an attention mechanism is important. In local propagation, this prevents propagation based on similarities of background regions. In few-shot-few-shot learning, it helps compensate for the domain gap. We propose two simple solutions that successfully fulfill this role. Finally, we apply our knowledge of few-shot learning on the specific problem of classifying aerial images. 
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">
-						<a class="anchor" id="phd-2017-zhang"></a>
+						<a class="anchor" id="phd-2021-zhang"></a>
 						<div class="cv-year">
-							2017-
+							2017-2021
 						</div>
 					</div>
 					<div class="col-sm">
 						<div class="cv-title">
 							Hanwei Zhang
 						</div>
-						Deep learning in adversarial contexts
+						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-phd-2021-zhang">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Deep learning in adversarial contexts
+						</a>
+						<a class="lnk" href="../data/cv/pdf/phd/2021.zhang.pdf"><i class="far fa-file-pdf2 pdf-icon"></i></a>
+						<div class="collapse" id="col-phd-2021-zhang">
+							<div class="cv-detail just">
+								<p>
+									This thesis is about adversarial attacks and defenses in deep learning. We propose to improve the performance of adversarial attacks in terms of speed, distortion and invisibility.
+								</p>
+								<p>
+									We contribute a definition of invisibility in terms of smoothness, which we integrate into the optimization of adversarial example generation. We achieve smooth adversarial perturbations of less distortion. To improve the efficiency of generating adversarial examples, we introduce an optimization algorithm called the Boundary Projection (BP) attack. BP first follows the gradient of the classification loss to until it finds an adversarial solution. It then searches along the class boundary to minimize the distortion. BP succeeds in generating adversarial examples with low-distortion very efficiently.
+								</p>
+								<p>
+									We also study defenses against adversarial examples. We apply quantization on local patches of both images and intermediate layer features, using different kinds of codebooks that are either fixed or learned from training data. Experiments show that such patch replacement is efficient and robust against adversarial attacks, while it requires no network training. 
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="row cv-row">
@@ -2139,7 +2179,7 @@
 					<div class="col-sm-auto cv-year-col">
 						<a class="anchor" id="eu-2019-grapes"></a>
 						<div class="cv-year">
-							2019-2022
+							2019-2024
 						</div>
 					</div>
 					<div class="col-sm">
