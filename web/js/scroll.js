@@ -7,11 +7,11 @@ function view() {
 	return {width: e[a+'Width'], height: e[a+'Height']}
 }
 
-function scroll(t) {
+function scroll(t, off) {
 	var header = view().width >= 768 ? 'header' : 'nav';
 	var height = $(header).outerHeight(true);
 	var margin = parseInt(t.parent().css('margin-top'));
-	var offset = t.offset().top - margin - height + 100;
+	var offset = t.offset().top - margin - height + off;
 	var r = $('html,body').scrollTop(offset);
 	console.log(r);
 }
@@ -20,7 +20,7 @@ function int_hash(e, a) {
 	e.preventDefault();
 	var h = $(a).attr('href');
 	var t = $(h);
-	if(t) scroll(t);
+	if(t) scroll(t, 100);
 }
 
 function ext_hash() {
@@ -32,7 +32,7 @@ function ext_hash() {
 		if(c) c.addClass('show');
 	}
 	for(var i=50; i<3000; i+=50)
-		setTimeout(function(){scroll(t);}, i);
+		setTimeout(function(){scroll(t, 80);}, i);
 }
 
 $(document).ready(function() {

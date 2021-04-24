@@ -1,0 +1,2034 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="Yannis Avrithis">
+		<meta name="description" content="Yannis Avrithis - Home page">
+		<meta name="keywords" content="Yannis Avrithis computer vision machine learning deep learning image search indexing retrieval">
+		<title>Yannis Avrithis - Code and Data</title>
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+
+		<!-- mathjax -->
+		<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML" async></script>
+
+		<!-- font awesome -->
+		<script defer src="../web/js/fa.js"></script>
+
+		<!-- styles -->
+		<link rel="stylesheet" href="../web/css/home.css">
+
+		<!-- scripts -->
+		<script src="../web/js/bs-docs.min.js"></script>
+		<script src="../web/js/email.js"></script>
+		<script src="../web/js/scroll.js"></script>
+
+	</head>
+	<body data-spy="scroll" data-target="#nav">
+		<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+			<a class="navbar-brand mr-0 mr-md-2 brand" href="../">Y</a>
+			<div class="navbar-nav-scroll">
+				<ul class="navbar-nav bd-navbar-nav flex-row">
+					<li class="nav-item">
+						<a class="nav-link" href="../">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../cv">Resume</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../pub">Publications</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="../code">Code & Data</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../time">Timeline</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+				<li class="nav-item">
+					<script>ema(yann(), "nav-link p-2");</script>
+						<i class="fal fa-at"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-2" href="https://arxiv.org/search/?searchtype=author&query=Avrithis%2C+Y">
+						<div class="arxiv">X</div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-2" href="https://dblp.org/pers/hd/a/Avrithis:Yannis">
+						<i class="fab fa-dblp" data-fa-transform="grow-32 down-14 right-12"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-2" href="https://scholar.google.com/citations?user=AF2SxG0AAAAJ&sortby=pubdate">
+						<i class="fal fa-atom" data-fa-transform="rotate-90"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-2" href="https://www.linkedin.com/in/yannisavrithis/">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-2" href="https://github.com/iavr">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</header>
+
+
+<div class="container-fluid" id="pub">
+	<div class="row">
+
+		<div class="col-md-auto side-bar">
+			<nav id="nav">
+
+				<div class="show-md">
+					<div class="toc-item">
+						<a class="rel toggle" data-toggle="collapse" href="#code-col">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Code
+						</a>
+						<div class="collapse show nav side-nav" id="code-col">
+							<a class="nav-link" href="#code-2020">2020</a>
+							<a class="nav-link" href="#code-2019">2019</a>
+							<a class="nav-link" href="#code-2018">2018</a>
+							<a class="nav-link" href="#code-2017">2017</a>
+							<a class="nav-link" href="#code-2016">2016</a>
+							<a class="nav-link" href="#code-2015">2015</a>
+							<a class="nav-link" href="#code-2014">2014</a>
+							<a class="nav-link" href="#code-2013">2013</a>
+							<a class="nav-link" href="#code-2012">2012</a>
+							<a class="nav-link" href="#code-2011">2011</a>
+							<a class="nav-link" href="#code-2010">2010</a>
+							<a class="nav-link" href="#code-2009">2009</a>
+							<a class="nav-link" href="#code-2008">2008</a>
+							<a class="nav-link" href="#code-2007">2007</a>
+						</div>
+					</div>
+					<div class="toc-item">
+						<a class="rel toggle" data-toggle="collapse" href="#app-col">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Applications
+						</a>
+						<div class="collapse show nav side-nav" id="app-col">
+							<a class="nav-link" href="#app-2008">2008</a>
+						</div>
+					</div>
+					<div class="toc-item">
+						<a class="rel toggle" data-toggle="collapse" href="#bin-col">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Binaries
+						</a>
+						<div class="collapse show nav side-nav" id="bin-col">
+							<a class="nav-link" href="#bin-2011">2011</a>
+							<a class="nav-link" href="#bin-2010">2010</a>
+							<a class="nav-link" href="#bin-2009">2009</a>
+						</div>
+					</div>
+					<div class="toc-item">
+						<a class="rel toggle" data-toggle="collapse" href="#data-col">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Data
+						</a>
+						<div class="collapse show nav side-nav" id="data-col">
+							<a class="nav-link" href="#data-2017">2017</a>
+							<a class="nav-link" href="#data-2016">2016</a>
+							<a class="nav-link" href="#data-2011">2011</a>
+							<a class="nav-link" href="#data-2010">2010</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="hide-md">
+					<div class="nav side-nav">
+						<a class="toc nav-link" href="#code">Code</a>
+						<a class="toc nav-link" href="#app">Apps</a>
+						<a class="toc nav-link" href="#bin">Binaries</a>
+						<a class="toc nav-link" href="#data">Data</a>
+						<a class="nav-link" href="#code-2020">20</a>
+						<a class="nav-link" href="#code-2019">19</a>
+						<a class="nav-link" href="#code-2018">18</a>
+						<a class="nav-link" href="#code-2017">17</a>
+						<a class="nav-link" href="#code-2016">16</a>
+						<a class="nav-link" href="#code-2015">15</a>
+						<a class="nav-link" href="#code-2014">14</a>
+						<a class="nav-link" href="#code-2013">13</a>
+						<a class="nav-link" href="#code-2012">12</a>
+						<a class="nav-link" href="#code-2011">11</a>
+						<a class="nav-link" href="#code-2010">10</a>
+						<a class="nav-link" href="#code-2009">09</a>
+						<a class="nav-link" href="#code-2008">08</a>
+						<a class="nav-link" href="#code-2007">07</a>
+					</div>
+				</div>
+
+			</nav>
+		</div>
+
+		<main class="col-md">
+			<div class="container bottom-pad">
+				<h1 class="pub">
+					<a class="anchor" id="code"></a>
+					Code
+				</h1>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2020"></a>
+					2020
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="aml"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-aml" id="tog-aml">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Asymmetric metric learning
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								M. Budnik
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/budnikm/asymmetric_metric_learning">AML</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-aml">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/filipradenovic/cnnimageretrieval-pytorch">CIR-torch</a> <span class="bull"></span>
+							published in <a href="/pub/#C117">CVPR 2021</a> <span class="bull"></span>
+							2020-2021
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C117.cvpr21.mobile.svg"><img alt="aml thumbnail" src="../data/pub/thumb/wide/conf/C117.cvpr21.mobile.svg"></a>
+							<div class="just">
+								<p>
+									Focusing on instance-level image retrieval, we study an asymmetric testing task, where the database is represented by the teacher and queries by the student. Inspired by this task, we introduce a novel paradigm of using asymmetric representations at training. This acts as a simple combination of knowledge transfer with the original metric learning task. The code allows the reproduction of the results of our <a href="/pub/#C112">CVPR 2019 paper</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="nagp"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-nagp" id="tog-nagp">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Neural architecture growing, pruning and search
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								T. Neitthoffer
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/shymine/neural-architecture-growing-pruning-and-search">NAGP</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-nagp">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/yigitcankaya/Shallow-Deep-Networks">SDN</a>, <a href="https://github.com/mil-ad/snip">SNIP</a> <span class="bull"></span>
+							2020
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/nagp.svg"><img alt="nagp thumbnail" src="../data/code/thumb/wide/code/nagp.svg"></a>
+							<div class="just">
+								<p>
+									The goal of neural architecture search is to automatically find the optimal network architecture, that is, the optimal succession and interconnection of layers. This is an intractable combinatorial optimization problem. We define a <i>fully-dense</i> super-network, out of which we select the most important connections by pruning. Still, training a deep super-network is not practical, so we devise a greedy algorithm: We grow the super-network a few layers at a time, training it and pruning its connections at each iteration. The code allows the reproduction of the results of the <a href="/cv/#msc-2020-neitthoffer">2020 MSc thesis</a>.
+								</p>
+								<p>
+									
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="asmk-py"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-asmk-py" id="tog-asmk-py">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Aggregated selective match kernel (Python version)
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								T. Jenicek, G. Tolias
+								(<span class="pub-ref">advised by</span> O. Chum)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/jenicek/asmk">ASMK-py</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-asmk-py">
+						<div class="pub-ref">
+							Python <span class="bull"></span>
+							based on <a href="/code/#asmk">ASMK</a>, <a href="https://github.com/filipradenovic/cnnimageretrieval-pytorch">CIR-torch</a>, <a href="https://github.com/facebookresearch/faiss">FAISS</a> <span class="bull"></span>
+							published in <a href="/pub/#C93">ICCV 2013</a>, <a href="https://arxiv.org/abs/2007.13172">HOW</a> <span class="bull"></span>
+							2020
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/asmk-py.svg"><img alt="asmk-py thumbnail" src="../data/code/thumb/wide/code/asmk-py.svg"></a>
+							<div class="just">
+								<p>
+									This is a Python implementation of <a href="/code/#asmk">ASMK</a>. There are minor differences compared to the original <a href="/pub/#C93">ASMK method (ICCV 2013)</a> and <a href="/code/#asmk">Matlab implementation</a>, which are described in the <a href="https://arxiv.org/abs/2007.13172">HOW paper (ECCV 2020)</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2019"></a>
+					2019
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="ssal"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ssal" id="tog-ssal">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Semi-supervised active learning
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								M. Budnik, O. Siméoni
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/osimeoni/RethinkingDeepActiveLearning">SSAL</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-ssal">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/facebookresearch/deepcluster">DeepCluster</a>, <a href="/code/#dlp">DLP</a> <span class="bull"></span>
+							published in <a href="/pub/#C113">ICPR 2020</a> <span class="bull"></span>
+							2019-2020
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C113.icpr20.active.svg"><img alt="ssal thumbnail" src="../data/pub/thumb/wide/conf/C113.icpr20.active.svg"></a>
+							<div class="just">
+								<p>
+									This is a deep active learning framework allowing a systematic evaluation of different acquisition functions with or without methods that make use of the unlabeled data during model training. In particular, this includes (i) unsupervised pre-training, as implemented by <a href="https://github.com/facebookresearch/deepcluster">DeepCluster</a>, and (ii) semi-supervised learning, as implemented by our <a href="/code/#dlp">deep label propagation</a>. The code allows the reproduction of the results of our <a href="/pub/#C113">ICPR 2020 paper</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="gcc"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-gcc" id="tog-gcc">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Graph convolutional cleaning
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								A. Iscen, G. Tolias
+								(<span class="pub-ref">advised by</span> O. Chum, C. Schmid, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/google-research/noisy-fewshot-learning">GCC</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-gcc">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/tkipf/gcn">GCN</a>, <a href="https://github.com/facebookresearch/faiss">FAISS</a> <span class="bull"></span>
+							published in <a href="/pub/#C114">ECCV 2020</a> <span class="bull"></span>
+							2019-2020
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/gcc.svg"><img alt="gcc thumbnail" src="../data/code/thumb/wide/code/gcc.svg"></a>
+							<div class="just">
+								<p>
+									We learn a classifier from few clean and many noisy labels. The structure of clean and noisy data is modeled by a graph per class and <a href="https://github.com/tkipf/gcn">graph convolutional networks</a> are used to predict class relevance of noisy examples. This cleaning method is evaluated on an extended version of a <i>few-shot learning</i> problem, where the few clean examples of novel classes are supplemented with additional noisy data. The code allows the reproduction of the results of our <a href="/pub/#C114">ECCV 2020 paper</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="nsod"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-nsod" id="tog-nsod">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Nano-supervised object detection
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Z. Yang
+								(<span class="pub-ref">advised by</span> M. Shi, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">NSOD</span>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-nsod">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/hbilen/WSDDN">WSDDN</a>, <a href="https://github.com/ppengtang/pcl.pytorch">PCL</a> <span class="bull"></span>
+							published in <a href="/pub/#R24">arXiv 2019</a> <span class="bull"></span>
+							2019-2020
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/report/R024.1912.00384.nsod.svg"><img alt="nsod thumbnail" src="../data/pub/thumb/wide/report/R024.1912.00384.nsod.svg"></a>
+							<div class="just">
+								<p>
+									We learn an object detector from few weakly-labeled images and a larger set of completely unlabeled images. The main idea is to learn a classifier first in a semi-supervised setting, then use it as a teacher to train a student network on a weakly-supervised object detection task. The student detector is based on <a href="https://github.com/ppengtang/pcl.pytorch">PCL</a> weakly supervised object detector. <span class="alrt">The code is not public yet.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="fsfsl"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-fsfsl" id="tog-fsfsl">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Few-shot few-shot learning
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Lifchitz
+								(<span class="pub-ref">advised by</span> S. Picard, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">FSFSL</span>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-fsfsl">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							published in <a href="/pub/#C115">ICPR 2020</a> <span class="bull"></span>
+							2019
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C115.icpr20.few-att.png"><img alt="fsfsl thumbnail" src="../data/pub/thumb/wide/conf/C115.icpr20.few-att.png"></a>
+							<div class="just">
+								<p>
+									We depart from the standard setting of <i>few-shot learning</i> in that the representation is obtained from a classifier pre-trained on a large-scale dataset of a different domain, while the base class data are limited to few examples per class and their role is to adapt the representation to the domain at hand rather than learn from scratch. In doing so, we obtain from the pre-trained classifier a spatial attention map that allows focusing on objects and suppressing background clutter. <span class="alrt">The code is not public.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="bp"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-bp" id="tog-bp">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Boundary projection
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								H. Zhang
+								(<span class="pub-ref">advised by</span> T. Furon, L. Amsaleg, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">BP</span>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-bp">
+						<div class="pub-ref">
+							<a href="https://www.tensorflow.org/">TensorFlow</a> <span class="bull"></span>
+							based on <a href="https://github.com/tensorflow/cleverhans">CleverHans</a> <span class="bull"></span>
+							published in <a href="/pub/#J30">TIFS 2021</a> <span class="bull"></span>
+							2019
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/journ/J30.tifs20.bp.png"><img alt="bp thumbnail" src="../data/pub/thumb/wide/journ/J30.tifs20.bp.png"></a>
+							<div class="just">
+								<p>
+									BP is an adversarial attack that reduces the distortion of the perturbation while operating under quantization at very few iterations. The attack is also used to build more robust models by using BP in adversarial training as a defense. <span class="alrt">The code is not public yet.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2018"></a>
+					2018
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="dlp"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-dlp" id="tog-dlp">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Deep label propagation
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								A. Iscen
+								(<span class="pub-ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/ahmetius/LP-DeepSSL">DLP</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-dlp">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/CuriousAI/mean-teacher/tree/master/pytorch">Mean Teacher</a>, <a href="https://github.com/facebookresearch/faiss">FAISS</a> <span class="bull"></span>
+							published in <a href="/pub/#C112">CVPR 2019</a> <span class="bull"></span>
+							2018-2019
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C112.cvpr19.semi.png"><img alt="dlp thumbnail" src="../data/pub/thumb/wide/conf/C112.cvpr19.semi.png"></a>
+							<div class="just">
+								<p>
+									DLP is a modern deep learning approach and an inductive version of classic label propagation for semi-supervised learning based on manifold similarity. The code allows the reproduction of the results of <a href="/pub/#C112">CVPR 2019</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="dci"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-dci" id="tog-dci">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Dense classification and implanting
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Lifchitz
+								(<span class="pub-ref">advised by</span> A. Bursuc, S. Picard, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">DCI</span>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-dci">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/gidariss/FewShotWithoutForgetting">FSwF</a> <span class="bull"></span>
+							published in <a href="/pub/#C111">CVPR 2019</a> <span class="bull"></span>
+							2018
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C111.cvpr19.few.svg"><img alt="dci thumbnail" src="../data/pub/thumb/wide/conf/C111.cvpr19.few.svg"></a>
+							<div class="just">
+								<p>
+									<i>Dense classification</i> over feature maps studies for the first time local activations in the domain of few-shot learning. <i>Implanting</i>, that is, attaching new neurons to a previously trained network to learn new, task-specific features, achieves for the first time fine-tuning of the entire network to convergence without overfitting on novel classes. <span class="alrt">The code is not public.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="dsm"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-dsm" id="tog-dsm">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Deep spatial matching
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								O. Siméoni
+								(<span class="pub-ref">advised by</span> O. Chum, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/osimeoni/DSM">DSM</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-dsm">
+						<div class="pub-ref">
+							<a href="https://github.com/vlfeat/matconvnet">MatConvNet</a>, C++ <span class="bull"></span>
+							based on <a href="https://github.com/filipradenovic/cnnimageretrieval">CIR</a> <span class="bull"></span>
+							published in <a href="/pub/#C110">CVPR 2019</a> <span class="bull"></span>
+							2018-2019
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C110.cvpr19.spatial.svg"><img alt="dsm thumbnail" src="../data/pub/thumb/wide/conf/C110.cvpr19.spatial.svg"></a>
+							<div class="just">
+								<p>
+									DSM exploits the sparsity of convolutional activations to detect local features and provide spatial matching for image retrieval. Without modifying the network architecture or re-training, without even local descriptors or vocabularies, deep spatial matching sets a new state of the art in particular object retrieval with a compact representation. The code allows the reproduction of the results of our <a href="/pub/#C110">CVPR 2019 paper</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="sae"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-sae" id="tog-sae">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Smooth adversarial examples
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								H. Zhang
+								(<span class="pub-ref">advised by</span> T. Furon, L. Amsaleg, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">SAE</span>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-sae">
+						<div class="pub-ref">
+							<a href="https://www.tensorflow.org/">TensorFlow</a> <span class="bull"></span>
+							based on <a href="https://github.com/tensorflow/cleverhans">CleverHans</a>, <a href="https://github.com/carlini/nn_robust_attacks">C&W</a> <span class="bull"></span>
+							published in <a href="/pub/#J29">JIS 2020</a> <span class="bull"></span>
+							2018
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/journ/J29.jis20.smooth.svg"><img alt="sae thumbnail" src="../data/pub/thumb/wide/journ/J29.jis20.smooth.svg"></a>
+							<div class="just">
+								<p>
+									This is a particular form of photorealistic on-manifold adversarial examples that are actually more effective than ordinary off-manifold examples, despite the spatial constraints: our attack has the same probability of success at lower distortion. The perturbation is locally smooth on the flat areas of the input image, but it may be noisy on its textured areas and sharp across its edges. This operation relies on Laplacian smoothing, which we integrate in the attack pipeline. <span class="alrt">The code is not public yet.</span>
+								</p>
+								<p>
+									
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2017"></a>
+					2017
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="mom"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-mom" id="tog-mom">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Mining on manifolds
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								A. Iscen, G. Tolias
+								(<span class="pub-ref">advised by</span> O. Chum, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/gtolias/mom">MoM</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-mom">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a>, <a href="https://github.com/vlfeat/matconvnet">MatConvNet</a> <span class="bull"></span>
+							based on <a href="https://github.com/vadimkantorov/metriclearningbench">MLbench</a>, <a href="/code/#dlp">DLP</a> <span class="bull"></span>
+							published in <a href="/pub/#C108">CVPR 2018</a> <span class="bull"></span>
+							2017-2018
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C108.cvpr18.mom.png"><img alt="mom thumbnail" src="../data/pub/thumb/wide/conf/C108.cvpr18.mom.png"></a>
+							<div class="just">
+								<p>
+									MoM is one of the very few <i>self-supervised</i> metric learning methods. Building on findings of manifold similarity, it learns a representation space where Euclidean neighbors are determined according to manifold neighbors in the original feature space. It is applied to fine-grained classification as well as particular object retrieval.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="god"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-god" id="tog-god">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Graph-based object discovery
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								O. Siméoni, A. Iscen
+								(<span class="pub-ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">GOD</span>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-god">
+						<div class="pub-ref">
+							<a href="https://github.com/vlfeat/matconvnet">MatConvNet</a> <span class="bull"></span>
+							based on <a href="/code/#diffusion">Diffusion</a>, <a href="/code/#agm">AGM</a> <span class="bull"></span>
+							published in <a href="/pub/#C105">WACV 2018</a>, <a href="/pub/#J28">MVA 2019</a> <span class="bull"></span>
+							2017-2018
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C105.wacv18.disco.svg"><img alt="god thumbnail" src="../data/pub/thumb/wide/conf/C105.wacv18.disco.svg"></a>
+							<div class="just">
+								<p>
+									GOD captures discriminative patterns from regional CNN activations of an entire dataset, suppressing background clutter. A saliency measure is defined, based on a centrality measure of a nearest neighbor graph constructed from regional CNN representations of dataset images. Salient regions are then detected using an extended version of <a href="/code/#agm">expanding Gaussian mixture</a>. <span class="alrt">The code is not public yet.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2016"></a>
+					2016
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="diffusion"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-diffusion" id="tog-diffusion">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Diffusion for image retrieval
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								A. Iscen, G. Tolias
+								(<span class="pub-ref">advised by</span> O. Chum, T. Furon, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/ahmetius/diffusion-retrieval/">Diffusion</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-diffusion">
+						<div class="pub-ref">
+							Matlab <span class="bull"></span>
+							based on <a href="http://yael.gforge.inria.fr/">Yael</a> <span class="bull"></span>
+							published in <a href="/pub/#C103">CVPR 2017</a> <span class="bull"></span>
+							2016-2017
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C103.cvpr17.diffuse.png"><img alt="diffusion thumbnail" src="../data/pub/thumb/wide/conf/C103.cvpr17.diffuse.png"></a>
+							<div class="just">
+								<p>
+									Diffusion is a <a href="/pub/#C103">manifold search</a> method that uses a random walk on the nearest neighbor graph of a dataset. It has been extended to a <a href="/pub/#C106">spectral approach</a> and a <a href="/pub/#C109">hybrid variant</a> of the two for image retrieval. The code and data allows the reproduction of the results of our <a href="/pub/#C103">CVPR 2017 paper</a>. In particular, we provide the descriptors used and the necessary ground-truth files for mAP evaluation. We also make available the approximate $k$-NN graph computed off-line for large-scale datasets.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="parts"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-parts" id="tog-parts">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Part learning for visual recognition
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								R. Sicre
+								(<span class="pub-ref">advised by</span> T. Furon, E. Kijak, F. Jurie, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">Parts</span>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-parts">
+						<div class="pub-ref">
+							Matlab <span class="bull"></span>
+							published in <a href="/pub/#C102">CVPR 2017</a>, <a href="/pub/#C104">CEFRL/ICCV 2017</a> <span class="bull"></span>
+							2016-2017
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C102.cvpr17.uparts.svg"><img alt="parts thumbnail" src="../data/pub/thumb/wide/conf/C102.cvpr17.uparts.svg"></a>
+							<div class="just">
+								<p>
+									In image classification, it has been common to learn mid-level discriminative parts, even before deep learning. <a href="/pub/#C104">Discovery of discriminative parts</a> casts this as a quadratic assignment problem, allowing the use of a number of optimization algorithms on top of CNN representations. <a href="/pub/#C102">Unsupervised part learning</a> extends this work by dispensing the need for class labels during part learning. It is applied equally to classification and instance retrieval, bringing significant gains to both. <span class="alrt">The code is not public.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="pynet"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-pynet" id="tog-pynet">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							PyNet
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Avrithis
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/iavr/pynet">PyNet</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-pynet">
+						<div class="pub-ref">
+							Python <span class="bull"></span>
+							2016
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/pynet.svg"><img alt="pynet thumbnail" src="../data/code/thumb/wide/code/pynet.svg"></a>
+							<div class="just">
+								<p>
+									PyNet is a minimal Python library for dynamic automatic differentiation. The focus is on simplicity and it is meant to accompany the differentiation lecture of <a href="https://sif-dlv.github.io/">Deep Learning for Vision</a> course. It provides a tape-based automatic differentiation mechanism similar to that of <a href="https://pytorch.org/"><a href="https://pytorch.org/">PyTorch</a></a>, allowing dynamic computational graph creation in plain Python code, including loops, conditionals etc. The initial implementation has included both a CPU backend in NumPy and a GPU backend in <a href="https://github.com/NervanaSystems/neon">Neon</a>. This version includes only the CPU backend and is meant for educational purposes.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="lopq-prod"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-lopq-prod" id="tog-lopq-prod">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Locally optimized product quantization (Production version)
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								C. Melina, Y. Kalantidis
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/yahoo/lopq/">LOPQ-prod</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-lopq-prod">
+						<div class="pub-ref">
+							Python, Spark <span class="bull"></span>
+							based on <a href="/code/#lopq">LOPQ</a> <span class="bull"></span>
+							published in <a href="/pub/#C95">CVPR 2014</a> <span class="bull"></span>
+							2016-2017
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/lopq-prod.gif"><img alt="lopq-prod thumbnail" src="../data/code/thumb/wide/code/lopq-prod.gif"></a>
+							<div class="just">
+								<p>
+									This is a Python/Spark implementation of <a href="/code/#lopq">LOPQ</a>. On top of CNN features, it has been used to power <a href="https://yahooresearch.tumblr.com/post/158115871236/introducing-similarity-search-at-flick">image similarity search</a> on the entire <a href="https://www.flickr.com/">Flickr</a> collection.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2015"></a>
+					2015
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="iqm"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-iqm" id="tog-iqm">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Inverted-quantized $k$-means
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Avrithis
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/iavr/iqm">IQM</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-iqm">
+						<div class="pub-ref">
+							Matlab, C++ <span class="bull"></span>
+							based on <a href="/code/#agm">AGM</a>, <a href="http://yael.gforge.inria.fr/">Yael</a>, <a href="http://github.com/iavr/xio/">xio</a> <span class="bull"></span>
+							published in <a href="/pub/#C99">ICCV 2015</a> <span class="bull"></span>
+							2015
+							<div class="p">
+								<span class='struct'>E. Anagnostopoulos:</span> Framework and baselines for small-scale (1M) experiments. <br>
+								<span class='struct'>Y. Kalantidis:</span> Framework and baselines for large-scale (100M) experiments. This includes extraction of CNN features for the 100M collection using Caffe and a distributed $k$-means baseline implemented in Spark. <br>
+							</div>
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C099.iccv15.iqm.svg"><img alt="iqm thumbnail" src="../data/pub/thumb/wide/conf/C099.iccv15.iqm.svg"></a>
+							<div class="just">
+								<p>
+									IQM is an extremely efficient clustering algorithm operating on an extremely compressed data representation, for instance 26 bits/vector. It is a variant of $k$-means that quantizes vectors and uses inverted search from centroids to cells, while dynamically determining the number of clusters, following <a href="/code/#agm">AGM</a>. Using global CNN image representations, IQM scales up to clustering of a collection of 100M images in less than an hour on a single processor.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="geraf"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-geraf" id="tog-geraf">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							$k$-d Generalized Randomized Forests
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								G. Samaras
+								(<span class="pub-ref">advised by</span> I. Emiris, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/gsamaras/kd_GeRaF">GeRaF</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-geraf">
+						<div class="pub-ref">
+							C++ header-only <span class="bull"></span>
+							published in <a href="/pub/#C100">CGI 2016</a> <span class="bull"></span>
+							2015-2016
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C100.cgi16.geraf.svg"><img alt="geraf thumbnail" src="../data/pub/thumb/wide/conf/C100.cgi16.geraf.svg"></a>
+							<div class="just">
+								<p>
+									$k$-d GeRaF is a data structure and algorithm for approximate nearest neighbor search in high dimensions. It improves randomized forests by introducing new randomization techniques to specify a set of independently constructed trees where search is performed simultaneously, hence increasing accuracy. We omit backtracking, and we optimize distance computations.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2014"></a>
+					2014
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="ebd"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ebd" id="tog-ebd">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Early burst detection (Demo version)
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								M. Shi
+								(<span class="pub-ref">advised by</span> H. Jégou, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">EBD</span>
+							<a class="lnk mr2" href="mailto:yannis@avrithis.net"><i class="fal fa-at"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-ebd">
+						<div class="pub-ref">
+							Matlab <span class="bull"></span>
+							based on <a href="/code/#asmk">ASMK</a> <span class="bull"></span>
+							published in <a href="/pub/#C97">CVPR 2015</a> <span class="bull"></span>
+							2014
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C097.cvpr15.burst.svg"><img alt="ebd thumbnail" src="../data/pub/thumb/wide/conf/C097.cvpr15.burst.svg"></a>
+							<div class="just">
+								<p>
+									EBD is a compact representation for image retrieval. It explicitly detects visual bursts in an image at an early stage, using clustering in the descriptor space. The bursty groups are merged into meta-features, which are used as input to image search systems. It achieves compressing image representations by more than 90% without significant loss in performance. <span class="alrt">This is a demo version, available upon request.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2013"></a>
+					2013
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="lopq"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-lopq" id="tog-lopq">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Locally optimized product quantization (Demo version)
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Kalantidis
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/research/lopq/">LOPQ</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-lopq">
+						<div class="pub-ref">
+							published in <a href="/pub/#C95">CVPR 2014</a> <span class="bull"></span>
+							2013-2014
+							<div class="p">
+								<span class='struct'>Off-line learning:</span>
+								Matlab
+								<span class="bull"></span> based on <a href="http://yael.gforge.inria.fr/">Yael</a>
+								<br>
+								<span class='struct'>On-line search:</span>
+								Python, C++
+								<span class="bull"></span> based on <a href="/code/#ivl">ivl</a>
+								<br>
+							</div>
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C095.cvpr14.lopq.png"><img alt="lopq thumbnail" src="../data/pub/thumb/wide/conf/C095.cvpr14.lopq.png"></a>
+							<div class="just">
+								<p>
+									LOPQ a method for approximate nearest neighbor search that has remained state of the art for several years at a scale of one billion vectors. Leveraging the very same data structure that is used to provide non-exhaustive search, that is, inverted lists or a multi-index, the idea is to locally optimize an individual product quantizer per cell and use it to encode residuals. Local optimization is over rotation and space decomposition. This code is for demonstration only. Pre-computing projections for all queries is only done to facilitate parameter tuning and is suboptimal.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="asmk"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-asmk" id="tog-asmk">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Aggregated selective match kernel (Matlab version)
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								G. Tolias
+								(<span class="pub-ref">advised by</span> H. Jégou, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/research/asmk/">ASMK</a>
+							<a class="lnk mr2" href="https://github.com/gtolias/asmk"><i class="fab fa-github"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-asmk">
+						<div class="pub-ref">
+							Matlab <span class="bull"></span>
+							based on <a href="http://yael.gforge.inria.fr/">Yael</a> <span class="bull"></span>
+							published in <a href="/pub/#C93">ICCV 2013</a>, <a href="/pub/#J25">IJCV 2016</a> <span class="bull"></span>
+							2013
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C093.iccv13a.asmk.svg"><img alt="asmk thumbnail" src="../data/pub/thumb/wide/conf/C093.iccv13a.asmk.svg"></a>
+							<div class="just">
+								<p>
+									ASMK is a method for image search using local features and a combination of inverted files with compact binary descriptors. This model encompasses as special cases aggregated representations like VLAD and matching techniques such as Hamming Embedding. Making the bridge between these approaches, it takes the best of existing methods by combining an aggregation procedure with a selective match kernel. It has been a state of the art method before <a href="https://arxiv.org/abs/1404.1777">deep learning</a> and it also applies to <a href="https://arxiv.org/abs/2007.13172">CNN features</a>. The code allows the reproduction of the results of our <a href="/pub/#C93">ICCV 2013 paper</a> as well as part of the experiments of <a href="/code/#revop">revisited Oxford and Paris</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="drvq"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-drvq" id="tog-drvq">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Dimensionality-recursive vector quantization
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Avrithis
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/tools/drvq">DRVQ</a>
+							<a class="lnk mr2" href="https://github.com/iavr/drvq"><i class="fab fa-github"></i></a>
+							<a class="lnk mr2" href="https://sourceforge.net/projects/drvq/">
+								<img class="sf" src="//a.fsdn.com/con/img/sandiego/svg/originals/sf-icon-orange-no_sf.svg">
+							</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-drvq">
+						<div class="pub-ref">
+							C++ <span class="bull"></span>
+							based on <a href="/code/#ivl">ivl</a> <span class="bull"></span>
+							published in <a href="/pub/#C94">ICCV 2013</a> <span class="bull"></span>
+							2013
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C094.iccv13b.qc.svg"><img alt="drvq thumbnail" src="../data/pub/thumb/wide/conf/C094.iccv13b.qc.svg"></a>
+							<div class="just">
+								<p>
+									DRVQ is a fast vector quantization method in high-dimensional Euclidean spaces under arbitrary data distributions. It is an approximation of $k$-means that is practically constant in data size and applies to arbitrarily high dimensions but can only scale to a few thousands of centroids. As a by-product of training, a tree structure performs either exact or approximate quantization on trained centroids, the latter being not very precise but extremely fast. The combination of C++ recursive virtual functions for tree implementation with Matlab-like syntax for matrix operations has allowed fast prototyping, readable code and optimal performance in one piece of software.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="ivl2"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ivl2" id="tog-ivl2">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							ivl2
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Avrithis
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/iavr/ivl2">ivl2</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-ivl2">
+						<div class="pub-ref">
+							C++11 header-only <span class="bull"></span>
+							2013-2014
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/ivl2.png"><img alt="ivl2 thumbnail" src="../data/code/thumb/wide/code/ivl2.png"></a>
+							<div class="just">
+								<p>
+									ivl2 is an effort to re-design and re-implement <a href="/code/#ivl">ivl</a> in the C++11 language standard. In contrast to <a href="/code/#ivl">ivl</a>, which has targeted wide adoption, this is an experimental effort targeting exploitation of latest progress in the language to simplify its implementation and generalize its functionality and syntax. It makes full use of new features including variadic templates, template aliases, type inference, <i>rvalue</i> references and move semantics.
+								</p>
+								<p>
+									
+								</p>
+								<p>
+									Its design is centered around a small number of orthogonal concepts that can be combined in arbitrary ways to yield an extremely powerful syntax. Among others, it offers a unique extension of <a href="http://en.cppreference.com/w/cpp/header/type_traits">std::type_traits</a> and <a href="http://en.cppreference.com/w/cpp/utility/tuple">std::tuple</a>, going far beyond the standard design to support views, expression templates, algorithms, and a unique common interface to tuples and static/dynamic arrays. It generalizes C++ iterators and D <a href="http://dlang.org/phobos/std_range.html">ranges</a>. It overloads all C++ operators and functions to automatically support arbitrary combinations of scalars, arrays or tuples in an arbitrary number of arguments, which is not possible with <a href="/code/#ivl">ivl</a> or any C++98 code.
+								</p>
+								<p>
+									
+								</p>
+								<p>
+									ivl2 is a complex and abstract piece of software consisting of hundreds of source files. It offers a unique blend of features not currently available in any other library or language. It is written from scratch and the code is clean, organized and optimized.
+								</p>
+								<p>
+									
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2012"></a>
+					2012
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="symcity"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-symcity" id="tog-symcity">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Feature Selection by Symmetry
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								G. Tolias, Y. Kalantidis
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">SymCity</span>
+							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/symcity/"><i class="fal fa-home"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-symcity">
+						<div class="pub-ref">
+							C++ <span class="bull"></span>
+							based on <a href="/code/#hpm">HPM</a>, <a href="/code/#ivl">ivl</a> <span class="bull"></span>
+							published in <a href="/pub/#C90">ACM-MM 2012</a> <span class="bull"></span>
+							2012
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C090.acm12a.symcity.png"><img alt="symcity thumbnail" src="../data/pub/thumb/wide/conf/C090.acm12a.symcity.png"></a>
+							<div class="just">
+								<p>
+									To reduce the space required for the index in large scale search, several methods focus on feature selection based on multiple views. In practice however, most images are unique, in the sense that they depict a unique view of an object or scene in the dataset and there is nothing to compare to. SymCity selects features in such unique images by <i>self-similarity</i>. In effect, we detect repeating patterns or local symmetries and select the participating features. The method itself is a variant of <a href="/code/#hpm">HPM</a>, called <i>Hough pyramid self-matching</i> (HPSM) and maintains the same retrieval performance using only 20% of the required memory. <span class="alrt">The code is not public.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="hpm-int"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-hpm-int" id="tog-hpm-int">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Hough pyramid matching (Internal version)
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Avrithis
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">HPM-int</span>
+							<a class="lnk mr2" href="http://image.ntua.gr/iva/tools/hpm/"><i class="fal fa-home"></i></a>
+							<a class="lnk mr2" href="mailto:yannis@avrithis.net"><i class="fal fa-at"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-hpm-int">
+						<div class="pub-ref">
+							C++ <span class="bull"></span>
+							based on <a href="/code/#hpm">HPM</a>, <a href="https://opencv.org/">OpenCV</a> <span class="bull"></span>
+							published in <a href="/pub/#C89">ICCV 2011</a>, <a href="/pub/#J22">IJCV 2014</a> <span class="bull"></span>
+							2012
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/hpm-int.svg"><img alt="hpm-int thumbnail" src="../data/code/thumb/wide/code/hpm-int.svg"></a>
+							<div class="just">
+								<p>
+									This is an internal version of <a href="/code/#hpm">HPM</a>. The dependence on <a href="/code/#ivl">ivl</a> has been removed and the code has been integrated with <a href="https://opencv.org/">OpenCV</a> data structures for local features. <span class="alrt">It is available upon request.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2011"></a>
+					2011
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="agm-prod"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-agm-prod" id="tog-agm-prod">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Approximate Gaussian mixture (Production version)
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Kalantidis
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">AGM-prod</span>
+							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/agm/"><i class="fal fa-home"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-agm-prod">
+						<div class="pub-ref">
+							C++ <span class="bull"></span>
+							based on <a href="/code/#ivl">ivl</a>, <a href="http://www.cs.ubc.ca/research/flann/">FLANN</a> <span class="bull"></span>
+							published in <a href="/pub/#C91">ECCV 2012</a> <span class="bull"></span>
+							2011-2012
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/agm-prod.svg"><img alt="agm-prod thumbnail" src="../data/code/thumb/wide/code/agm-prod.svg"></a>
+							<div class="just">
+								<p>
+									This is the production version of <a href="/code/#agm">AGM</a>, allowing the reproduction of the results of our <a href="/pub/#C91">ECCV 2012 paper</a>. <span class="alrt">The code is not public.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="agm"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-agm" id="tog-agm">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Approximate Gaussian mixture (Demo version)
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Avrithis
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/research/agm/">AGM</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-agm">
+						<div class="pub-ref">
+							Matlab <span class="bull"></span>
+							published in <a href="/pub/#C91">ECCV 2012</a> <span class="bull"></span>
+							2011-2012
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C091.eccv12a.agm.png"><img alt="agm thumbnail" src="../data/pub/thumb/wide/conf/C091.eccv12a.agm.png"></a>
+							<div class="just">
+								<p>
+									AGM is a clustering method that combines the flexibility of Gaussian mixtures with the scaling properties needed to construct large visual vocabularies for image retrieval. The algorithm can dynamically estimate the number of clusters, which is referred to as <i>expanding Gaussian mixture</i> (EGM). It also provides significant speed-up by employing approximate nearest neighbor search in assigning points to clusters, which is referred to as <i>approximate Gaussian mixture</i> (AGM). This is a demo version on a toy 2D example. The production version is not public.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2010"></a>
+					2010
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="scene-maps"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-scene-maps" id="tog-scene-maps">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Scene maps
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Kalantidis, E. Spyrou, G. Tolias
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">Scene-maps</span>
+							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/scene_maps/"><i class="fal fa-home"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-scene-maps">
+						<div class="pub-ref">
+							C++ <span class="bull"></span>
+							based on <a href="/code/#ivl">ivl</a>, <a href="http://sourceforge.net/projects/lpsolve/">LPSolve</a> <span class="bull"></span>
+							published in <a href="/pub/#C86">ACM-MM 2010</a>, <a href="/pub/#J19">MTAP 2011</a> <span class="bull"></span>
+							2010-2011
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/scene-maps.png"><img alt="scene-maps thumbnail" src="../data/code/thumb/wide/code/scene-maps.png"></a>
+							<div class="just">
+								<p>
+									<i>Scene maps</i> refers to a representation of image collections used for <a href="/pub/#C86">large scale image search and mining</a>, and applied to <a href="/pub/#J19">location and landmark recognition</a>. Starting from a geo-tagged dataset, we first group images geographically and then visually, where each visual cluster is assumed to depict different views of the the same scene. We align all views to one reference image and construct a 2D <i>scene map</i> by preserving details from all images while discarding repeating visual features. A scene map thus collectively represents a scene as seen from different viewpoints. The indexing, retrieval and spatial matching scheme then operates directly on scene maps. All clustering operations are based on <i>kernel vector quantization</i> (KVQ). <span class="alrt">The code is not public.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2009"></a>
+					2009
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="fmh-prod"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-fmh-prod" id="tog-fmh-prod">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Feature map hashing/similarity (Production version)
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								G. Tolias, Y. Kalantidis
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">FMH-prod</span>
+							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/feature_map_hashing"><i class="fal fa-home"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-fmh-prod">
+						<div class="pub-ref">
+							C++ <span class="bull"></span>
+							based on <a href="/code/#ivl">ivl</a>, <a href="/code/#fmh">FMH</a> <span class="bull"></span>
+							published in <a href="/pub/#C85">ACM-MM 2010</a>, <a href="/pub/#J23">CVIU 2014</a> <span class="bull"></span>
+							2009-2012
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C085.acm-mm10b.fmh.jpg"><img alt="fmh-prod thumbnail" src="../data/pub/thumb/wide/conf/C085.acm-mm10b.fmh.jpg"></a>
+							<div class="just">
+								<p>
+									This is the production version of <a href="/code/#fmh">FMH</a>. <span class="alrt">The code is not public.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="fmh"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-fmh" id="tog-fmh">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Feature map hashing/similarity (Demo version)
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Avrithis
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">FMH</span>
+							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/feature_map_hashing"><i class="fal fa-home"></i></a>
+							<a class="lnk mr2" href="mailto:yannis@avrithis.net"><i class="fal fa-at"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-fmh">
+						<div class="pub-ref">
+							Matlab <span class="bull"></span>
+							published in <a href="/pub/#C85">ACM-MM 2010</a>, <a href="/pub/#J23">CVIU 2014</a> <span class="bull"></span>
+							2009
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/fmh.svg"><img alt="fmh thumbnail" src="../data/code/thumb/wide/code/fmh.svg"></a>
+							<div class="just">
+								<p>
+									<a href="/pub/#C85">FMH</a> is a method for image indexing and retrieval, which integrates appearance with global image geometry in the indexing process, while enjoying robustness against viewpoint change, photometric variations, occlusion, and background clutter. To handle its increased memory requirements, hashing has been subsequently substituted with an automated and unsupervised feature selection model, leading to <a href="/pub/#J23">feature map similarity (FMS)</a>. This version is a prototype of the original idea on a toy 2D example. <span class="alrt">It is available upon request.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2008"></a>
+					2008
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="sfd"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-sfd" id="tog-sfd">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Spatiotemporal feature detector
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								K. Rapantzikos
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<span class="empty but mr">SFD</span>
+							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/spatiotemporal_feature_detection"><i class="fal fa-home"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-sfd">
+						<div class="pub-ref">
+							Matlab <span class="bull"></span>
+							published in <a href="/pub/#C83">CVPR 2009</a>, <a href="/pub/#J20">CC 2011</a>, <a href="/pub/#J21">TMM 2013</a> <span class="bull"></span>
+							2008-2009
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/sfd.svg"><img alt="sfd thumbnail" src="../data/code/thumb/wide/code/sfd.svg"></a>
+							<div class="just">
+								<p>
+									This is a local feature detector originally applied to <a href="/pub/#C83">action recognition</a> and then to <a href="/pub/#J20">salient event detection</a> and <a href="/pub/#J21">movie summarization</a>. It uses a multi-scale volumetric representation of the video and involves spatiotemporal operations at the voxel level. Saliency is computed by a global minimization process constrained by pure volumetric constraints, each of them being related to an informative visual aspect, namely spatial proximity, scale and feature similarity (intensity, color, motion). Points are selected as the extrema of the saliency response and prove to balance well between density and informativeness. <span class="alrt">The code is not public.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2007"></a>
+					2007
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="ivl"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ivl" id="tog-ivl">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							ivl
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								K. Kontosis, N. Skalkotos, S. Nathanail
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/ivl/">ivl</a>
+							<a class="lnk mr2" href="http://image.ntua.gr/iva/tools/ivl"><i class="fal fa-home"></i></a>
+							<a class="lnk mr2" href="https://github.com/cpplibivl/ivl"><i class="fab fa-github"></i></a>
+							<a class="lnk mr2" href="https://sourceforge.net/projects/ivl/">
+								<img class="sf" src="//a.fsdn.com/con/img/sandiego/svg/originals/sf-icon-orange-no_sf.svg">
+							</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-ivl">
+						<div class="pub-ref">
+							C++ <span class="bull"></span>
+							2007-2013
+							<div class="p">
+								<span class='struct'>2007:</span> S. Nathanail <br>
+								<span class='struct'>2008:</span> N. Skalkotos <br>
+								<span class='struct'>2009-2013:</span> K. Kontosis <br>
+							</div>
+							<div class="p">
+								<span class='struct'>ivl-lina:</span>
+								N. Skalkotos <span class="bull"></span>
+								Linear algebra (<a href="http://netlib.org/lapack/">LAPACK</a>)
+								<span class="bull"></span> 2008
+								<br>
+								<span class='struct'>ivl-cv:</span>
+								K. Kontosis <span class="bull"></span>
+								Computer vision (<a href="https://opencv.org/">OpenCV</a>)
+								<span class="bull"></span> 2009-2010
+								<br>
+								<span class='struct'>ivl-qt:</span>
+								K. Kontosis <span class="bull"></span>
+								GUI (<a href="https://qt-project.org/">Qt</a>)
+								<span class="bull"></span> 2011-2012
+								<br>
+							</div>
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/ivl.svg"><img alt="ivl thumbnail" src="../data/code/thumb/wide/code/ivl.svg"></a>
+							<div class="just">
+								<p>
+									ivl a full-header template C++98 general purpose library with convenient and powerful syntax. It extends C++ syntax towards mathematical notation, while making use of language features like classes, functions, operators, templates and type safety. It allows simple and expressive statements, while taking care of the underlying representation and optimization. Often resembling a new language, it targets abstract, concise, readable, yet efficient code. It supports the principle that <i>the path from theory through rapid prototyping to production quality software should be as short as possible</i>. In fact, the actual code should not differ much from pseudocode.
+								</p>
+								<p>
+									
+								</p>
+								<p>
+									ivl features static and dynamic arrays, ranges, tuples, matrices, images and function objects supporting multiple return arguments, left/right overloading, function pipelining and vectorization, expression templates, automatic lazy evaluation, and dynamic multi-threading. Other features include sub-arrays and other lazy views of one- or multi-dimensional arrays and tuples, STL-compatible and multidimensional iterators, and extended compound operators. It is easy to use, with most syntax being self explanatory. It is fully optimized, with minimal or no runtime overhead, no temporaries or copies, and with most expressions boiling down to a single <i>for</i> loop.
+								</p>
+								<p>
+									
+								</p>
+								<p>
+									ivl <i>core</i> is a header-only library, with no need for separate linking. It is fully template, supporting user-defined types. Separate modules are available that smoothly integrate with <a href="http://netlib.org/lapack/">LAPACK</a>, <a href="https://opencv.org/">OpenCV</a> and <a href="http://qt-project.org/">Qt</a> for linear algebra, computer vision and GUI respectively. In each case, ivl shares its data representation with the underlying external library and combines its convenient syntax with a rich collection of software. Separate linking is needed for the modules used, since external libraries are not template.
+								</p>
+								<p>
+									
+								</p>
+								<p>
+									The library is available as open source under a dual LGPL3.0 and GPL2.0 license at <a href="https://sourceforge.net/projects/ivl/">SourceForge</a> and at its dedicated <a href="http://image.ntua.gr/ivl/">web site</a>, which includes extended examples and documentation. A unique article <a href="http://image.ntua.gr/ivl/files/ivl-by-example.pdf">ivl by example</a> explains in less than eight pages how to build a <i>randomized decision forest classifier</i> from scratch with ivl, including the complete code of just 120 lines. The article and code behave like one entity, as in <a href="http://en.wikipedia.org/wiki/Literate_programming">literate programming</a>.
+								</p>
+								<p>
+									
+								</p>
+								<p>
+									Over the years, ivl has been influenced by several C++ numerical libraries, for instance <a href="http://eigen.tuxfamily.org/">Eigen</a>, or <a href="http://www.boost.org/doc/libs/1_49_0/libs/multi_array/">Boost.Multi-Array</a> and <a href="http://www.boost.org/doc/libs/1_49_0/libs/tuple/">Boost.Tuple</a> for data representation and manipulation. At a more foundational level, it includes its own <i>template metaprogramming</i> library similar to <a href="http://www.boost.org/doc/libs/1_50_0/libs/mpl/doc/">Boost.MPL</a>, heavily used for code optimization. A great motivation has been the Matlab language syntax, and in this sense a related project is <a href="http://arma.sourceforge.net/">Armadillo</a>. Most of this syntax is supported, without the computational overhead and other known issues. In fact, ivl provides a unique integration of all the above functionalities.
+								</p>
+								<p>
+									
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="pub">
+					<a class="anchor" id="app"></a>
+					Applications
+				</h1>
+				<h2 class="pub rule">
+					<a class="anchor" id="app-2008"></a>
+					2008
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="viral"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-viral" id="tog-viral">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Visual Image Retrieval and Localization
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Kalantidis, G. Tolias, M. Phinikettos, E. Spyrou, P. Mylonas
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://viral.image.ntua.gr/">VIRaL</a>
+							<a class="lnk mr2" href="http://image.ntua.gr/iva/tools/viral"><i class="fal fa-home"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-viral">
+						<div class="pub-ref">
+							based on <a href="https://www.flickr.com/">Flickr</a> <span class="bull"></span>
+							published in <a href="/pub/#C86">ACM-MM 2010</a>, <a href="/pub/#J19">MTAP 2011</a> <span class="bull"></span>
+							2008-2012
+							<div class="p">
+								<span class='struct'>Application interface:</span>
+								M. Phinikettos <span class="bull"></span>
+								PHP, Javascript
+								<span class="bull"></span> 2008-2012
+								<br>
+								<span class='struct'>Core search engine:</span>
+								Y. Kalantidis, G. Tolias <span class="bull"></span>
+								C++
+								<span class="bull"></span> 2008-2012
+								<br>
+								<span class='struct'>Explore/Routes:</span>
+								Y. Kalantidis, G. Tolias <span class="bull"></span>
+								C++, PHP, Javascript
+								<span class="bull"></span> based on <a href="/code/#scene-maps">Scene-maps</a>
+								<span class="bull"></span> 2011
+								<br>
+							</div>
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/app/viral.png"><img alt="viral thumbnail" src="../data/code/thumb/wide/app/viral.png"></a>
+							<div class="just">
+								<p>
+									VIRaL is a visual search engine available online since 2008. The query is an image, either uploaded, fetched from a given URL, or chosen from the its database. Given this single image, it retrieves visually similar images and estimates its location on the map. It also suggests tags that may be attached to the query image, identifies known landmarks or points of interest, and provides links to relevant Wikipedia articles. Its database contains 2.7M <a href="https://www.flickr.com/">Flickr</a> images from 43 cities in the world. It is able to recognize tens of thousands of landmarks.
+								</p>
+								<p>
+									
+								</p>
+								<p>
+									Additional applications enhance its user experience. <a href="http://viral.image.ntua.gr/?explore">VIRaL Explore</a> enables browsing of the entire VIRaL image collection on the world map. Starting in a given city or at any zoom level on the map, it places icons corresponding to grouped photos, along with landmark names and Wikipedia links, if applicable. Photos are grouped off-line according to whether they depict the same object, building, or scene, and most popular groups are shown on the map, according to zoom level. <a href="http://viral.image.ntua.gr/?routes">VIRaL Routes</a> offers a unique browsing experience of personal photo collections. Collections are processed off-line to identify where they were taken and group them by scene; a route is then constructed on the map, showing icons of visited places.
+								</p>
+								<p>
+									
+								</p>
+								<p>
+									VIRaL targets general public to demonstrate results of our research. It has been disseminated in several technical and wide-audience venues. It is a unique application, and one of the very few non-commercial CBIR engines listed by <a href="http://en.wikipedia.org/wiki/List_of_CBIR_engines">Wikipedia</a> that is really operating online.
+								</p>
+								<p>
+									
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="pub">
+					<a class="anchor" id="bin"></a>
+					Binaries
+				</h1>
+				<h2 class="pub rule">
+					<a class="anchor" id="bin-2011"></a>
+					2011
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="wash"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-wash" id="tog-wash">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Weighted alpha-shapes
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								C. Varytimidis
+								(<span class="pub-ref">advised by</span> K. Rapantzikos, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/research/wash/">WaSH</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-wash">
+						<div class="pub-ref">
+							C++ <span class="bull"></span>
+							based on <a href="https://opencv.org/">OpenCV</a>, <a href="http://www.cgal.org/">CGAL</a>, <a href="http://www.boost.org/">Boost</a> <span class="bull"></span>
+							published in <a href="/pub/#C92">ECCV 2012</a>, <a href="/pub/#C96">ACCV 2014</a>, <a href="/pub/#J25">IJCV 2016</a> <span class="bull"></span>
+							2011-2012
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C092.eccv12b.wash.png"><img alt="wash thumbnail" src="../data/pub/thumb/wide/conf/C092.eccv12b.wash.png"></a>
+							<div class="just">
+								<p>
+									WaSH is a local feature detector. Given an input image, it computes a list of detected features, optionally with descriptors. It begins from sampled edges and is based on shape stability measures across the <i>weighted $\alpha$-filtration</i>, a computational geometry construction that captures the shape of a non-uniform set of points. Detected features are blob-like and include non-extremal regions as well as regions determined by cavities of boundary shape.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="bin-2010"></a>
+					2010
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="hpm"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-hpm" id="tog-hpm">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Hough pyramid matching (Public version)
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								G. Tolias
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/tools/hpm/">HPM</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-hpm">
+						<div class="pub-ref">
+							C++ <span class="bull"></span>
+							based on <a href="/code/#ivl">ivl</a> <span class="bull"></span>
+							published in <a href="/pub/#C89">ICCV 2011</a>, <a href="/pub/#J22">IJCV 2014</a> <span class="bull"></span>
+							2010-2011
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C089.iccv11a.hpm.png"><img alt="hpm thumbnail" src="../data/pub/thumb/wide/conf/C089.iccv11a.hpm.png"></a>
+							<div class="just">
+								<p>
+									HPM is a spatial matching method applied to geometry re-ranking for large scale search. It is based on a relaxed spatial matching model, which applies pyramid matching to the Hough transformation space. It is invariant to similarity transformations and free of inlier-count verification. It imposes one-to-one mapping and is flexible, allowing non-rigid motion and multiple matching surfaces or objects. It is linear in the number of correspondences and extremely fast in practice.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="bin-2009"></a>
+					2009
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="mfd"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-mfd" id="tog-mfd">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Medial feature detector
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Avrithis
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/tools/mfd/">MFD</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-mfd">
+						<div class="pub-ref">
+							C++ <span class="bull"></span>
+							based on <a href="/code/#ivl">ivl</a>, <a href="https://opencv.org/">OpenCV</a>, <a href="http://www.robots.ox.ac.uk/~vgg/research/affine/det_eval_files/extract_features2.tar.gz">VGG Affine Features</a> <span class="bull"></span>
+							published in <a href="/pub/#C88">ICCV 2011</a> <span class="bull"></span>
+							2009-2011
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C088.iccv11b.mfd.svg"><img alt="mfd thumbnail" src="../data/pub/thumb/wide/conf/C088.iccv11b.mfd.svg"></a>
+							<div class="just">
+								<p>
+									MFD is a local feature detector. Given an input image, it gives access to all intermediate results including a (weighted) <i>distance transform</i>, (weighted) <i>medial axis</i>, an <i>image partition</i> generalizing topological watershed, and the detected features with optional descriptors using the <a href="http://www.robots.ox.ac.uk/~vgg/research/affine/">VGG software</a>. MFD also provides detailed statistics through several commands and options, including interactive visualization and debugging. It can operate in batch mode, optionally recursing subfolders. It has a special mode for binary images providing faster implementation, useful for binary distance transform and medial axis. In this case it also offers sub-pixel accuracy. The code is highly optimized, with running times in the order of 0.5 seconds for an image of 1Mpixel. A 15-page <a href="http://image.ntua.gr/iva/tools/mfd/mfd.0.6.pdf">documentation</a> is provided.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="pub">
+					<a class="anchor" id="data"></a>
+					Data
+				</h1>
+				<h2 class="pub rule">
+					<a class="anchor" id="data-2017"></a>
+					2017
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="revop"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-revop" id="tog-revop">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Revisiting Oxford and Paris
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								F. Radenovic, A. Iscen
+								(<span class="pub-ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/filipradenovic/revisitop/">RevOP</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-revop">
+						<div class="pub-ref">
+							Matlab, Python <span class="bull"></span>
+							based on <a href="https://www.robots.ox.ac.uk/~vgg/data/oxbuildings/">Oxford5k</a>, <a href="https://www.robots.ox.ac.uk/~vgg/data/parisbuildings/">Paris6k</a> <span class="bull"></span>
+							published in <a href="/pub/#C107">CVPR 2018</a> <span class="bull"></span>
+							2017
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/data/revop.png"><img alt="revop thumbnail" src="../data/code/thumb/wide/data/revop.png"></a>
+							<div class="just">
+								<p>
+									RevOP is an image retrieval benchmark. It is the result of revisiting the two most popular image retrieval datasets, <a href="https://www.robots.ox.ac.uk/~vgg/data/oxbuildings/">Oxford5k</a> and <a href="https://www.robots.ox.ac.uk/~vgg/data/parisbuildings/">Paris6k</a>. We provide new annotation for both datasets with an extra attention to the reliability of the ground truth. All co-authors have independently annotated the entire dataset; the final annotation is the result of merging all individual contributions with an automated voting process. We introduce 15 new, more difficult queries per dataset and update the evaluation protocol by introducing three new settings of varying difficulty. We also create a new set of one million challenging distractors. The package includes Matlab and Python code to download and process the data and evaluate results on the new benchmark.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="data-2016"></a>
+					2016
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="instre2"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-instre2" id="tog-instre2">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Instance retrieval benchmark 2
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								A. Iscen
+								(<span class="pub-ref">advised by</span> G. Tolias, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="ftp://ftp.irisa.fr/local/texmex/corpus/instre/">INSTRE2</a>
+							<a class="lnk mr2" href="ftp://ftp.irisa.fr/local/texmex/corpus/instre/readme.htm"><i class="fal fa-home"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-instre2">
+						<div class="pub-ref">
+							based on <a href="https://doi.org/10.1145/2700292">INSTRE</a> <span class="bull"></span>
+							published in <a href="/pub/#C103">CVPR 2017</a> <span class="bull"></span>
+							2016
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/data/instre2.png"><img alt="instre2 thumbnail" src="../data/code/thumb/wide/data/instre2.png"></a>
+							<div class="just">
+								<p>
+									This is a new version of the <a href="https://doi.org/10.1145/2700292">INSTRE benchmark</a> for instance-level object retrieval and recognition. It has been developed as part of our work on <a href="/pub/#C102">diffusion</a>. In particular, we are re-hosting the dataset at <a href="ftp://ftp.irisa.fr/local/texmex/corpus/instre/">Inria</a> because the original version is unavailable, we introduce a new evaluation protocol that is in line with other well known datasets and we provide a rich set of baselines to facilitate comparisons.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="data-2011"></a>
+					2011
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="logos27"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-logos27" id="tog-logos27">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Flickr Logos 27
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Kalantidis, LG. Pueyo, M. Trevisiol
+								(<span class="pub-ref">advised by</span> R. van Zwol, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/flickr_logos/">Logos27</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-logos27">
+						<div class="pub-ref">
+							based on <a href="https://www.flickr.com/groups/identitydesign/">Flickr Identity + Logo Design</a> <span class="bull"></span>
+							published in <a href="/pub/#C87">ICMR 2011</a> <span class="bull"></span>
+							2011
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C087.icmr11.logo.png"><img alt="logos27 thumbnail" src="../data/pub/thumb/wide/conf/C087.icmr11.logo.png"></a>
+							<div class="just">
+								<p>
+									This is an annotated logo dataset downloaded from <a href="https://flickr.com/">Flickr</a> group <a href="https://www.flickr.com/groups/identitydesign/">Identity + Logo Design</a> and contains more than 4000 logo classes/brands in total. It consists of a training, a distractor and a query set, containing respectively 810 images with bounding boxes labeled into 27 classes, 4207 logo images/classes depicting clean logos and 270 images, half of which are annotated into 27 training classes and the other half do not depict logos.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="wc2m"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-wc2m" id="tog-wc2m">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							World Cities 2M
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								G. Tolias
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/wc/">WC2M</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-wc2m">
+						<div class="pub-ref">
+							based on <a href="https://flickr.com/">Flickr</a> <span class="bull"></span>
+							published in <a href="/pub/#C89">ICCV 2011</a> <span class="bull"></span>
+							2011
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/data/wc2m.png"><img alt="wc2m thumbnail" src="../data/code/thumb/wide/data/wc2m.png"></a>
+							<div class="just">
+								<p>
+									WC2M Consists of 2.2M geo-tagged images from 40 cities, crawled from <a href="https://flickr.com/">Flickr</a> using geographic queries covering a window of each city center. It is meant to be used as a distractor set along with any annotated test set for image retrieval. It also includes the test set of <a href="/code/#ec1m">EC1M</a> dataset and is a superset of both <a href="/code/#ec1m">EC1M</a> and <a href="/code/#ec50k">EC50k</a>. The dataset is challenging because both the test set and the distractors mostly depict urban scenery.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					<a class="anchor" id="data-2010"></a>
+					2010
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="ec1m"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ec1m" id="tog-ec1m">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							European Cities 1M
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								Y. Kalantidis, G. Tolias
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/ec1m/">EC1M</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-ec1m">
+						<div class="pub-ref">
+							based on <a href="https://flickr.com/">Flickr</a> <span class="bull"></span>
+							published in <a href="/pub/#C86">ACM-MM 2010</a> <span class="bull"></span>
+							2010
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/data/ec1m.png"><img alt="ec1m thumbnail" src="../data/code/thumb/wide/data/ec1m.png"></a>
+							<div class="just">
+								<p>
+									EC1M Consists of 909k geo-tagged images from 22 European cities, crawled from <a href="https://flickr.com/">Flickr</a> using geographic queries covering a window of each city center. A subset of 1,081 images from Barcelona is annotated into 35 groups depicting the same scene; 17 of the groups are landmark scenes and 18 are non-landmark. Annotation is based respectively on tags and visual search / manual clean-up. In total, 157 of those images are defined as queries (up to 5 per group). Images of the remaining 21 cities are used as distractors. Most depict urban scenery like the ground-truth, making a challenging distractor dataset.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="ec50k"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ec50k" id="tog-ec50k">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							European Cities 50k
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								G. Tolias, Y. Kalantidis
+								(<span class="pub-ref">advised by</span> Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/ec50k/">EC50k</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-ec50k">
+						<div class="pub-ref">
+							based on <a href="https://flickr.com/">Flickr</a> <span class="bull"></span>
+							published in <a href="/pub/#C85">ACM-MM 2010</a> <span class="bull"></span>
+							2010
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/data/ec50k.jpg"><img alt="ec50k thumbnail" src="../data/code/thumb/wide/data/ec50k.jpg"></a>
+							<div class="just">
+								<p>
+									EC50k consists of 50,767 geo-tagged images from 14 European cities, crawled from <a href="https://flickr.com/">Flickr</a> using geographic queries covering a window of each city center. A subset of 778 images from 9 cities are annotated into 20 groups depicting the same scene. Annotation is based on tags and visual search / manual clean-up. In total, 100 of those images are defined as queries (5 per group). Images of the remaining 5 cities are used as distractors. Most depict urban scenery like the ground-truth, making a challenging distractor dataset.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</main>
+
+	</div>
+</div>
+
+	</body>
+</html>
