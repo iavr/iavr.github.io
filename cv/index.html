@@ -181,7 +181,7 @@
 					<i class="far fa-file-pdf2"></i>
 					<div class="cv-ref">
 						Last updated:
-						Jul 05, 2021
+						Jul 22, 2021
 					</div>
 				</a>
 				<h1 class="cv rule">
@@ -1641,7 +1641,27 @@
 						<div class="cv-title">
 							Phillip Bellos
 						</div>
-						Semi-Supervised Learning
+						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-msc-2021-bellos">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Iterative Label Cleaning for Semi-Supervised Learning
+						</a>
+						<a class="lnk" href="../data/cv/pdf/msc/2021.bellos.pdf"><i class="far fa-file-pdf2 pdf-icon"></i></a>
+						<div class="collapse" id="col-msc-2021-bellos">
+							<div class="cv-detail just">
+								<p>
+									Deep neural networks have become the de facto model for computer vision applications. Their success is partially attributable to their scalability, i.e., the empirical observation that training them on larger datasets produces better performance. Deep networks often achieve their strong performance through supervised learning, which requires a labeled dataset. The performance benefit conferred by the use of a larger dataset can therefore come at a significant cost, since labeling data often requires human labor. This cost can be extraordinary when labeling must be done by an expert.
+								</p>
+								<p>
+									A powerful approach for training models on a large amount of data without requiring a large amount of labels is semi-supervised learning (SSL). SSL mitigates the requirement for labeled data by providing a means of leveraging unlabeled data. Since unlabeled data can often be obtained with minimal human labor, any performance boost conferred by SSL often comes with low cost. This has led to a plethora of SSL methods that are designed for deep networks.
+								</p>
+								<p>
+									In this thesis, we propose two methods that combine successful ideas in problems related to our task at hand. In particular, we propose CleanMatch and WeightMatch, two new semi-supervised learning methods that unify dominant approaches and address their limitations. CleanMatch consists of two stages: (1) iterative selection of the most confident pseudo-labels provided by a combination of consistency regularization and pseudo-labeling, following FixMatch; and (2) augmentation of the labeled set with the selected examples of the first stage and semi-supervised training, using FixMatch on the augmented dataset. WeightMatch estimates a weight reflecting the confidence of each labeled example, forcing the model to rely more on the confident ones during training.
+								</p>
+								<p>
+									Our methods achieve state-of-the-art performance on multiple datasets. They achieve substantial accuracy improvements on label-scarce versions of CIFAR-10, SVHN and CIFAR-100. 
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="row cv-row">
