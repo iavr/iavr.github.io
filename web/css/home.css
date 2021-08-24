@@ -146,8 +146,8 @@
 	color: rgba(0,0,0,.85);
 }
 .side-nav a.active, .side-nav a.active:hover {
-	font-weight: 400;
-	color: rgba(0,0,0,.85);
+/* 	font-weight: 400; */
+	color: rgba(0,0,0,1);
 	background-color: rgba(0,0,0,.1);
 }
 #cv .side-nav a {
@@ -401,6 +401,10 @@ h1 .anchor, h2 .anchor {
 /* symbols/icons */
 /* ----------------------------------------------------------*/
 
+.icon-in {
+	margin-left: .2em;
+	margin-right: .2em;
+}
 .icon {
 	display: inline-block;
 	text-align: center;
@@ -731,7 +735,8 @@ h1.time {
 	margin-top: 25px;
 	margin-bottom: 10px;
 }
-.t-pub    { background-color: rgba(  0, 80,200,.3); }
+.t-member { background-color: rgba(100,100, 60,.3); }
+.t-job    { background-color: rgba(240, 20, 20,.3); }
 .t-teach  { background-color: rgba(240,100,  0,.3); }
 .t-talk   { background-color: rgba(180,  0,120,.3); }
 .t-phd    { background-color: rgba(120, 60,  0,.3); }
@@ -744,10 +749,12 @@ h1.time {
 .t-eval   { background-color: rgba(120, 20,200,.3); }
 .t-edit   { background-color: rgba(120, 20,200,.3); }
 .t-conf   { background-color: rgba(120, 20,200,.3); }
-.t-job    { background-color: rgba(240, 20, 20,.3); }
-.t-member { background-color: rgba(100,100, 60,.3); }
+.t-work   { background-color: rgba(120, 20,200,.3); }
+.t-pub    { background-color: rgba(  0, 80,200,.3); }
+.t-code   { background-color: rgba(200,200,  0,.3); }
 
-a.t-pub:hover    { background-color: rgba(  0, 80,200,.6); }
+a.t-member:hover { background-color: rgba(100,100, 60,.6); }
+a.t-job:hover    { background-color: rgba(240, 20, 20,.6); }
 a.t-teach:hover  { background-color: rgba(240,100,  0,.6); }
 a.t-talk:hover   { background-color: rgba(180,  0,120,.6); }
 a.t-phd:hover    { background-color: rgba(120, 60,  0,.6); }
@@ -760,8 +767,9 @@ a.t-jury:hover   { background-color: rgba(120, 20,200,.6); }
 a.t-eval:hover   { background-color: rgba(120, 20,200,.6); }
 a.t-edit:hover   { background-color: rgba(120, 20,200,.6); }
 a.t-conf:hover   { background-color: rgba(120, 20,200,.6); }
-a.t-job:hover    { background-color: rgba(240, 20, 20,.6); }
-a.t-member:hover { background-color: rgba(100,100, 60,.6); }
+a.t-work:hover   { background-color: rgba(120, 20,200,.6); }
+a.t-pub:hover    { background-color: rgba(  0, 80,200,.6); }
+a.t-code:hover   { background-color: rgba(200,200,  0, 1); }
 
 
 /* buttons */

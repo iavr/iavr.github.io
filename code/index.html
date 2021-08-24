@@ -69,7 +69,7 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link p-2" href="https://dblp.org/pers/hd/a/Avrithis:Yannis">
-						<i class="fab fa-dblp" data-fa-transform="grow-32 down-14 right-12"></i>
+						<i class="faa fa-dblp" data-fa-transform="grow-32 down-14 right-12"></i>
 					</a>
 				</li>
 				<li class="nav-item">
@@ -101,9 +101,11 @@
 					<div class="toc-item">
 						<a class="rel toggle" data-toggle="collapse" href="#code-col">
 							<i class="left-60 tog far fa-chevron-down"></i>
+							<span class="icon-in"><i class="fal fa-gears"></i></span>
 							Code
 						</a>
 						<div class="collapse show nav side-nav" id="code-col">
+							<a class="nav-link" href="#code-2021">2021</a>
 							<a class="nav-link" href="#code-2020">2020</a>
 							<a class="nav-link" href="#code-2019">2019</a>
 							<a class="nav-link" href="#code-2018">2018</a>
@@ -123,6 +125,7 @@
 					<div class="toc-item">
 						<a class="rel toggle" data-toggle="collapse" href="#app-col">
 							<i class="left-60 tog far fa-chevron-down"></i>
+							<span class="icon-in"><i class="fal fa-browser"></i></span>
 							Applications
 						</a>
 						<div class="collapse show nav side-nav" id="app-col">
@@ -132,6 +135,7 @@
 					<div class="toc-item">
 						<a class="rel toggle" data-toggle="collapse" href="#bin-col">
 							<i class="left-60 tog far fa-chevron-down"></i>
+							<span class="icon-in"><i class="fal fa-binary-lock"></i></span>
 							Binaries
 						</a>
 						<div class="collapse show nav side-nav" id="bin-col">
@@ -143,6 +147,7 @@
 					<div class="toc-item">
 						<a class="rel toggle" data-toggle="collapse" href="#data-col">
 							<i class="left-60 tog far fa-chevron-down"></i>
+							<span class="icon-in"><i class="fal fa-database"></i></span>
 							Data
 						</a>
 						<div class="collapse show nav side-nav" id="data-col">
@@ -156,7 +161,10 @@
 
 				<div class="hide-md">
 					<div class="nav side-nav">
-						<a class="toc nav-link" href="#code">Code</a>
+						<a class="toc nav-link" href="#code">
+							<span class="icon-in"><i class="fal fa-gears"></i></span>
+						</a>
+						<a class="nav-link" href="#code-2021">21</a>
 						<a class="nav-link" href="#code-2020">20</a>
 						<a class="nav-link" href="#code-2019">19</a>
 						<a class="nav-link" href="#code-2018">18</a>
@@ -171,13 +179,19 @@
 						<a class="nav-link" href="#code-2009">09</a>
 						<a class="nav-link" href="#code-2008">08</a>
 						<a class="nav-link" href="#code-2007">07</a>
-						<a class="toc nav-link" href="#app">Apps</a>
+						<a class="toc nav-link" href="#app">
+							<span class="icon-in"><i class="fal fa-browser"></i></span>
+						</a>
 						<a class="nav-link" href="#app-2008">08</a>
-						<a class="toc nav-link" href="#bin">Binaries</a>
+						<a class="toc nav-link" href="#bin">
+							<span class="icon-in"><i class="fal fa-binary-lock"></i></span>
+						</a>
 						<a class="nav-link" href="#bin-2011">11</a>
 						<a class="nav-link" href="#bin-2010">10</a>
 						<a class="nav-link" href="#bin-2009">09</a>
-						<a class="toc nav-link" href="#data">Data</a>
+						<a class="toc nav-link" href="#data">
+							<span class="icon-in"><i class="fal fa-database"></i></span>
+						</a>
 						<a class="nav-link" href="#data-2017">17</a>
 						<a class="nav-link" href="#data-2016">16</a>
 						<a class="nav-link" href="#data-2011">11</a>
@@ -192,8 +206,51 @@
 			<div class="container bottom-pad">
 				<h1 class="pub">
 					<a class="anchor" id="code"></a>
-					Code
+					<span class="mr">Code</span>
+					<i class="fal fa-gears"></i>
 				</h1>
+				<h2 class="pub rule">
+					<a class="anchor" id="code-2021"></a>
+					2021
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="videoqa"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-videoqa" id="tog-videoqa">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Video question answering
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								D. Engin
+								(<span class="pub-ref">advised by</span> N. Q. K. Duong, F. Schnitzler, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://engindeniz.github.io/dialogsummary-videoqa">VideoQA</a>
+							<a class="lnk mr2" href="https://github.com/InterDigitalInc/DialogSummary-VideoQA"><i class="fab fa-github"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-videoqa">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/noagarcia/ROLL-VideoQA">ROLL-VideoQA</a> <span class="bull"></span>
+							published in <a href="/pub/#C119">ICCV 2021</a> <span class="bull"></span>
+							2021
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C119.iccv21.vqa.svg"><img alt="videoqa thumbnail" src="../data/pub/thumb/wide/conf/C119.iccv21.vqa.svg"></a>
+							<div class="just">
+								<p>
+									This is a Video Question Answering (VideoQA) method, where we address understanding of stories in video such as movies and TV shows from raw data, without external sources like plot synopses, scripts, video descriptions or knowledge bases. We treat dialog as a noisy source to be converted into text description via dialog summarization, much like recent methods treat video. The input of each modality is encoded by transformers independently, then we fuse all modalities using soft temporal attention for localization over long inputs. The code allows the reproduction of the results of our <a href="/pub/#C119">ICCV 2021 paper</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 				<h2 class="pub rule">
 					<a class="anchor" id="code-2020"></a>
 					2020
@@ -487,7 +544,7 @@
 							<a href="https://www.tensorflow.org/">TensorFlow</a> <span class="bull"></span>
 							based on <a href="https://github.com/tensorflow/cleverhans">CleverHans</a> <span class="bull"></span>
 							published in <a href="/pub/#J30">TIFS 2021</a> <span class="bull"></span>
-							2019
+							2019-2020
 						</div>
 						<div class="pub-detail">
 							<a href="../data/pub/thumb/wide/journ/J30.tifs20.bp.png"><img alt="bp thumbnail" src="../data/pub/thumb/wide/journ/J30.tifs20.bp.png"></a>
@@ -639,7 +696,7 @@
 							<a href="https://www.tensorflow.org/">TensorFlow</a>, Matlab <span class="bull"></span>
 							based on <a href="https://github.com/tensorflow/cleverhans">CleverHans</a>, <a href="https://github.com/carlini/nn_robust_attacks">C&W</a> <span class="bull"></span>
 							published in <a href="/pub/#J29">JIS 2020</a> <span class="bull"></span>
-							2018
+							2018-2019
 						</div>
 						<div class="pub-detail">
 							<a href="../data/pub/thumb/wide/journ/J29.jis20.smooth.svg"><img alt="sae thumbnail" src="../data/pub/thumb/wide/journ/J29.jis20.smooth.svg"></a>
@@ -1597,7 +1654,8 @@
 				</div>
 				<h1 class="pub">
 					<a class="anchor" id="app"></a>
-					Applications
+					<span class="mr">Applications</span>
+					<i class="fal fa-browser"></i>
 				</h1>
 				<h2 class="pub rule">
 					<a class="anchor" id="app-2008"></a>
@@ -1675,7 +1733,8 @@
 				</div>
 				<h1 class="pub">
 					<a class="anchor" id="bin"></a>
-					Binaries
+					<span class="mr">Binaries</span>
+					<i class="fal fa-binary-lock"></i>
 				</h1>
 				<h2 class="pub rule">
 					<a class="anchor" id="bin-2011"></a>
@@ -1801,7 +1860,8 @@
 				</div>
 				<h1 class="pub">
 					<a class="anchor" id="data"></a>
-					Data
+					<span class="mr">Data</span>
+					<i class="fal fa-database"></i>
 				</h1>
 				<h2 class="pub rule">
 					<a class="anchor" id="data-2017"></a>
