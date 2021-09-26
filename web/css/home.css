@@ -596,13 +596,21 @@ h1.home {
 		margin-top: 20px;
 	}
 }
+.athena {
+	color: #10069F;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+a .athena:hover {
+	color: #200CD0;
+}
 .inria {
 	color: #8C1515;
 	font-weight: 500;
 	text-transform: uppercase;
 }
 a .inria:hover {
-	color: #d03030;
+	color: #D03030;
 }
 .home-footer {
 	background-color: #878681;

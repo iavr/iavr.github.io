@@ -5,16 +5,15 @@ function ema(addr, sty) {
 function txt(msg) {
 	document.write(msg);
 }
-function yann() {
-	var first = "yannis";
-	var last = "avrithis";
-	var dom = "net";
-	return first + "@" + last + "." + dom;
+function ema_addr(name, dom) {
+	return name + "@" + dom;
 }
-function ioan(sty) {
-	var first = "ioannis";
-	var last = "avrithis";
-	var dom = "inria";
-	var fr = "fr";
-	return first + "." + last + "@" + dom + "." + fr;
+function ema_net() {
+	return ema_addr("yannis", "avrithis.net");
+}
+function ema_athena() {
+	return ema_addr("yannis.avrithis", "athenarc.gr");
+}
+function ema_inria() {
+	return ema_addr("ioannis.avrithis", "inria.fr");
 }
