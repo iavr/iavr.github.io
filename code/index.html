@@ -78,6 +78,11 @@
 					</a>
 				</li>
 				<li class="nav-item">
+					<script>ema(ema_net(), "nav-link p-2");</script>
+						<i class="fal fa-at"></i>
+					</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link p-2" href="https://www.linkedin.com/in/yannisavrithis/">
 						<i class="fab fa-linkedin-in"></i>
 					</a>
@@ -105,6 +110,7 @@
 							<span class="icon-in"><i class="fal fa-gears"></i></span>
 						</a>
 						<div class="collapse show nav side-nav" id="code-col">
+							<a class="nav-link" href="#code-2022">2022</a>
 							<a class="nav-link" href="#code-2021">2021</a>
 							<a class="nav-link" href="#code-2020">2020</a>
 							<a class="nav-link" href="#code-2019">2019</a>
@@ -164,6 +170,7 @@
 						<a class="toc nav-link" href="#code">
 							<span class="icon-in"><i class="fal fa-gears"></i></span>
 						</a>
+						<a class="nav-link" href="#code-2022">22</a>
 						<a class="nav-link" href="#code-2021">21</a>
 						<a class="nav-link" href="#code-2020">20</a>
 						<a class="nav-link" href="#code-2019">19</a>
@@ -210,6 +217,121 @@
 					<i class="fal fa-gears"></i>
 				</h1>
 				<h2 class="pub rule">
+					<a class="anchor" id="code-2022"></a>
+					2022
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="attmask"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-attmask" id="tog-attmask">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Attention-guided masked image modeling
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								I. Kakogeorgiou, B. Psomas
+								(<span class="ref">advised by</span> S. Gidaris, Y. Avrithis, K. Karantzalos, N. Komodakis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/gkakogeorgiou/attmask">AttMask</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-attmask">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/bytedance/ibot">iBOT</a>, <a href="https://github.com/facebookresearch/dino">DINO</a>, <a href="https://github.com/microsoft/unilm/tree/master/beit">BEiT</a>, <a href="https://github.com/MadryLab/backgrounds_challenge">ImageNet-9</a> <span class="bull"></span>
+							published in <a href="/pub/#C125">ECCV 2022</a> <span class="bull"></span>
+							2022
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C125.eccv22.attmask.svg"><img alt="attmask thumbnail" src="../data/pub/thumb/wide/conf/C125.eccv22.attmask.svg"></a>
+							<div class="just">
+								<p>
+									In the context of self-supervised pretraining of vision transformers, this is a masking strategy that can be used as an alternative to random masking for dense distillation-based masked image modeliing (MIM) as well as plain distillation-based self-supervised learning on classification tokens. In particular, in the distillation-based setting, a teacher transformer encoder generates an attention map, which we use to guide masking for the student. The code allows the reproduction of the results of our <a href="/pub/#C125">ECCV 2022 paper</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="alignmix"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-alignmix" id="tog-alignmix">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Aligned feature interpolation
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								S. Venkataramanan
+								(<span class="ref">advised by</span> E. Kijak, L. Amsaleg, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/shashankvkt/AlignMixup_CVPR22">AlignMix</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-alignmix">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/dfdazac/wassdistance">WassDistance</a> <span class="bull"></span>
+							published in <a href="/pub/#C124">CVPR 2022</a> <span class="bull"></span>
+							2022
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C124.cvpr22.alignmix.svg"><img alt="alignmix thumbnail" src="../data/pub/thumb/wide/conf/C124.cvpr22.alignmix.svg"></a>
+							<div class="just">
+								<p>
+									This is a mixup-based data augmentation method, where we geometrically align two images in the feature space. The correspondences allow us to interpolate between two sets of features, while keeping the locations of one set. The code allows the reproduction of the results of our <a href="/pub/#C124">CVPR 2022 paper</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="tfh"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-tfh" id="tog-tfh">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Tensor feature hallucination
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								M. Lazarou
+								(<span class="ref">advised by</span> T. Stathaki, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://github.com/MichalisLazarou/TFH_fewshot">TFH</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-tfh">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/WangYueFt/rfs">RFS</a>, <a href="https://github.com/tankche1/IDeMe-Net">IDeMe-Net</a>, <a href="https://github.com/tankche1/Semantic-Feature-Augmentation-in-Few-shot-Learning">Dual TriNet</a>, <a href="https://github.com/nupurkmr9/S2M2_fewshot">S2M2</a>, <a href="https://github.com/icoz69/DeepEMD">DeepEMD</a> <span class="bull"></span>
+							published in <a href="/pub/#C121">WACV 2022</a> <span class="bull"></span>
+							2022
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C121.wacv22.few-gen.png"><img alt="tfh thumbnail" src="../data/pub/thumb/wide/conf/C121.wacv22.few-gen.png"></a>
+							<div class="just">
+								<p>
+									This is a simple synthetic data generation method few-shot learning. It involves a simple loss function for training a feature generator and it learns to generate tensor features instead of vector features. The code allows the reproduction of the results of our <a href="/pub/#C121">WACV 2022 paper</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
 					<a class="anchor" id="code-2021"></a>
 					2021
 				</h2>
@@ -225,7 +347,7 @@
 						<div class="part mr">
 							<span class="author">
 								D. Engin
-								(<span class="pub-ref">advised by</span> N. Q. K. Duong, F. Schnitzler, Y. Avrithis)
+								(<span class="ref">advised by</span> N. Q. K. Duong, F. Schnitzler, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -267,7 +389,7 @@
 						<div class="part mr">
 							<span class="author">
 								M. Budnik
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -283,7 +405,7 @@
 							2020-2021
 						</div>
 						<div class="pub-detail">
-							<a href="../data/pub/thumb/wide/conf/C117.cvpr21.mobile.svg"><img alt="aml thumbnail" src="../data/pub/thumb/wide/conf/C117.cvpr21.mobile.svg"></a>
+							<a href="../data/pub/thumb/wide/conf/C117.cvpr21.aml.svg"><img alt="aml thumbnail" src="../data/pub/thumb/wide/conf/C117.cvpr21.aml.svg"></a>
 							<div class="just">
 								<p>
 									Focusing on instance-level image retrieval, we study an asymmetric testing task, where the database is represented by the teacher and queries by the student. Inspired by this task, we introduce a novel paradigm of using asymmetric representations at training. This acts as a simple combination of knowledge transfer with the original metric learning task. The code allows the reproduction of the results of our <a href="/pub/#C112">CVPR 2019 paper</a>.
@@ -304,7 +426,7 @@
 						<div class="part mr">
 							<span class="author">
 								T. Neitthoffer
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -343,7 +465,7 @@
 						<div class="part mr">
 							<span class="author">
 								T. Jenicek, G. Tolias
-								(<span class="pub-ref">advised by</span> O. Chum)
+								(<span class="ref">advised by</span> O. Chum)
 							</span>
 						</div>
 						<div class="part">
@@ -384,7 +506,7 @@
 						<div class="part mr">
 							<span class="author">
 								M. Budnik, O. Siméoni
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -421,7 +543,7 @@
 						<div class="part mr">
 							<span class="author">
 								A. Iscen, G. Tolias
-								(<span class="pub-ref">advised by</span> O. Chum, C. Schmid, Y. Avrithis)
+								(<span class="ref">advised by</span> O. Chum, C. Schmid, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -458,7 +580,7 @@
 						<div class="part mr">
 							<span class="author">
 								Z. Yang
-								(<span class="pub-ref">advised by</span> M. Shi, Y. Avrithis)
+								(<span class="ref">advised by</span> M. Shi, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -495,7 +617,7 @@
 						<div class="part mr">
 							<span class="author">
 								Y. Lifchitz
-								(<span class="pub-ref">advised by</span> S. Picard, Y. Avrithis)
+								(<span class="ref">advised by</span> S. Picard, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -531,7 +653,7 @@
 						<div class="part mr">
 							<span class="author">
 								H. Zhang
-								(<span class="pub-ref">advised by</span> T. Furon, L. Amsaleg, Y. Avrithis)
+								(<span class="ref">advised by</span> T. Furon, L. Amsaleg, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -572,7 +694,7 @@
 						<div class="part mr">
 							<span class="author">
 								A. Iscen
-								(<span class="pub-ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
+								(<span class="ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -609,7 +731,7 @@
 						<div class="part mr">
 							<span class="author">
 								Y. Lifchitz
-								(<span class="pub-ref">advised by</span> A. Bursuc, S. Picard, Y. Avrithis)
+								(<span class="ref">advised by</span> A. Bursuc, S. Picard, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -646,7 +768,7 @@
 						<div class="part mr">
 							<span class="author">
 								O. Siméoni
-								(<span class="pub-ref">advised by</span> O. Chum, Y. Avrithis)
+								(<span class="ref">advised by</span> O. Chum, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -683,7 +805,7 @@
 						<div class="part mr">
 							<span class="author">
 								H. Zhang
-								(<span class="pub-ref">advised by</span> T. Furon, L. Amsaleg, Y. Avrithis)
+								(<span class="ref">advised by</span> T. Furon, L. Amsaleg, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -727,7 +849,7 @@
 						<div class="part mr">
 							<span class="author">
 								A. Iscen, G. Tolias
-								(<span class="pub-ref">advised by</span> O. Chum, Y. Avrithis)
+								(<span class="ref">advised by</span> O. Chum, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -764,7 +886,7 @@
 						<div class="part mr">
 							<span class="author">
 								O. Siméoni, A. Iscen
-								(<span class="pub-ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
+								(<span class="ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -805,7 +927,7 @@
 						<div class="part mr">
 							<span class="author">
 								A. Iscen, G. Tolias
-								(<span class="pub-ref">advised by</span> O. Chum, T. Furon, Y. Avrithis)
+								(<span class="ref">advised by</span> O. Chum, T. Furon, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -842,7 +964,7 @@
 						<div class="part mr">
 							<span class="author">
 								R. Sicre
-								(<span class="pub-ref">advised by</span> T. Furon, E. Kijak, F. Jurie, Y. Avrithis)
+								(<span class="ref">advised by</span> T. Furon, E. Kijak, F. Jurie, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -992,7 +1114,7 @@
 						<div class="part mr">
 							<span class="author">
 								G. Samaras
-								(<span class="pub-ref">advised by</span> I. Emiris, Y. Avrithis)
+								(<span class="ref">advised by</span> I. Emiris, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1032,7 +1154,7 @@
 						<div class="part mr">
 							<span class="author">
 								M. Shi
-								(<span class="pub-ref">advised by</span> H. Jégou, Y. Avrithis)
+								(<span class="ref">advised by</span> H. Jégou, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1076,7 +1198,7 @@
 						<div class="part mr">
 							<span class="author">
 								Y. Kalantidis
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1121,7 +1243,7 @@
 						<div class="part mr">
 							<span class="author">
 								G. Tolias
-								(<span class="pub-ref">advised by</span> H. Jégou, Y. Avrithis)
+								(<span class="ref">advised by</span> H. Jégou, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1252,7 +1374,7 @@
 						<div class="part mr">
 							<span class="author">
 								G. Tolias, Y. Kalantidis
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1334,7 +1456,7 @@
 						<div class="part mr">
 							<span class="author">
 								Y. Kalantidis
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1411,7 +1533,7 @@
 						<div class="part mr">
 							<span class="author">
 								Y. Kalantidis, E. Spyrou, G. Tolias
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1453,7 +1575,7 @@
 						<div class="part mr">
 							<span class="author">
 								G. Tolias, Y. Kalantidis
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1534,7 +1656,7 @@
 						<div class="part mr">
 							<span class="author">
 								K. Rapantzikos
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1575,7 +1697,7 @@
 						<div class="part mr">
 							<span class="author">
 								K. Kontosis, N. Skalkotos, S. Nathanail
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1673,7 +1795,7 @@
 						<div class="part mr">
 							<span class="author">
 								Y. Kalantidis, G. Tolias, M. Phinikettos, E. Spyrou, P. Mylonas
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1752,7 +1874,7 @@
 						<div class="part mr">
 							<span class="author">
 								C. Varytimidis
-								(<span class="pub-ref">advised by</span> K. Rapantzikos, Y. Avrithis)
+								(<span class="ref">advised by</span> K. Rapantzikos, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1793,7 +1915,7 @@
 						<div class="part mr">
 							<span class="author">
 								G. Tolias
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1879,11 +2001,12 @@
 						<div class="part mr">
 							<span class="author">
 								F. Radenovic, A. Iscen
-								(<span class="pub-ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
+								(<span class="ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
-							<a class="acro but mr" href="https://github.com/filipradenovic/revisitop/">RevOP</a>
+							<a class="acro but mr" href="https://cove.thecvf.com/datasets/652">RevOP</a>
+							<a class="lnk mr2" href="https://github.com/filipradenovic/revisitop/"><i class="fab fa-github"></i></a>
 						</div>
 
 					</div>
@@ -1920,7 +2043,7 @@
 						<div class="part mr">
 							<span class="author">
 								A. Iscen
-								(<span class="pub-ref">advised by</span> G. Tolias, Y. Avrithis)
+								(<span class="ref">advised by</span> G. Tolias, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1961,7 +2084,7 @@
 						<div class="part mr">
 							<span class="author">
 								Y. Kalantidis, LG. Pueyo, M. Trevisiol
-								(<span class="pub-ref">advised by</span> R. van Zwol, Y. Avrithis)
+								(<span class="ref">advised by</span> R. van Zwol, Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -1997,7 +2120,7 @@
 						<div class="part mr">
 							<span class="author">
 								G. Tolias
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -2037,7 +2160,7 @@
 						<div class="part mr">
 							<span class="author">
 								Y. Kalantidis, G. Tolias
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">
@@ -2073,7 +2196,7 @@
 						<div class="part mr">
 							<span class="author">
 								G. Tolias, Y. Kalantidis
-								(<span class="pub-ref">advised by</span> Y. Avrithis)
+								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
 						<div class="part">

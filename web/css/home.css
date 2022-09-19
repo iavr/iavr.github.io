@@ -258,8 +258,13 @@ p {
 	width: 100%;
 	padding: 30px;
 }
+.sec-cont {
+	width: 100%;
+	padding: 10px 30px 30px 30px;
+}
 @media (max-width:575.98px){
 	.sec {padding: 30px 15px}
+	.sec-cont {padding: 10px 15px 30px 15px}
 }
 .high {
 	background-color: #f7f6f1;
@@ -291,6 +296,9 @@ main a:hover {
 	opacity: .9;
 }
 .dim:hover {
+	opacity: .7;
+}
+.ref {
 	opacity: .7;
 }
 .p {
@@ -422,8 +430,8 @@ h1 .anchor, h2 .anchor {
 	background-color: rgba(0,0,0,.45);
 	border-radius: 50%;
 	display: inline-block;
-	height: .35em;
-	width: .35em;
+	height: .30em;
+	width: .30em;
 	margin: 0 .4em .15em .4em;
 }
 .bd-footer .bull {
@@ -522,18 +530,18 @@ a.bright:hover {
 .home-name {
 	font-size: 32px;
 }
+.home-affil {
+	font-size: 18px;
+}
 .home-role {
-	font-size: 20px;
 	font-variant: small-caps;
 }
 .home-org {
-	font-size: 18px;
 	font-style: italic;
 }
 @media (min-width:768px) {
-	.home-name {font-size: 44px;}
-	.home-role {font-size: 26px;}
-	.home-org {font-size: 20px;}
+	.home-name {font-size: 40px;}
+	.home-affil {font-size: 20px;}
 }
 h1.home {
 	margin-top: 10px;
@@ -591,18 +599,13 @@ h1.home {
 	font-size: 90%;
 	color: #cc8;
 }
+.home-col {
+	margin-top: 20px;
+}
 @media (max-width:767.98px){
 	.home-col:not(:first-child) {
 		margin-top: 20px;
 	}
-}
-.athena {
-	color: #10069F;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-a .athena:hover {
-	color: #200CD0;
 }
 .inria {
 	color: #8C1515;
@@ -611,6 +614,14 @@ a .athena:hover {
 }
 a .inria:hover {
 	color: #D03030;
+}
+.athena {
+	color: #10069F;
+	font-weight: 500;
+}
+.iarai {
+	color: #45556E;
+	font-weight: 500;
 }
 .home-footer {
 	background-color: #878681;
@@ -754,6 +765,7 @@ h1.time {
 .t-el     { background-color: rgba( 20,140, 20,.3); }
 .t-act    { background-color: rgba(120, 20,200,.3); }
 .t-jury   { background-color: rgba(120, 20,200,.3); }
+.t-adv    { background-color: rgba(120, 20,200,.3); }
 .t-eval   { background-color: rgba(120, 20,200,.3); }
 .t-edit   { background-color: rgba(120, 20,200,.3); }
 .t-conf   { background-color: rgba(120, 20,200,.3); }
@@ -772,6 +784,7 @@ a.t-fr:hover     { background-color: rgba( 20,140, 20,.6); }
 a.t-el:hover     { background-color: rgba( 20,140, 20,.6); }
 a.t-act:hover    { background-color: rgba(120, 20,200,.6); }
 a.t-jury:hover   { background-color: rgba(120, 20,200,.6); }
+a.t-adv:hover    { background-color: rgba(120, 20,200,.6); }
 a.t-eval:hover   { background-color: rgba(120, 20,200,.6); }
 a.t-edit:hover   { background-color: rgba(120, 20,200,.6); }
 a.t-conf:hover   { background-color: rgba(120, 20,200,.6); }
