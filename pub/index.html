@@ -78,11 +78,6 @@
 					</a>
 				</li>
 				<li class="nav-item">
-					<script>ema(ema_net(), "nav-link p-2");</script>
-						<i class="fal fa-at"></i>
-					</a>
-				</li>
-				<li class="nav-item">
 					<a class="nav-link p-2" href="https://www.linkedin.com/in/yannisavrithis/">
 						<i class="fab fa-linkedin-in"></i>
 					</a>
@@ -235,6 +230,103 @@
 					</h2>
 					<div class="just">
 						This material is presented to ensure timely dissemination of scholarly and technical work. Copyright and all rights therein are retained by authors or by other copyright holders. Anyone copying this information is expected to adhere to the terms and constraints invoked by each author's copyright. In most cases, these works may not be reposted without the explicit permission of the copyright holder.
+					</div>
+				</div>
+				<h1 class="pub">
+					<a class="anchor" id="y-2023"></a>
+					2023
+				</h1>
+				<h2 class="pub rule">
+					Conference proceedings
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="C126"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-C126" id="tog-C126">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Boosting Vision Transformers for Image Retrieval
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">C.H. Song, J. Yoon, S. Choi, Y. Avrithis</span>
+						</div>
+						<div class="part">
+							<span class="acro but mr">WACV&nbsp;2023</span>
+							<a class="lnk" href="../data/pub/pdf/conf/C126.wacv23.dtop.pdf"><i class="faa fa-file-pdf2"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-C126">
+						<div class="pub-ref">
+							In Proc. <em>IEEE Winter Conference on Applications of Computer Vision</em><br>
+							Waikoloa, HI, US  <span class="bull"></span> Jan 2023
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C126.wacv23.dtop.png"><img alt="C126 thumbnail" src="../data/pub/thumb/wide/conf/C126.wacv23.dtop.png"></a>
+							<div class="just">
+								<p>
+									Vision transformers have achieved remarkable progress in vision tasks such as image classification and detection. However, in instance-level image retrieval, transformers have not yet shown good performance compared to convolutional networks. We propose a number of improvements that make transformers outperform the state of the art for the first time. (1) We show that a hybrid architecture is more effective than plain transformers, by a large margin. (2) We introduce two branches collecting global (classification token) and local (patch tokens) information, from which we form a global image representation. (3) In each branch, we collect multi-layer features from the transformer encoder, corresponding to skip connections across distant layers. (4) We enhance locality of interactions at the deeper layers of the encoder, which is the relative weakness of vision transformers. We train our model on all commonly used training sets and, for the first time, we make fair comparisons separately per training set. In all cases, we outperform previous models based on global representation. Public code is available at <a href="https://github.com/dealicious-inc/DToP">https://github.com/dealicious-inc/DToP</a>.
+								</p>
+							</div>
+							<figure class="pub-bib highlight">
+								<pre><code>@conference{C126,
+   title = {Boosting vision transformers for image retrieval},
+   author = {C.H. Song and J. Yoon and S. Choi and Y. Avrithis},
+   booktitle = {Proceedings of IEEE Winter Conference on Applications of Computer Vision (WACV)},
+   month = {1},
+   address = {Waikoloa, HI, US},
+   year = {2023}
+}</code></pre>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<h2 class="pub rule">
+					Preprints / technical reports
+				</h2>
+				<div class="pub-entry">
+					<div class="pub-title">
+						<a class="anchor" id="R39"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R39" id="tog-R39">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Opti-CAM: Optimizing Saliency Maps for Interpretability
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">H. Zhang, Felipe Torres, Ronan Sicre, Yannis Avrithis, Stephane Ayache</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://arxiv.org/abs/2301.07002">arXiv,&nbsp;2023</a>
+							<a class="lnk" href="../data/pub/pdf/report/R039.2301.07002.opti-cam.pdf"><i class="faa fa-file-pdf2"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-R39">
+						<div class="pub-ref">
+							<em>arXiv preprint arXiv:2301.07002</em>  <span class="bull"></span> Jan 2023
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/report/R039.2301.07002.opti-cam.svg"><img alt="R39 thumbnail" src="../data/pub/thumb/wide/report/R039.2301.07002.opti-cam.svg"></a>
+							<div class="just">
+								<p>
+									Methods based on class activation maps (CAM) provide a simple mechanism to interpret predictions of convolutional neural networks by using linear combinations of feature maps as saliency maps. By contrast, masking-based methods optimize a saliency map directly in the image space or learn it by training another network on additional data.
+								</p>
+								<p>
+									In this work we introduce Opti-CAM, combining ideas from CAM-based and masking-based approaches. Our saliency map is a linear combination of feature maps, where weights are optimized per image such that the logit of the masked image for a given class is maximized. We also fix a fundamental flaw in two of the most common evaluation metrics of attribution methods. On several datasets, Opti-CAM largely outperforms other CAM-based approaches according to the most relevant classification metrics. We provide empirical evidence supporting that localization and classifier interpretability are not necessarily aligned.
+								</p>
+							</div>
+							<figure class="pub-bib highlight">
+								<pre><code>@article{R39,
+   title = {Opti-{CAM}: Optimizing saliency maps for interpretability},
+   author = {H. Zhang and Felipe Torres and Ronan Sicre and Yannis Avrithis and Stephane Ayache},
+   journal = {arXiv preprint arXiv:2301.07002},
+   month = {1},
+   year = {2023}
+}</code></pre>
+							</figure>
+						</div>
 					</div>
 				</div>
 				<h1 class="pub">
@@ -479,6 +571,47 @@
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
+						<a class="anchor" id="R38"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R38" id="tog-R38">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Boosting Vision Transformers for Image Retrieval
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">C.H. Song, J. Yoon, S. Choi, Y. Avrithis</span>
+						</div>
+						<div class="part">
+							<a class="acro but mr" href="https://arxiv.org/abs/2210.11909">arXiv,&nbsp;2022</a>
+							<a class="lnk" href="../data/pub/pdf/report/R038.2210.11909.dtop.pdf"><i class="faa fa-file-pdf2"></i></a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-R38">
+						<div class="pub-ref">
+							<em>arXiv preprint arXiv:2210.11909</em>  <span class="bull"></span> Oct 2022
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/report/R038.2210.11909.dtop.png"><img alt="R38 thumbnail" src="../data/pub/thumb/wide/report/R038.2210.11909.dtop.png"></a>
+							<div class="just">
+								<p>
+									Vision transformers have achieved remarkable progress in vision tasks such as image classification and detection. However, in instance-level image retrieval, transformers have not yet shown good performance compared to convolutional networks. We propose a number of improvements that make transformers outperform the state of the art for the first time. (1) We show that a hybrid architecture is more effective than plain transformers, by a large margin. (2) We introduce two branches collecting global (classification token) and local (patch tokens) information, from which we form a global image representation. (3) In each branch, we collect multi-layer features from the transformer encoder, corresponding to skip connections across distant layers. (4) We enhance locality of interactions at the deeper layers of the encoder, which is the relative weakness of vision transformers. We train our model on all commonly used training sets and, for the first time, we make fair comparisons separately per training set. In all cases, we outperform previous models based on global representation. Public code is available at <a href="https://github.com/dealicious-inc/DToP">this https URL</a>.
+								</p>
+							</div>
+							<figure class="pub-bib highlight">
+								<pre><code>@article{R38,
+   title = {Boosting vision transformers for image retrieval},
+   author = {C.H. Song and J. Yoon and S. Choi and Y. Avrithis},
+   journal = {arXiv preprint arXiv:2210.11909},
+   month = {10},
+   year = {2022}
+}</code></pre>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
 						<a class="anchor" id="R37"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R37" id="tog-R37">
 							<i class="left-60 tog far fa-chevron-down"></i>
@@ -534,7 +667,7 @@
 					</div>
 					<div class="pub-author">
 						<div class="part mr">
-							<span class="author">I. Kakogeorgiou, S. Gidaris, B. Psomas, Y. Avrithis, A. Bursuc, K. Karantzalos, N. Komodakis</span>
+							<span class="author">I. Kakogeorgiou, S. Gidarisand B. Psomas, Y. Avrithis, A. Bursuc, K. Karantzalos, N. Komodakis</span>
 						</div>
 						<div class="part">
 							<a class="acro but mr" href="https://arxiv.org/abs/2203.12719">arXiv,&nbsp;2022</a>
@@ -556,7 +689,7 @@
 							<figure class="pub-bib highlight">
 								<pre><code>@article{R36,
    title = {What to Hide from Your Students: Attention-Guided Masked Image Modeling},
-   author = {I. Kakogeorgiou, S. Gidaris, B. Psomas, Y. Avrithis, A. Bursuc, K. Karantzalos, N. Komodakis},
+   author = {I. Kakogeorgiou and S. Gidarisand B. Psomas and Y. Avrithis and A. Bursuc and K. Karantzalos and N. Komodakis},
    journal = {arXiv preprint arXiv:2203.12719},
    month = {7},
    year = {2022}
