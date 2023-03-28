@@ -1,4 +1,4 @@
-function ema(addr, sty) {
+function ema(addr, sty, title) {
 	var href = "mail" + "to:" + addr;
 	document.write("<a class=\"" + sty + "\" href=" + href + ">");
 }

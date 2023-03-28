@@ -768,6 +768,9 @@ h1.time {
 .t-work   { background-color: rgba(120, 20,200,.3); }
 .t-pub    { background-color: rgba(  0, 80,200,.3); }
 .t-code   { background-color: rgba(200,200,  0,.3); }
+.t-app    { background-color: rgba(200,200,  0,.3); }
+.t-bin    { background-color: rgba(200,200,  0,.3); }
+.t-data   { background-color: rgba( 50,250, 50,.3); }
 
 a.t-member:hover { background-color: rgba(100,100, 60,.6); }
 a.t-job:hover    { background-color: rgba(240, 20, 20,.6); }
@@ -787,6 +790,9 @@ a.t-conf:hover   { background-color: rgba(120, 20,200,.6); }
 a.t-work:hover   { background-color: rgba(120, 20,200,.6); }
 a.t-pub:hover    { background-color: rgba(  0, 80,200,.6); }
 a.t-code:hover   { background-color: rgba(200,200,  0, 1); }
+a.t-app:hover    { background-color: rgba(200,200,  0, 1); }
+a.t-bin:hover    { background-color: rgba(200,200,  0, 1); }
+a.t-data:hover   { background-color: rgba( 50,250, 50, 1); }
 
 
 /* buttons */
