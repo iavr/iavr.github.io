@@ -192,7 +192,7 @@
 	.bd-clipboard{display:block}
 }
 
-.btn-clipboard{position:absolute;top:1.2rem;right:.5rem;z-index:10;display:block;padding:.25rem .5rem;font-size:75%;color:#818a91;cursor:pointer;background-color:transparent;border:0;border-radius:.25rem}
+.btn-clipboard{position:absolute;top:.7rem;right:.5rem;z-index:10;display:block;padding:.25rem .5rem;font-size:75%;color:#818a91;cursor:pointer;background-color:transparent;border:0;border-radius:.25rem}
 
 .btn-clipboard:hover{color:#fff;background-color:#027de7}
 
