@@ -446,6 +446,12 @@ a .fa-file-pdf2 {
 a:hover .fa-file-pdf2 {
 	color: #ff2020;
 }
+a.ext {
+	color: #906090;
+}
+a.ext:hover {
+	color: #603060;
+}
 .left-60 {
 	font-size: .6em;
 	position: absolute;
