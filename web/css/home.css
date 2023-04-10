@@ -404,7 +404,12 @@ h1 .anchor, h2 .anchor {
 .mr2 {
 	margin-right: .3em;
 }
-
+.ml2- {
+	margin-left: -.4em;
+}
+.nr {
+	white-space: nowrap;
+}
 
 /* symbols/icons */
 /* ----------------------------------------------------------*/
@@ -740,6 +745,9 @@ h2.pub {
 }
 #pub .part {
 	display: inline;
+}
+.cite {
+	font-size: 80%;
 }
 
 
