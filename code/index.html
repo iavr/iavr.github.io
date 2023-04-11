@@ -49,7 +49,7 @@
 						<a class="nav-link" href="../pub">Publications</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="../code">Code & Data</a>
+						<a class="nav-link active" href="../code">Code/Data</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="../time">Timeline</a>
@@ -58,7 +58,7 @@
 			</div>
 			<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
 				<li class="nav-item">
-					<script>ema(ema_net(), "nav-link p-2", "");</script>
+					<script>ema2(ema_net(), "nav-link p-2", "Email");</script>
 						<i class="fal fa-at"></i>
 					</a>
 				</li>
@@ -222,6 +222,47 @@
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
+						<a class="anchor" id="metrix"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-metrix" id="tog-metrix">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Mixup for Deep Metric Learning
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								B. Psomas, S. Venkataramanan
+								(<span class="ref">advised by</span> E. Kijak, L. Amsaleg, K. Karantzalos, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/billpsomas/Metrix_ICLR22" title="Code repository">Metrix</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C123" title="Conference paper">
+								<i class="fal fa-books"></i>
+							</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-metrix">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							published in <a href="/pub/#C123">ICLR 2022</a> <span class="bull"></span>
+							2022
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/conf/C123.iclr22.metrix.svg"><img alt="metrix thumbnail" src="../data/pub/thumb/wide/conf/C123.iclr22.metrix.svg"></a>
+							<div class="just">
+								<p>
+									Metric Mix, or Metrix, is an algorithm for mixup-based interpolation as a data augmentation method for metric learning. It uses a generalized formulation that encompasses existing metric learning loss functions that is modified to accommodate for mixup. Mixing takes place at the input space, intermediate representations as well as the embedding space. It refers to both examples and target labels. Metrix significantly outperforms state-of-the-art metric learning methods on a number of standard benchmark deep metric learning datasets. The code allows the reproduction of the results of our <a href="/pub/#C123">ICLR 2022 paper</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pub-entry">
+					<div class="pub-title">
 						<a class="anchor" id="attmask"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-attmask" id="tog-attmask">
 							<i class="left-60 tog far fa-chevron-down"></i>
@@ -235,10 +276,12 @@
 								(<span class="ref">advised by</span> S. Gidaris, Y. Avrithis, K. Karantzalos, N. Komodakis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/gkakogeorgiou/attmask">AttMask</a>
-							<a class="lnk mr2" href="../pub/#C125" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/gkakogeorgiou/attmask" title="Code repository">AttMask</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C125" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -275,10 +318,12 @@
 								(<span class="ref">advised by</span> E. Kijak, L. Amsaleg, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/shashankvkt/AlignMixup_CVPR22">AlignMix</a>
-							<a class="lnk mr2" href="../pub/#C124" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/shashankvkt/AlignMixup_CVPR22" title="Code repository">AlignMix</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C124" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -315,10 +360,12 @@
 								(<span class="ref">advised by</span> T. Stathaki, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/MichalisLazarou/TFH_fewshot">TFH</a>
-							<a class="lnk mr2" href="../pub/#C121" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/MichalisLazarou/TFH_fewshot" title="Code repository">TFH</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C121" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -341,7 +388,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2021"></a>
+					<a class="anchor" id="vol-2021"></a>
 					2021
 				</h2>
 				<div class="pub-entry">
@@ -359,10 +406,12 @@
 								(<span class="ref">advised by</span> T. Stathaki, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/MichalisLazarou/iLPC">iLPC</a>
-							<a class="lnk mr2" href="../pub/#C118" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/MichalisLazarou/iLPC" title="Code repository">iLPC</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C118" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -399,12 +448,14 @@
 								(<span class="ref">advised by</span> N. Q. K. Duong, F. Schnitzler, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/InterDigitalInc/DialogSummary-VideoQA">VideoQA</a>
-							<a class="lnk mr2" href="../pub/#C119" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/InterDigitalInc/DialogSummary-VideoQA" title="Code repository">VideoQA</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C119" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="https://engindeniz.github.io/dialogsummary-videoqa" title="Project home">
+							<a class="lnk ext mr2" href="https://engindeniz.github.io/dialogsummary-videoqa" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
 						</div>
@@ -428,7 +479,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2020"></a>
+					<a class="anchor" id="vol-2020"></a>
 					2020
 				</h2>
 				<div class="pub-entry">
@@ -446,10 +497,12 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/budnikm/asymmetric_metric_learning">AML</a>
-							<a class="lnk mr2" href="../pub/#C117" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/budnikm/asymmetric_metric_learning" title="Code repository">AML</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C117" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -486,8 +539,10 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/shymine/neural-architecture-growing-pruning-and-search">NAGP</a>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/shymine/neural-architecture-growing-pruning-and-search" title="Code repository">NAGP</a>
+						</div>
+						<div class="part nw">
 						</div>
 
 					</div>
@@ -525,10 +580,12 @@
 								(<span class="ref">advised by</span> O. Chum)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/jenicek/asmk">ASMK-py</a>
-							<a class="lnk mr2" href="../pub/#C93" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/jenicek/asmk" title="Code repository">ASMK-py</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C93" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -551,7 +608,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2019"></a>
+					<a class="anchor" id="vol-2019"></a>
 					2019
 				</h2>
 				<div class="pub-entry">
@@ -569,10 +626,12 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/osimeoni/RethinkingDeepActiveLearning">SSAL</a>
-							<a class="lnk mr2" href="../pub/#C113" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/osimeoni/RethinkingDeepActiveLearning" title="Code repository">SSAL</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C113" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -609,10 +668,12 @@
 								(<span class="ref">advised by</span> O. Chum, C. Schmid, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/google-research/noisy-fewshot-learning">GCC</a>
-							<a class="lnk mr2" href="../pub/#C114" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/google-research/noisy-fewshot-learning" title="Code repository">GCC</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C114" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -649,10 +710,12 @@
 								(<span class="ref">advised by</span> M. Shi, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">NSOD</span>
-							<a class="lnk mr2" href="../pub/#R24" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#J31" title="Journal paper">
+								<i class="fal fa-book-open"></i>
 							</a>
 						</div>
 
@@ -661,11 +724,11 @@
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/hbilen/WSDDN">WSDDN</a>, <a href="https://github.com/ppengtang/pcl.pytorch">PCL</a> <span class="bull"></span>
-							published in <a href="/pub/#R24">arXiv 2019</a> <span class="bull"></span>
+							published in <a href="/pub/#J31">PR 2021</a> <span class="bull"></span>
 							2019-2020
 						</div>
 						<div class="pub-detail">
-							<a href="../data/pub/thumb/wide/report/R024.1912.00384.nsod.svg"><img alt="nsod thumbnail" src="../data/pub/thumb/wide/report/R024.1912.00384.nsod.svg"></a>
+							<a href="../data/pub/thumb/wide/journ/J31.pr20.nsod.svg"><img alt="nsod thumbnail" src="../data/pub/thumb/wide/journ/J31.pr20.nsod.svg"></a>
 							<div class="just">
 								<p>
 									We learn an object detector from few weakly-labeled images and a larger set of completely unlabeled images. The main idea is to learn a classifier first in a semi-supervised setting, then use it as a teacher to train a student network on a weakly-supervised object detection task. The student detector is based on <a href="https://github.com/ppengtang/pcl.pytorch">PCL</a> weakly supervised object detector. <span class="alrt">The code is not public yet.</span>
@@ -689,10 +752,12 @@
 								(<span class="ref">advised by</span> S. Picard, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">FSFSL</span>
-							<a class="lnk mr2" href="../pub/#C115" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C115" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -728,10 +793,12 @@
 								(<span class="ref">advised by</span> T. Furon, L. Amsaleg, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/hanwei0912/walking-on-the-edge-fast-low-distortion-adversarial-examples">BP</a>
-							<a class="lnk mr2" href="../pub/#J30" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/hanwei0912/walking-on-the-edge-fast-low-distortion-adversarial-examples" title="Code repository">BP</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#J30" title="Journal paper">
+								<i class="fal fa-book-open"></i>
 							</a>
 						</div>
 
@@ -754,7 +821,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2018"></a>
+					<a class="anchor" id="vol-2018"></a>
 					2018
 				</h2>
 				<div class="pub-entry">
@@ -772,10 +839,12 @@
 								(<span class="ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/ahmetius/LP-DeepSSL">DLP</a>
-							<a class="lnk mr2" href="../pub/#C112" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/ahmetius/LP-DeepSSL" title="Code repository">DLP</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C112" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -812,10 +881,12 @@
 								(<span class="ref">advised by</span> A. Bursuc, S. Picard, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">DCI</span>
-							<a class="lnk mr2" href="../pub/#C111" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C111" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -852,10 +923,12 @@
 								(<span class="ref">advised by</span> O. Chum, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/osimeoni/DSM">DSM</a>
-							<a class="lnk mr2" href="../pub/#C110" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/osimeoni/DSM" title="Code repository">DSM</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C110" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -892,10 +965,12 @@
 								(<span class="ref">advised by</span> T. Furon, L. Amsaleg, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/hanwei0912/SmoothAdversarialExamples">SAE</a>
-							<a class="lnk mr2" href="../pub/#J29" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/hanwei0912/SmoothAdversarialExamples" title="Code repository">SAE</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#J29" title="Journal paper">
+								<i class="fal fa-book-open"></i>
 							</a>
 						</div>
 
@@ -921,7 +996,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2017"></a>
+					<a class="anchor" id="vol-2017"></a>
 					2017
 				</h2>
 				<div class="pub-entry">
@@ -939,10 +1014,12 @@
 								(<span class="ref">advised by</span> O. Chum, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/gtolias/mom">MoM</a>
-							<a class="lnk mr2" href="../pub/#C108" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/gtolias/mom" title="Code repository">MoM</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C108" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -979,10 +1056,15 @@
 								(<span class="ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">GOD</span>
-							<a class="lnk mr2" href="../pub/#C105" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C105" title="Conference paper">
+								<i class="fal fa-books"></i>
+							</a>
+							<a class="lnk mr2" href="../pub/#J28" title="Journal paper">
+								<i class="fal fa-book-open"></i>
 							</a>
 						</div>
 
@@ -1005,7 +1087,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2016"></a>
+					<a class="anchor" id="vol-2016"></a>
 					2016
 				</h2>
 				<div class="pub-entry">
@@ -1023,10 +1105,12 @@
 								(<span class="ref">advised by</span> O. Chum, T. Furon, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/ahmetius/diffusion-retrieval/">Diffusion</a>
-							<a class="lnk mr2" href="../pub/#C103" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/ahmetius/diffusion-retrieval/" title="Code repository">Diffusion</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C103" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -1063,10 +1147,12 @@
 								(<span class="ref">advised by</span> T. Furon, E. Kijak, F. Jurie, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">Parts</span>
-							<a class="lnk mr2" href="../pub/#C102" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C104" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -1101,8 +1187,10 @@
 								Y. Avrithis
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/iavr/pynet">PyNet</a>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/iavr/pynet" title="Code repository">PyNet</a>
+						</div>
+						<div class="part nw">
 						</div>
 
 					</div>
@@ -1135,10 +1223,12 @@
 								C. Melina, Y. Kalantidis
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/yahoo/lopq/">LOPQ-prod</a>
-							<a class="lnk mr2" href="../pub/#C95" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/yahoo/lopq/" title="Code repository">LOPQ-prod</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C95" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -1161,7 +1251,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2015"></a>
+					<a class="anchor" id="vol-2015"></a>
 					2015
 				</h2>
 				<div class="pub-entry">
@@ -1178,10 +1268,12 @@
 								Y. Avrithis
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/iavr/iqm">IQM</a>
-							<a class="lnk mr2" href="../pub/#C99" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/iavr/iqm" title="Code repository">IQM</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C99" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -1222,10 +1314,12 @@
 								(<span class="ref">advised by</span> I. Emiris, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/gsamaras/kd_GeRaF">GeRaF</a>
-							<a class="lnk mr2" href="../pub/#C100" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/gsamaras/kd_GeRaF" title="Code repository">GeRaF</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C100" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -1247,7 +1341,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2014"></a>
+					<a class="anchor" id="vol-2014"></a>
 					2014
 				</h2>
 				<div class="pub-entry">
@@ -1265,12 +1359,14 @@
 								(<span class="ref">advised by</span> H. Jégou, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">EBD</span>
-							<a class="lnk mr2" href="../pub/#C97" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C97" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<script>ema(ema_net(), "lnk mr2", "Email request");</script>
+							<script>ema2(ema_net(), "lnk ext mr2", "Email request");</script>
 								<i class="fal fa-at"></i>
 							</a>
 						</div>
@@ -1294,7 +1390,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2013"></a>
+					<a class="anchor" id="vol-2013"></a>
 					2013
 				</h2>
 				<div class="pub-entry">
@@ -1312,10 +1408,12 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="http://image.ntua.gr/iva/research/lopq/">LOPQ</a>
-							<a class="lnk mr2" href="../pub/#C95" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/research/lopq/" title="Home + download">LOPQ</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C95" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -1360,12 +1458,17 @@
 								(<span class="ref">advised by</span> H. Jégou, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/gtolias/asmk">ASMK</a>
-							<a class="lnk mr2" href="../pub/#C93" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/gtolias/asmk" title="Code repository">ASMK</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C93" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/asmk/" title="Project home">
+							<a class="lnk mr2" href="../pub/#J25" title="Journal paper">
+								<i class="fal fa-book-open"></i>
+							</a>
+							<a class="lnk ext mr2" href="http://image.ntua.gr/iva/research/asmk/" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
 						</div>
@@ -1402,15 +1505,17 @@
 								Y. Avrithis
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/iavr/drvq">DRVQ</a>
-							<a class="lnk mr2" href="../pub/#C94" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/iavr/drvq" title="Code repository">DRVQ</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C94" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="http://image.ntua.gr/iva/tools/drvq" title="Project home">
+							<a class="lnk ext mr2" href="http://image.ntua.gr/iva/tools/drvq" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
-							<a class="lnk mr2" href="https://sourceforge.net/projects/drvq/" title="SourceForge download">
+							<a class="lnk ext mr2" href="https://sourceforge.net/projects/drvq/" title="Download">
 								<i class="faa fa-sourceforge"></i>
 							</a>
 						</div>
@@ -1447,8 +1552,10 @@
 								Y. Avrithis
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/iavr/ivl2">ivl2</a>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/iavr/ivl2" title="Code repository">ivl2</a>
+						</div>
+						<div class="part nw">
 						</div>
 
 					</div>
@@ -1483,7 +1590,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2012"></a>
+					<a class="anchor" id="vol-2012"></a>
 					2012
 				</h2>
 				<div class="pub-entry">
@@ -1501,12 +1608,14 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">SymCity</span>
-							<a class="lnk mr2" href="../pub/#C90" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C90" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/symcity/" title="Project home">
+							<a class="lnk ext mr2" href="http://image.ntua.gr/iva/research/symcity/" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
 						</div>
@@ -1543,15 +1652,20 @@
 								Y. Avrithis
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">HPM-int</span>
-							<a class="lnk mr2" href="../pub/#C89" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C89" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="http://image.ntua.gr/iva/tools/hpm/" title="Project home">
+							<a class="lnk mr2" href="../pub/#J22" title="Journal paper">
+								<i class="fal fa-book-open"></i>
+							</a>
+							<a class="lnk ext mr2" href="http://image.ntua.gr/iva/tools/hpm/" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
-							<script>ema(ema_net(), "lnk mr2", "Email request");</script>
+							<script>ema2(ema_net(), "lnk ext mr2", "Email request");</script>
 								<i class="fal fa-at"></i>
 							</a>
 						</div>
@@ -1575,7 +1689,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2011"></a>
+					<a class="anchor" id="vol-2011"></a>
 					2011
 				</h2>
 				<div class="pub-entry">
@@ -1593,12 +1707,14 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">AGM-prod</span>
-							<a class="lnk mr2" href="../pub/#C91" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C91" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/agm/" title="Project home">
+							<a class="lnk ext mr2" href="http://image.ntua.gr/iva/research/agm/" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
 						</div>
@@ -1635,10 +1751,12 @@
 								Y. Avrithis
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="http://image.ntua.gr/iva/research/agm/">AGM</a>
-							<a class="lnk mr2" href="../pub/#C91" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/research/agm/" title="Home + download">AGM</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C91" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -1660,7 +1778,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2010"></a>
+					<a class="anchor" id="vol-2010"></a>
 					2010
 				</h2>
 				<div class="pub-entry">
@@ -1678,12 +1796,17 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">Scene-maps</span>
-							<a class="lnk mr2" href="../pub/#C86" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C86" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/scene_maps/" title="Project home">
+							<a class="lnk mr2" href="../pub/#J19" title="Journal paper">
+								<i class="fal fa-book-open"></i>
+							</a>
+							<a class="lnk ext mr2" href="http://image.ntua.gr/iva/research/scene_maps/" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
 						</div>
@@ -1707,7 +1830,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2009"></a>
+					<a class="anchor" id="vol-2009"></a>
 					2009
 				</h2>
 				<div class="pub-entry">
@@ -1725,12 +1848,17 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">FMH-prod</span>
-							<a class="lnk mr2" href="../pub/#C85" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C85" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/feature_map_hashing" title="Project home">
+							<a class="lnk mr2" href="../pub/#J23" title="Journal paper">
+								<i class="fal fa-book-open"></i>
+							</a>
+							<a class="lnk ext mr2" href="http://image.ntua.gr/iva/research/feature_map_hashing" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
 						</div>
@@ -1767,15 +1895,20 @@
 								Y. Avrithis
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">FMH</span>
-							<a class="lnk mr2" href="../pub/#C85" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C85" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/feature_map_hashing" title="Project home">
+							<a class="lnk mr2" href="../pub/#J23" title="Journal paper">
+								<i class="fal fa-book-open"></i>
+							</a>
+							<a class="lnk ext mr2" href="http://image.ntua.gr/iva/research/feature_map_hashing" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
-							<script>ema(ema_net(), "lnk mr2", "Email request");</script>
+							<script>ema2(ema_net(), "lnk ext mr2", "Email request");</script>
 								<i class="fal fa-at"></i>
 							</a>
 						</div>
@@ -1798,7 +1931,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2008"></a>
+					<a class="anchor" id="vol-2008"></a>
 					2008
 				</h2>
 				<div class="pub-entry">
@@ -1816,12 +1949,17 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
+						<div class="part nw">
 							<span class="empty but mr">SFD</span>
-							<a class="lnk mr2" href="../pub/#C83" title="Paper">
-								<i class="fal fa-book"></i>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C83" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="http://image.ntua.gr/iva/research/spatiotemporal_feature_detection" title="Project home">
+							<a class="lnk mr2" href="../pub/#J20" title="Journal paper">
+								<i class="fal fa-book-open"></i>
+							</a>
+							<a class="lnk ext mr2" href="http://image.ntua.gr/iva/research/spatiotemporal_feature_detection" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
 						</div>
@@ -1830,7 +1968,7 @@
 					<div class="collapse" id="col-sfd">
 						<div class="pub-ref">
 							Matlab <span class="bull"></span>
-							published in <a href="/pub/#C83">CVPR 2009</a>, <a href="/pub/#J20">CC 2011</a>, <a href="/pub/#J21">TMM 2013</a> <span class="bull"></span>
+							published in <a href="/pub/#C83">CVPR 2009</a>, <a href="/pub/#J20">CC 2011</a> <span class="bull"></span>
 							2008-2009
 						</div>
 						<div class="pub-detail">
@@ -1844,7 +1982,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="code-2007"></a>
+					<a class="anchor" id="vol-2007"></a>
 					2007
 				</h2>
 				<div class="pub-entry">
@@ -1862,18 +2000,20 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="http://image.ntua.gr/ivl/">ivl</a>
+						<div class="part nw">
+							<a class="acro but mr" href="http://image.ntua.gr/ivl/" title="Home + download">ivl</a>
 							<a class="lnk mr" href="../data/code/pdf/code/ivl.by-example.pdf" title="Article PDF">
 								<i class="faa fa-file-pdf2"></i>
 							</a>
-							<a class="lnk mr2" href="http://image.ntua.gr/iva/tools/ivl" title="Project home">
+						</div>
+						<div class="part nw">
+							<a class="lnk ext mr2" href="http://image.ntua.gr/iva/tools/ivl" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
-							<a class="lnk mr2" href="https://github.com/cpplibivl/ivl" title="Repository">
+							<a class="lnk ext mr2" href="https://github.com/cpplibivl/ivl" title="Repository">
 								<i class="fab fa-github"></i>
 							</a>
-							<a class="lnk mr2" href="https://sourceforge.net/projects/ivl/" title="SourceForge download">
+							<a class="lnk ext mr2" href="https://sourceforge.net/projects/ivl/" title="Download">
 								<i class="faa fa-sourceforge"></i>
 							</a>
 						</div>
@@ -1967,12 +2107,17 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="http://viral.image.ntua.gr/">VIRaL</a>
-							<a class="lnk mr2" href="../pub/#C86" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="http://viral.image.ntua.gr/" title="Access online">VIRaL</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C86" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="http://image.ntua.gr/iva/tools/viral" title="Project home">
+							<a class="lnk mr2" href="../pub/#J19" title="Journal paper">
+								<i class="fal fa-book-open"></i>
+							</a>
+							<a class="lnk ext mr2" href="http://image.ntua.gr/iva/tools/viral" title="Project home">
 								<i class="fal fa-home"></i>
 							</a>
 						</div>
@@ -2051,10 +2196,15 @@
 								(<span class="ref">advised by</span> K. Rapantzikos, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="http://image.ntua.gr/iva/research/wash/">WaSH</a>
-							<a class="lnk mr2" href="../pub/#C92" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/research/wash/" title="Home + download">WaSH</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C92" title="Conference paper">
+								<i class="fal fa-books"></i>
+							</a>
+							<a class="lnk mr2" href="../pub/#J26" title="Journal paper">
+								<i class="fal fa-book-open"></i>
 							</a>
 						</div>
 
@@ -2063,7 +2213,7 @@
 						<div class="pub-ref">
 							C++ <span class="bull"></span>
 							based on <a href="https://opencv.org/">OpenCV</a>, <a href="http://www.cgal.org/">CGAL</a>, <a href="http://www.boost.org/">Boost</a> <span class="bull"></span>
-							published in <a href="/pub/#C92">ECCV 2012</a>, <a href="/pub/#C96">ACCV 2014</a>, <a href="/pub/#J26">PR 2016</a> <span class="bull"></span>
+							published in <a href="/pub/#C92">ECCV 2012</a>, <a href="/pub/#J26">PR 2016</a> <span class="bull"></span>
 							2011-2012
 						</div>
 						<div class="pub-detail">
@@ -2077,7 +2227,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="bin-2010"></a>
+					<a class="anchor" id="vol-2010"></a>
 					2010
 				</h2>
 				<div class="pub-entry">
@@ -2095,10 +2245,15 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="http://image.ntua.gr/iva/tools/hpm/">HPM</a>
-							<a class="lnk mr2" href="../pub/#C89" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/tools/hpm/" title="Home + download">HPM</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C89" title="Conference paper">
+								<i class="fal fa-books"></i>
+							</a>
+							<a class="lnk mr2" href="../pub/#J22" title="Journal paper">
+								<i class="fal fa-book-open"></i>
 							</a>
 						</div>
 
@@ -2121,7 +2276,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="bin-2009"></a>
+					<a class="anchor" id="vol-2009"></a>
 					2009
 				</h2>
 				<div class="pub-entry">
@@ -2138,10 +2293,12 @@
 								Y. Avrithis
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="http://image.ntua.gr/iva/tools/mfd/">MFD</a>
-							<a class="lnk mr2" href="../pub/#C88" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/tools/mfd/" title="Home + download">MFD</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C88" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -2187,13 +2344,15 @@
 								(<span class="ref">advised by</span> G. Tolias, O. Chum, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="https://github.com/filipradenovic/revisitop/">RevOP</a>
-							<a class="lnk mr2" href="../pub/#C107" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/filipradenovic/revisitop/" title="Code repository">RevOP</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C107" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
-							<a class="lnk mr2" href="https://cove.thecvf.com/datasets/652" title="Project home">
-								<i class="fal fa-home"></i>
+							<a class="lnk ext mr2" href="https://cove.thecvf.com/datasets/652" title="Data repository">
+								<i class="fal fa-cloud"></i>
 							</a>
 						</div>
 
@@ -2216,7 +2375,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="data-2016"></a>
+					<a class="anchor" id="vol-2016"></a>
 					2016
 				</h2>
 				<div class="pub-entry">
@@ -2234,13 +2393,12 @@
 								(<span class="ref">advised by</span> G. Tolias, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="ftp://ftp.irisa.fr/local/texmex/corpus/instre/">INSTRE2</a>
-							<a class="lnk mr2" href="../pub/#C103" title="Paper">
-								<i class="fal fa-book"></i>
-							</a>
-							<a class="lnk mr2" href="ftp://ftp.irisa.fr/local/texmex/corpus/instre/readme.htm" title="Project home">
-								<i class="fal fa-home"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="ftp://ftp.irisa.fr/local/texmex/corpus/instre/" title="FTP download">INSTRE2</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C103" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -2262,7 +2420,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="data-2011"></a>
+					<a class="anchor" id="vol-2011"></a>
 					2011
 				</h2>
 				<div class="pub-entry">
@@ -2280,10 +2438,12 @@
 								(<span class="ref">advised by</span> R. van Zwol, Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/flickr_logos/">Logos27</a>
-							<a class="lnk mr2" href="../pub/#C87" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/flickr_logos/" title="Home + download">Logos27</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C87" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -2319,10 +2479,12 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/wc/">WC2M</a>
-							<a class="lnk mr2" href="../pub/#C89" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/wc/" title="Home + download">WC2M</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C89" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -2344,7 +2506,7 @@
 					</div>
 				</div>
 				<h2 class="pub rule">
-					<a class="anchor" id="data-2010"></a>
+					<a class="anchor" id="vol-2010"></a>
 					2010
 				</h2>
 				<div class="pub-entry">
@@ -2362,10 +2524,12 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/ec1m/">EC1M</a>
-							<a class="lnk mr2" href="../pub/#C86" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/ec1m/" title="Home + download">EC1M</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C86" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 
@@ -2401,10 +2565,12 @@
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
-						<div class="part">
-							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/ec50k/">EC50k</a>
-							<a class="lnk mr2" href="../pub/#C85" title="Paper">
-								<i class="fal fa-book"></i>
+						<div class="part nw">
+							<a class="acro but mr" href="http://image.ntua.gr/iva/datasets/ec50k/" title="Home + download">EC50k</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C85" title="Conference paper">
+								<i class="fal fa-books"></i>
 							</a>
 						</div>
 

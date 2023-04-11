@@ -1,6 +1,10 @@
-function ema(addr, sty, title) {
+function ema2(addr, sty, title) {
 	var href = "mail" + "to:" + addr;
-	document.write("<a class=\"" + sty + "\" href=" + href + ">");
+	document.write("<a class=\"" + sty + "\" href=\"" + href + "\" title=\"" + title + "\">");
+}
+function ema(addr, sty) {
+	var href = "mail" + "to:" + addr;
+	document.write("<a class=\"" + sty + "\" href=\"" + href + "\">");
 }
 function txt(msg) {
 	document.write(msg);
