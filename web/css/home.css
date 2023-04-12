@@ -235,6 +235,9 @@ body {
 .dense {
 	font-family: 'Roboto Condensed', sans-serif;
 }
+.strong {
+	font-weight: 700;
+}
 h1 {
 	color: #8C1515;
 	font-size: 26px;
@@ -404,8 +407,11 @@ h1 .anchor, h2 .anchor {
 .mr2 {
 	margin-right: .3em;
 }
-.ml2- {
+.ml-gs {
 	margin-left: -.5em;
+}
+.ml-ss {
+	margin-left: -.7em;
 }
 .nw {
 	white-space: nowrap;
