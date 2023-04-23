@@ -73,6 +73,8 @@
 	#pub main {max-width: calc(100vw - 11em - 30px)}
 /* 	viewport minus sidebar width minus margin between sidebar and main */
 /* 	needed because col-md does not work when containing a pre (for citations) */
+	#pub main.no-side {max-width: calc(100vw - 30px)}
+/* 	same but withour sidebar */
 }
 
 .side-bar nav {
