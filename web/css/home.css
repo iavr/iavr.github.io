@@ -70,10 +70,10 @@
 	#time .side-bar {width: 6em}
 	#cv .side-bar {width: 11em}
 	#pub .side-bar {width: 11em}
-	#pub main {max-width: calc(100vw - 11em - 30px)}
-/* 	viewport minus sidebar width minus margin between sidebar and main */
+	#pub main {max-width: calc(100vw - 11em)}
+/* 	viewport minus sidebar width */
 /* 	needed because col-md does not work when containing a pre (for citations) */
-	#pub main.no-side {max-width: calc(100vw - 30px)}
+	#pub main.no-side {max-width: calc(100vw)}
 /* 	same but withour sidebar */
 }
 
