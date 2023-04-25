@@ -33,6 +33,12 @@
 		<script src="../web/js/email.js"></script>
 		<script src="../web/js/scroll.js"></script>
 
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="../web/ico/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../web/ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../web/ico/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
 	</head>
 	<body data-spy="scroll" data-target="#nav">
 		<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
@@ -50,9 +56,11 @@
 							Publications
 						</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="../pub">By year</a>
-							<a class="dropdown-item" href="../pub-type">By type</a>
+							<a class="dropdown-item active" href="../pub">By year</a>
+							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="../pub-cite">By citations</a>
+							<a class="dropdown-item" href="../pub-type">By type</a>
+							<a class="dropdown-item" href="../pub-auth">By author</a>
 						</div>
 					</li>
 					</li>
@@ -62,8 +70,10 @@
 						</a>
 						<div class="dropdown-menu">
 							<a class="dropdown-item" href="../code">By type</a>
-							<a class="dropdown-item active" href="../code-year">By year</a>
+							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="../code-star">By stars</a>
+							<a class="dropdown-item active" href="../code-year">By year</a>
+							<a class="dropdown-item" href="../code-auth">By author</a>
 						</div>
 					</li>
 					</li>
@@ -176,7 +186,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="metrix"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-metrix" id="tog-metrix">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-metrix-" id="tog-metrix">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Mixup for Deep Metric Learning
 						</a>
@@ -205,7 +215,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-metrix">
+					<div class="collapse" id="col-metrix-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							<a href="https://github.com/billpsomas/Metrix_ICLR22/blob/master/LICENSE">MIT</a> license <span class="bull"></span>
@@ -226,7 +236,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="attmask"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-attmask" id="tog-attmask">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-attmask-" id="tog-attmask">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Attention-guided masked image modeling
 						</a>
@@ -255,7 +265,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-attmask">
+					<div class="collapse" id="col-attmask-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/bytedance/ibot">iBOT</a>, <a href="https://github.com/facebookresearch/dino">DINO</a>, <a href="https://github.com/microsoft/unilm/tree/master/beit">BEiT</a>, <a href="https://github.com/MadryLab/backgrounds_challenge">ImageNet-9</a> <span class="bull"></span>
@@ -277,7 +287,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="alignmix"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-alignmix" id="tog-alignmix">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-alignmix-" id="tog-alignmix">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Aligned feature interpolation
 						</a>
@@ -306,7 +316,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-alignmix">
+					<div class="collapse" id="col-alignmix-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/dfdazac/wassdistance">WassDistance</a> <span class="bull"></span>
@@ -328,7 +338,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="tfh"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-tfh" id="tog-tfh">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-tfh-" id="tog-tfh">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Tensor feature hallucination
 						</a>
@@ -354,7 +364,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-tfh">
+					<div class="collapse" id="col-tfh-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/WangYueFt/rfs">RFS</a>, <a href="https://github.com/tankche1/IDeMe-Net">IDeMe-Net</a>, <a href="https://github.com/tankche1/Semantic-Feature-Augmentation-in-Few-shot-Learning">Dual TriNet</a>, <a href="https://github.com/nupurkmr9/S2M2_fewshot">S2M2</a>, <a href="https://github.com/icoz69/DeepEMD">DeepEMD</a> <span class="bull"></span>
@@ -383,7 +393,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="ilpc"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ilpc" id="tog-ilpc">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ilpc-" id="tog-ilpc">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Iterative label propagation and cleaning
 						</a>
@@ -409,7 +419,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-ilpc">
+					<div class="collapse" id="col-ilpc-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/nupurkmr9/S2M2_fewshot">S2M2</a>, <a href="https://github.com/yhu01/PT-MAP">PT-MAP</a>, <a href="https://github.com/Yikai-Wang/ICI-FSL">LR+ICI</a>, <a href="https://github.com/wyharveychen/CloserLookFewShot">CloserLook</a>, <a href="https://github.com/seongmin-kye/MCT">MCT</a> <span class="bull"></span>
@@ -430,7 +440,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="videoqa"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-videoqa" id="tog-videoqa">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-videoqa-" id="tog-videoqa">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Video question answering
 						</a>
@@ -462,7 +472,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-videoqa">
+					<div class="collapse" id="col-videoqa-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/noagarcia/ROLL-VideoQA">ROLL-VideoQA</a> <span class="bull"></span>
@@ -492,7 +502,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="aml"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-aml" id="tog-aml">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-aml-" id="tog-aml">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Asymmetric metric learning
 						</a>
@@ -518,7 +528,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-aml">
+					<div class="collapse" id="col-aml-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/filipradenovic/cnnimageretrieval-pytorch">CIR-torch</a> <span class="bull"></span>
@@ -539,7 +549,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="nagp"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-nagp" id="tog-nagp">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-nagp-" id="tog-nagp">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Neural architecture growing, pruning and search
 						</a>
@@ -558,7 +568,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-nagp">
+					<div class="collapse" id="col-nagp-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/yigitcankaya/Shallow-Deep-Networks">SDN</a>, <a href="https://github.com/mil-ad/snip">SNIP</a> <span class="bull"></span>
@@ -581,7 +591,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="asmk-py"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-asmk-py" id="tog-asmk-py">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-asmk-py-" id="tog-asmk-py">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Aggregated selective match kernel (Python version)
 						</a>
@@ -610,7 +620,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-asmk-py">
+					<div class="collapse" id="col-asmk-py-">
 						<div class="pub-ref">
 							Python <span class="bull"></span>
 							based on <a href="/code/#asmk">ASMK</a>, <a href="https://github.com/filipradenovic/cnnimageretrieval-pytorch">CIR-torch</a>, <a href="https://github.com/facebookresearch/faiss">FAISS</a> <span class="bull"></span>
@@ -640,7 +650,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="ssal"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ssal" id="tog-ssal">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ssal-" id="tog-ssal">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Semi-supervised active learning
 						</a>
@@ -669,7 +679,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-ssal">
+					<div class="collapse" id="col-ssal-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/facebookresearch/deepcluster">DeepCluster</a>, <a href="/code/#dlp">DLP</a> <span class="bull"></span>
@@ -691,7 +701,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="gcc"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-gcc" id="tog-gcc">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-gcc-" id="tog-gcc">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Graph convolutional cleaning
 						</a>
@@ -720,7 +730,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-gcc">
+					<div class="collapse" id="col-gcc-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/tkipf/gcn">GCN</a>, <a href="https://github.com/facebookresearch/faiss">FAISS</a> <span class="bull"></span>
@@ -742,7 +752,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="nsod"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-nsod" id="tog-nsod">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-nsod-" id="tog-nsod">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Nano-supervised object detection
 						</a>
@@ -764,7 +774,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-nsod">
+					<div class="collapse" id="col-nsod-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/hbilen/WSDDN">WSDDN</a>, <a href="https://github.com/ppengtang/pcl.pytorch">PCL</a> <span class="bull"></span>
@@ -785,7 +795,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="fsfsl"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-fsfsl" id="tog-fsfsl">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-fsfsl-" id="tog-fsfsl">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Few-shot few-shot learning
 						</a>
@@ -807,7 +817,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-fsfsl">
+					<div class="collapse" id="col-fsfsl-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							published in <a href="/pub/#C115">ICPR 2020</a> <span class="bull"></span>
@@ -827,7 +837,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="bp"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-bp" id="tog-bp">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-bp-" id="tog-bp">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Boundary projection
 						</a>
@@ -856,7 +866,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-bp">
+					<div class="collapse" id="col-bp-">
 						<div class="pub-ref">
 							<a href="https://www.tensorflow.org/">TensorFlow</a> <span class="bull"></span>
 							based on <a href="https://github.com/tensorflow/cleverhans">CleverHans</a> <span class="bull"></span>
@@ -886,7 +896,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="dlp"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-dlp" id="tog-dlp">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-dlp-" id="tog-dlp">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Deep label propagation
 						</a>
@@ -915,7 +925,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-dlp">
+					<div class="collapse" id="col-dlp-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/CuriousAI/mean-teacher/tree/master/pytorch">Mean Teacher</a>, <a href="https://github.com/facebookresearch/faiss">FAISS</a> <span class="bull"></span>
@@ -937,7 +947,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="dci"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-dci" id="tog-dci">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-dci-" id="tog-dci">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Dense classification and implanting
 						</a>
@@ -959,7 +969,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-dci">
+					<div class="collapse" id="col-dci-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							based on <a href="https://github.com/gidariss/FewShotWithoutForgetting">FSwF</a> <span class="bull"></span>
@@ -980,7 +990,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="dsm"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-dsm" id="tog-dsm">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-dsm-" id="tog-dsm">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Deep spatial matching
 						</a>
@@ -1005,7 +1015,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-dsm">
+					<div class="collapse" id="col-dsm-">
 						<div class="pub-ref">
 							<a href="https://github.com/vlfeat/matconvnet">MatConvNet</a>, C++ <span class="bull"></span>
 							based on <a href="https://github.com/filipradenovic/cnnimageretrieval">CIR</a> <span class="bull"></span>
@@ -1027,7 +1037,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="sae"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-sae" id="tog-sae">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-sae-" id="tog-sae">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Smooth adversarial examples
 						</a>
@@ -1056,7 +1066,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-sae">
+					<div class="collapse" id="col-sae-">
 						<div class="pub-ref">
 							<a href="https://www.tensorflow.org/">TensorFlow</a>, Matlab <span class="bull"></span>
 							based on <a href="https://github.com/tensorflow/cleverhans">CleverHans</a>, <a href="https://github.com/carlini/nn_robust_attacks">C&W</a> <span class="bull"></span>
@@ -1089,7 +1099,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="mom"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-mom" id="tog-mom">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-mom-" id="tog-mom">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Mining on manifolds
 						</a>
@@ -1115,7 +1125,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-mom">
+					<div class="collapse" id="col-mom-">
 						<div class="pub-ref">
 							<a href="https://pytorch.org/">PyTorch</a>, <a href="https://github.com/vlfeat/matconvnet">MatConvNet</a> <span class="bull"></span>
 							based on <a href="https://github.com/vadimkantorov/metriclearningbench">MLbench</a>, <a href="/code/#dlp">DLP</a> <span class="bull"></span>
@@ -1136,7 +1146,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="god"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-god" id="tog-god">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-god-" id="tog-god">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Graph-based object discovery
 						</a>
@@ -1161,7 +1171,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-god">
+					<div class="collapse" id="col-god-">
 						<div class="pub-ref">
 							<a href="https://github.com/vlfeat/matconvnet">MatConvNet</a> <span class="bull"></span>
 							based on <a href="/code/#diffusion">Diffusion</a>, <a href="/code/#agm">AGM</a> <span class="bull"></span>
@@ -1186,7 +1196,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="revop"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-revop" id="tog-revop">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-revop-" id="tog-revop">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Revisiting Oxford and Paris
 						</a>
@@ -1215,7 +1225,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-revop">
+					<div class="collapse" id="col-revop-">
 						<div class="pub-ref">
 							Matlab, Python <span class="bull"></span>
 							based on <a href="https://www.robots.ox.ac.uk/~vgg/data/oxbuildings/">Oxford5k</a>, <a href="https://www.robots.ox.ac.uk/~vgg/data/parisbuildings/">Paris6k</a> <span class="bull"></span>
@@ -1244,7 +1254,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="diffusion"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-diffusion" id="tog-diffusion">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-diffusion-" id="tog-diffusion">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Diffusion for image retrieval
 						</a>
@@ -1273,7 +1283,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-diffusion">
+					<div class="collapse" id="col-diffusion-">
 						<div class="pub-ref">
 							Matlab <span class="bull"></span>
 							based on <a href="http://yael.gforge.inria.fr/">Yael</a> <span class="bull"></span>
@@ -1295,7 +1305,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="parts"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-parts" id="tog-parts">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-parts-" id="tog-parts">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Part learning for visual recognition
 						</a>
@@ -1317,7 +1327,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-parts">
+					<div class="collapse" id="col-parts-">
 						<div class="pub-ref">
 							Matlab <span class="bull"></span>
 							published in <a href="/pub/#C102">CVPR 2017</a>, <a href="/pub/#C104">CEFRL/ICCV 2017</a> <span class="bull"></span>
@@ -1337,7 +1347,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="pynet"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-pynet" id="tog-pynet">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-pynet-" id="tog-pynet">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							PyNet
 						</a>
@@ -1362,7 +1372,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-pynet">
+					<div class="collapse" id="col-pynet-">
 						<div class="pub-ref">
 							Python <span class="bull"></span>
 							<a href="https://github.com/iavr/pynet/blob/master/LICENSE">BSD</a> license <span class="bull"></span>
@@ -1382,7 +1392,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="lopq-prod"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-lopq-prod" id="tog-lopq-prod">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-lopq-prod-" id="tog-lopq-prod">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Locally optimized product quantization (Production version)
 						</a>
@@ -1410,7 +1420,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-lopq-prod">
+					<div class="collapse" id="col-lopq-prod-">
 						<div class="pub-ref">
 							Python, Spark <span class="bull"></span>
 							based on <a href="/code/#lopq">LOPQ</a> <span class="bull"></span>
@@ -1436,7 +1446,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="instre2"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-instre2" id="tog-instre2">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-instre2-" id="tog-instre2">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Instance retrieval benchmark 2
 						</a>
@@ -1458,7 +1468,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-instre2">
+					<div class="collapse" id="col-instre2-">
 						<div class="pub-ref">
 							based on <a href="https://doi.org/10.1145/2700292">INSTRE</a> <span class="bull"></span>
 							published in <a href="/pub/#C103">CVPR 2017</a> <span class="bull"></span>
@@ -1486,7 +1496,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="iqm"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-iqm" id="tog-iqm">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-iqm-" id="tog-iqm">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Inverted-quantized $k$-means
 						</a>
@@ -1514,7 +1524,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-iqm">
+					<div class="collapse" id="col-iqm-">
 						<div class="pub-ref">
 							Matlab, C++ <span class="bull"></span>
 							based on <a href="/code/#agm">AGM</a>, <a href="http://yael.gforge.inria.fr/">Yael</a>, <a href="http://github.com/iavr/xio/">xio</a> <span class="bull"></span>
@@ -1540,7 +1550,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="geraf"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-geraf" id="tog-geraf">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-geraf-" id="tog-geraf">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							$k$-d Generalized Randomized Forests
 						</a>
@@ -1569,7 +1579,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-geraf">
+					<div class="collapse" id="col-geraf-">
 						<div class="pub-ref">
 							C++ header-only <span class="bull"></span>
 							<a href="https://github.com/gsamaras/kd_GeRaF/blob/master/LICENSE.txt">BSD</a> license <span class="bull"></span>
@@ -1598,7 +1608,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="ebd"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ebd" id="tog-ebd">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ebd-" id="tog-ebd">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Early burst detection (Demo version)
 						</a>
@@ -1623,7 +1633,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-ebd">
+					<div class="collapse" id="col-ebd-">
 						<div class="pub-ref">
 							Matlab <span class="bull"></span>
 							based on <a href="/code/#asmk">ASMK</a> <span class="bull"></span>
@@ -1652,7 +1662,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="lopq"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-lopq" id="tog-lopq">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-lopq-" id="tog-lopq">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Locally optimized product quantization (Demo version)
 						</a>
@@ -1674,7 +1684,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-lopq">
+					<div class="collapse" id="col-lopq-">
 						<div class="pub-ref">
 							published in <a href="/pub/#C95">CVPR 2014</a> <span class="bull"></span>
 							2013-2014
@@ -1703,7 +1713,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="asmk"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-asmk" id="tog-asmk">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-asmk-" id="tog-asmk">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Aggregated selective match kernel (Matlab version)
 						</a>
@@ -1735,7 +1745,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-asmk">
+					<div class="collapse" id="col-asmk-">
 						<div class="pub-ref">
 							Matlab <span class="bull"></span>
 							based on <a href="http://yael.gforge.inria.fr/">Yael</a> <span class="bull"></span>
@@ -1756,7 +1766,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="drvq"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-drvq" id="tog-drvq">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-drvq-" id="tog-drvq">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Dimensionality-recursive vector quantization
 						</a>
@@ -1790,7 +1800,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-drvq">
+					<div class="collapse" id="col-drvq-">
 						<div class="pub-ref">
 							C++ <span class="bull"></span>
 							based on <a href="/code/#ivl">ivl</a> <span class="bull"></span>
@@ -1812,7 +1822,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="ivl2"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ivl2" id="tog-ivl2">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ivl2-" id="tog-ivl2">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							ivl2
 						</a>
@@ -1837,7 +1847,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-ivl2">
+					<div class="collapse" id="col-ivl2-">
 						<div class="pub-ref">
 							C++11 header-only <span class="bull"></span>
 							<a href="https://github.com/iavr/ivl2/blob/master/LICENSE">GNU LGPL2/3</a> license <span class="bull"></span>
@@ -1880,7 +1890,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="symcity"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-symcity" id="tog-symcity">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-symcity-" id="tog-symcity">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Feature Selection by Symmetry
 						</a>
@@ -1905,7 +1915,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-symcity">
+					<div class="collapse" id="col-symcity-">
 						<div class="pub-ref">
 							C++ <span class="bull"></span>
 							based on <a href="/code/#hpm">HPM</a>, <a href="/code/#ivl">ivl</a> <span class="bull"></span>
@@ -1926,7 +1936,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="hpm-int"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-hpm-int" id="tog-hpm-int">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-hpm-int-" id="tog-hpm-int">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Hough pyramid matching (Internal version)
 						</a>
@@ -1956,7 +1966,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-hpm-int">
+					<div class="collapse" id="col-hpm-int-">
 						<div class="pub-ref">
 							C++ <span class="bull"></span>
 							based on <a href="/code/#hpm">HPM</a>, <a href="https://opencv.org/">OpenCV</a> <span class="bull"></span>
@@ -1985,7 +1995,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="wash"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-wash" id="tog-wash">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-wash-" id="tog-wash">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Weighted alpha-shapes
 						</a>
@@ -2010,7 +2020,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-wash">
+					<div class="collapse" id="col-wash-">
 						<div class="pub-ref">
 							C++ <span class="bull"></span>
 							based on <a href="https://opencv.org/">OpenCV</a>, <a href="http://www.cgal.org/">CGAL</a>, <a href="http://www.boost.org/">Boost</a> <span class="bull"></span>
@@ -2035,7 +2045,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="agm-prod"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-agm-prod" id="tog-agm-prod">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-agm-prod-" id="tog-agm-prod">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Approximate Gaussian mixture (Production version)
 						</a>
@@ -2060,7 +2070,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-agm-prod">
+					<div class="collapse" id="col-agm-prod-">
 						<div class="pub-ref">
 							C++ <span class="bull"></span>
 							based on <a href="/code/#ivl">ivl</a>, <a href="http://www.cs.ubc.ca/research/flann/">FLANN</a> <span class="bull"></span>
@@ -2081,7 +2091,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="agm"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-agm" id="tog-agm">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-agm-" id="tog-agm">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Approximate Gaussian mixture (Demo version)
 						</a>
@@ -2102,7 +2112,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-agm">
+					<div class="collapse" id="col-agm-">
 						<div class="pub-ref">
 							Matlab <span class="bull"></span>
 							published in <a href="/pub/#C91">ECCV 2012</a> <span class="bull"></span>
@@ -2126,7 +2136,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="logos27"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-logos27" id="tog-logos27">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-logos27-" id="tog-logos27">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Flickr Logos 27
 						</a>
@@ -2134,7 +2144,7 @@
 					<div class="pub-author">
 						<div class="part mr">
 							<span class="author">
-								Y. Kalantidis, LG. Pueyo, M. Trevisiol
+								Y. Kalantidis, L.G. Pueyo, M. Trevisiol
 								(<span class="ref">advised by</span> R. van Zwol, Y. Avrithis)
 							</span>
 						</div>
@@ -2148,7 +2158,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-logos27">
+					<div class="collapse" id="col-logos27-">
 						<div class="pub-ref">
 							based on <a href="https://www.flickr.com/groups/identitydesign/">Flickr Identity + Logo Design</a> <span class="bull"></span>
 							published in <a href="/pub/#C87">ICMR 2011</a> <span class="bull"></span>
@@ -2168,7 +2178,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="wc2m"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-wc2m" id="tog-wc2m">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-wc2m-" id="tog-wc2m">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							World Cities 2M
 						</a>
@@ -2190,7 +2200,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-wc2m">
+					<div class="collapse" id="col-wc2m-">
 						<div class="pub-ref">
 							based on <a href="https://flickr.com/">Flickr</a> <span class="bull"></span>
 							published in <a href="/pub/#C89">ICCV 2011</a> <span class="bull"></span>
@@ -2218,7 +2228,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="hpm"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-hpm" id="tog-hpm">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-hpm-" id="tog-hpm">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Hough pyramid matching (Public version)
 						</a>
@@ -2243,7 +2253,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-hpm">
+					<div class="collapse" id="col-hpm-">
 						<div class="pub-ref">
 							C++ <span class="bull"></span>
 							based on <a href="/code/#ivl">ivl</a> <span class="bull"></span>
@@ -2268,7 +2278,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="scene-maps"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-scene-maps" id="tog-scene-maps">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-scene-maps-" id="tog-scene-maps">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Scene maps
 						</a>
@@ -2296,7 +2306,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-scene-maps">
+					<div class="collapse" id="col-scene-maps-">
 						<div class="pub-ref">
 							C++ <span class="bull"></span>
 							based on <a href="/code/#ivl">ivl</a>, <a href="http://sourceforge.net/projects/lpsolve/">LPSolve</a> <span class="bull"></span>
@@ -2321,7 +2331,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="ec1m"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ec1m" id="tog-ec1m">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ec1m-" id="tog-ec1m">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							European Cities 1M
 						</a>
@@ -2343,7 +2353,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-ec1m">
+					<div class="collapse" id="col-ec1m-">
 						<div class="pub-ref">
 							based on <a href="https://flickr.com/">Flickr</a> <span class="bull"></span>
 							published in <a href="/pub/#C86">ACM-MM 2010</a> <span class="bull"></span>
@@ -2363,7 +2373,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="ec50k"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ec50k" id="tog-ec50k">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ec50k-" id="tog-ec50k">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							European Cities 50k
 						</a>
@@ -2385,7 +2395,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-ec50k">
+					<div class="collapse" id="col-ec50k-">
 						<div class="pub-ref">
 							based on <a href="https://flickr.com/">Flickr</a> <span class="bull"></span>
 							published in <a href="/pub/#C85">ACM-MM 2010</a> <span class="bull"></span>
@@ -2413,7 +2423,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="mfd"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-mfd" id="tog-mfd">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-mfd-" id="tog-mfd">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Medial feature detector
 						</a>
@@ -2434,7 +2444,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-mfd">
+					<div class="collapse" id="col-mfd-">
 						<div class="pub-ref">
 							C++ <span class="bull"></span>
 							based on <a href="/code/#ivl">ivl</a>, <a href="https://opencv.org/">OpenCV</a>, <a href="http://www.robots.ox.ac.uk/~vgg/research/affine/det_eval_files/extract_features2.tar.gz">VGG Affine Features</a> <span class="bull"></span>
@@ -2459,7 +2469,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="fmh-prod"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-fmh-prod" id="tog-fmh-prod">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-fmh-prod-" id="tog-fmh-prod">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Feature map hashing/similarity (Production version)
 						</a>
@@ -2487,7 +2497,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-fmh-prod">
+					<div class="collapse" id="col-fmh-prod-">
 						<div class="pub-ref">
 							C++ <span class="bull"></span>
 							based on <a href="/code/#ivl">ivl</a>, <a href="/code/#fmh">FMH</a> <span class="bull"></span>
@@ -2508,7 +2518,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="fmh"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-fmh" id="tog-fmh">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-fmh-" id="tog-fmh">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Feature map hashing/similarity (Demo version)
 						</a>
@@ -2538,7 +2548,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-fmh">
+					<div class="collapse" id="col-fmh-">
 						<div class="pub-ref">
 							Matlab <span class="bull"></span>
 							published in <a href="/pub/#C85">ACM-MM 2010</a>, <a href="/pub/#J23">CVIU 2014</a> <span class="bull"></span>
@@ -2566,7 +2576,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="viral"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-viral" id="tog-viral">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-viral-" id="tog-viral">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Visual Image Retrieval and Localization
 						</a>
@@ -2574,7 +2584,7 @@
 					<div class="pub-author">
 						<div class="part mr">
 							<span class="author">
-								Y. Kalantidis, G. Tolias, M. Phinikettos, E. Spyrou, P. Mylonas
+								Y. Kalantidis, G. Tolias, M. Phinikettos, E. Spyrou, Ph. Mylonas
 								(<span class="ref">advised by</span> Y. Avrithis)
 							</span>
 						</div>
@@ -2594,7 +2604,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-viral">
+					<div class="collapse" id="col-viral-">
 						<div class="pub-ref">
 							based on <a href="https://www.flickr.com/">Flickr</a> <span class="bull"></span>
 							published in <a href="/pub/#C86">ACM-MM 2010</a>, <a href="/pub/#J19">MTAP 2011</a> <span class="bull"></span>
@@ -2651,7 +2661,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="sfd"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-sfd" id="tog-sfd">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-sfd-" id="tog-sfd">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							Spatiotemporal feature detector
 						</a>
@@ -2679,7 +2689,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-sfd">
+					<div class="collapse" id="col-sfd-">
 						<div class="pub-ref">
 							Matlab <span class="bull"></span>
 							published in <a href="/pub/#C83">CVPR 2009</a>, <a href="/pub/#J20">CC 2011</a> <span class="bull"></span>
@@ -2707,7 +2717,7 @@
 				<div class="pub-entry">
 					<div class="pub-title">
 						<a class="anchor" id="ivl"></a>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ivl" id="tog-ivl">
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ivl-" id="tog-ivl">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							ivl
 						</a>
@@ -2741,7 +2751,7 @@
 						</div>
 
 					</div>
-					<div class="collapse" id="col-ivl">
+					<div class="collapse" id="col-ivl-">
 						<div class="pub-ref">
 							C++ <span class="bull"></span>
 							<a href="https://github.com/cpplibivl/ivl/blob/master/LICENSE">GNU LGPL2/3</a> license <span class="bull"></span>
@@ -2813,6 +2823,27 @@
 
 	</div>
 </div>
+<footer class="bd-footer">
+	<div class="container-fluid p-3 p-md-5">
+		<p>
+			Built using <a href="https://shopify.github.io/liquid/">Liquid</a>, <a href="https://jekyllrb.com/">Jekyll</a> and <span class="bright">my own code</span> on top
+			<span class="bull">
+			</span> Styled using <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://www.mathjax.org/">MathJax</a>, <a href="https://fontawesome.com/">Font Awesome</a> and <a href="https://fonts.google.com/specimen/Roboto/">Google Fonts</a>
+		</p>
+		<p>
+			Hosted by <a href="https://github.com/iavr/iavr.github.io">GitHub</a>
+			<span class="bull"></span>
+			Domain by <a href="https://www.name.com/">name.com</a>
+			<span class="bull"></span>
+			Last updated <span class="bright">Apr 26, 2023</span>
+		</p>
+		<p>
+			Copyright notice applies to all <a href="../pub/#copyright">publications</a>
+			<span class="bull"></span>
+			All remaining material licensed <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+		</p>
+	</div>
+</footer>
 
 	</body>
 </html>

@@ -33,6 +33,12 @@
 		<script src="../web/js/email.js"></script>
 		<script src="../web/js/scroll.js"></script>
 
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="../web/ico/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../web/ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../web/ico/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
 	</head>
 	<body data-spy="scroll" data-target="#nav">
 		<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
@@ -50,9 +56,11 @@
 							Publications
 						</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="../pub">By year</a>
-							<a class="dropdown-item" href="../pub-type">By type</a>
+							<a class="dropdown-item active" href="../pub">By year</a>
+							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="../pub-cite">By citations</a>
+							<a class="dropdown-item" href="../pub-type">By type</a>
+							<a class="dropdown-item" href="../pub-auth">By author</a>
 						</div>
 					</li>
 					</li>
@@ -61,9 +69,11 @@
 							Code/Data
 						</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="../code">By type</a>
-							<a class="dropdown-item" href="../code-year">By year</a>
+							<a class="dropdown-item active" href="../code">By type</a>
+							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="../code-star">By stars</a>
+							<a class="dropdown-item" href="../code-year">By year</a>
+							<a class="dropdown-item" href="../code-auth">By author</a>
 						</div>
 					</li>
 					</li>
@@ -3025,6 +3035,27 @@
 	</div>
 </div>
 
+<footer class="bd-footer">
+	<div class="container-fluid p-3 p-md-5">
+		<p>
+			Built using <a href="https://shopify.github.io/liquid/">Liquid</a>, <a href="https://jekyllrb.com/">Jekyll</a> and <span class="bright">my own code</span> on top
+			<span class="bull">
+			</span> Styled using <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://www.mathjax.org/">MathJax</a>, <a href="https://fontawesome.com/">Font Awesome</a> and <a href="https://fonts.google.com/specimen/Roboto/">Google Fonts</a>
+		</p>
+		<p>
+			Hosted by <a href="https://github.com/iavr/iavr.github.io">GitHub</a>
+			<span class="bull"></span>
+			Domain by <a href="https://www.name.com/">name.com</a>
+			<span class="bull"></span>
+			Last updated <span class="bright">Apr 26, 2023</span>
+		</p>
+		<p>
+			Copyright notice applies to all <a href="../pub/#copyright">publications</a>
+			<span class="bull"></span>
+			All remaining material licensed <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+		</p>
+	</div>
+</footer>
 
 	</body>
 </html>

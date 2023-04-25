@@ -149,35 +149,40 @@
 	color: rgba(0,0,0,.85);
 }
 .side-nav a.active, .side-nav a.active:hover {
-/* 	font-weight: 400; */
 	color: rgba(0,0,0,1);
 	background-color: rgba(0,0,0,.1);
 }
 #cv .side-nav a {
 	padding: .2rem .4em;
 }
-#pub .side-nav a {
-	font-size: 90%;
-	text-align: center;
-}
-#time .side-nav a {
+#pub .side-nav a, #time .side-nav a {
 	font-size: 90%;
 }
 #pub .side-nav a.sm, #time .side-nav a.sm {
 	font-size: 80%;
 }
 @media (min-width:768px) {
+	#cv .side-nav a {
+		width: 100%;
+		padding: .2rem .8em;
+	}
 	#pub .side-nav {
-		padding: 0 1.3rem;
+		padding: 0 .5rem 0 1.5rem;
+	}
+	#pub .side-nav.full {
+		padding: 0 .5rem;
 	}
 	#pub .side-nav a {
 		width: 4em;
-		padding: .2rem 0;
+		padding: .2rem .8rem;
 	}
-	#time .side-nav {
-		padding: 0 1rem;
+	#pub .side-nav.full a {
+		width: 100%;
+		padding: .2rem 1rem;
 	}
 	#time .side-nav a {
+		width: 100%;
+		padding: .2rem 1.4rem;
 		font-size: inherit;
 	}
 }
