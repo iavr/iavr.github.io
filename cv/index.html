@@ -216,7 +216,7 @@
 					<i class="faa fa-file-pdf2"></i>
 					<div class="cv-ref">
 						Last updated:
-						Oct 24, 2023
+						Nov 08, 2023
 					</div>
 				</a>
 				<h1 class="cv rule">
@@ -1755,23 +1755,24 @@
 						<div class="cv-title">
 							Thodoris Lymperopoulos
 						</div>
-						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-msc-2023-lymperopoulos">
+						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-msc-2023-lymperopoulos">
 							<i class="left-60 tog far fa-chevron-down"></i>
 							A Study of Explainable AI: The Concept of Zero Information
 						</a>
+						<a class="lnk" href="../data/cv/pdf/msc/2023.lymperopoulos.pdf"><i class="faa fa-file-pdf2 pdf-icon"></i></a>
 						<div class="collapse" id="col-msc-2023-lymperopoulos">
 							<div class="cv-detail just">
 								<p>
-									The rapid development of complex deep learning models has led to remarkable achievements across various applications. These models, trained on extensive datasets, have demonstrated exceptional accuracy in decision-making, indicating their ability to recognize crucial patterns in data. However, this success has come at the cost of transparency and interpretability. These intricate architectures involve nested functions performing numerous low-level computations, resulting in complex feature correlations and sequential dimensionality reductions. Much like the human brain, where we understand individual neuron interactions but struggle to comprehend how the brain perceives higher concepts, we face a similar challenge in understanding the inner workings of deep learning models.
+									The rapid evolution of complex deep learning models has yielded remarkable achievements in several applications, underlining their proficiency in recognizing vital data patterns. However, this success came at the cost of transparency and interpretability. These intricate architectures are considered as black boxes, since their low-level, non-linear computations are too many to analyze. Much like the human brain, we understand individual neuron interactions but we struggle to comprehend how the model combines information to form higher concepts. This gap of knowledge gave rise to Explainable AI (XAI).
 								</p>
 								<p>
-									Explainable Artificial Intelligence (XAI) emerges as a critical field aiming to bridge this knowledge gap concerning model functionality. Diverse methodologies have been devised to interpret how models arrive at their decisions, shifting the focus toward explaining specific decisions given input samples. This quest for explainability bifurcates into two discrete questions: what factors influenced the model's decision and how did they influence it? The emphasis has primarily been on the former, leading to the development of attribution methods. These methods seek to attribute a model's decision back to input features, assigning importance scores to each feature and constructing attribution maps. To achieve this, they leverage mathematical tools that can decompose the model's decision and reveal some importance concepts. These methods vary in complexity, may require single or multiple passes through the model, and incorporate techniques inspired by different science fields.
+									This particular field of AI is in its developing stage and a sequence of questions to comprehend the functioning of a model is yet to be formed. However, the exploration began with a fundamental question: "what factors influence the prediction of a model for a given input", leading to the   development of attribution methods. These methods assign importance scores to each input feature. The proliferation of such methods necessitated the creation of evaluation metrics to measure their effectiveness. Yet, such metrics have limitations, leading to the development of sets of axioms and criteria that were considered essential for robust methods to satisfy. While facing similar limitations, they provided a more conceptually sound approach for robust attributions.
 								</p>
 								<p>
-									Despite the plethora of methods available, the quest for the correct attribution method remains elusive. For that reason, researchers designed different evaluation metrics, as a framework for measuring the effectiveness and comparing different methods. Such metrics have proven to be unfaithful, and their use must be approached with caution. Consequently, a robust methodology for evaluating the effectiveness of attribution methods remains a pressing need. In response to this challenge, some researchers focused on developing a set of axioms and criteria that they considered essential for the correct method to satisfy. While facing similar limitations as evaluation metrics, this method appeared conceptually viable for discovering the correct attribution.
+									In response to these challenges, this thesis explores the concept of Zero Information. This concept aims to conceal all information contained in parts of an image for a particular model, revealing their contribution to the prediction of the model. We develop a new approach to the problem, by designing criteria related to information concealment. First, we design an algorithm for hiding information from the whole image. By translating criteria into loss functions, the algorithm finds the most influential input features that lead to the drop of the model's confidence and use them to define an attribution method. Then, we hide information from parts of the image, by extending the criteria to capture feature interactions. An optimization algorithm is designed to meet these criteria, while leveraging generative models for reconstructing the hidden parts with natural fill. The method is tested across multiple metrics, showing strong performance against other techniques. It can then be exploited by different attribution methods and evaluation metrics based on information concealment, yielding better results.
 								</p>
 								<p>
-									This thesis builds upon this methodology and comes to address some fundamental challenges in XAI. It challenges the problem of Zero Information and formulates criteria that lead to the development of a robust framework, based on the concept of Information Concealment. Such a framework can then be leveraged to develop more robust evaluation metrics or to enhance the effectiveness of attribution techniques. 
+									Overall, this thesis attempts to develop a methodology towards robust filling techniques for Zero Information. It does not give definite answers to the problem, since it is constrained by its complexity. Instead, it paves the way for better criteria to be developed in the future, to answer a fundamental question of XAI and unlock the power of different methods. 
 								</p>
 							</div>
 						</div>
@@ -1787,6 +1788,10 @@
 					<div class="col-sm">
 						<div class="cv-title">
 							<a href="https://www.linkedin.com/in/christos-morfopoulos-a58954171/">Christos Morfopoulos</a>
+							<div class="cv-ref">
+								now Machine Learning Engineer at
+								<a href="https://www.accenture.com/gr-en">Accenture</a>, Athens, Greece
+							</div>
 						</div>
 						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-msc-2023-morfopoulos">
 							<i class="left-60 tog far fa-chevron-down"></i>
@@ -1818,6 +1823,10 @@
 					<div class="col-sm">
 						<div class="cv-title">
 							<a href="https://www.linkedin.com/in/dreppas/">Dimitrios Reppas</a>
+							<div class="cv-ref">
+								now Machine Learning Technical Manager at
+								<a href="https://itml.gr/">ITML</a>, Athens, Greece
+							</div>
 						</div>
 						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-msc-2022-reppas">
 							<i class="left-60 tog far fa-chevron-down"></i>
@@ -1855,6 +1864,10 @@
 					<div class="col-sm">
 						<div class="cv-title">
 							<a href="https://www.linkedin.com/in/ioannis-misios/">Ioannis Misios</a>
+							<div class="cv-ref">
+								now Computer Vision Engineer at
+								<a href="https://nvisionist.com/">nvisionist</a>, Athens, Greece
+							</div>
 						</div>
 						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-msc-2022-misios">
 							<i class="left-60 tog far fa-chevron-down"></i>
@@ -2027,8 +2040,8 @@
 						<div class="cv-title">
 							<a href="https://www.linkedin.com/in/giorgos-mitsis-351a76104/">Giorgos Mitsis</a>
 							<div class="cv-ref">
-								now PhD Student at
-								<a href="https://www.ntua.gr/en/">National Technical University of Athens</a>, Athens, Greece
+								now Software Engineer at
+								<a href="http://www.skroutz.gr">Skroutz</a>, Athens, Greece
 							</div>
 						</div>
 						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-msc-2015-mitsis">
@@ -2060,7 +2073,7 @@
 					</div>
 					<div class="col-sm">
 						<div class="cv-title">
-							Vasileios Chatzipanos
+							<a href="https://www.linkedin.com/in/vchatz/">Vasileios Chatzipanos</a>
 							<div class="cv-ref">
 								now Software Engineer at
 								<a href="https://www.crunchrapps.com/">Crunchr</a>, Amsterdam, The Netherlands
@@ -4953,7 +4966,7 @@
 			<span class="bull"></span>
 			Domain by <a href="https://www.name.com/">name.com</a>
 			<span class="bull"></span>
-			Last updated <span class="bright">Oct 24, 2023</span>
+			Last updated <span class="bright">Nov 08, 2023</span>
 		</p>
 		<p>
 			Copyright notice applies to all <a href="../pub/#copyright">publications</a>
