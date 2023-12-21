@@ -465,6 +465,9 @@
 							<a class="lnk mr2" href="../data/pub/bib/conf/C131.bib" title="BibTeX citation">
 								<i class="fal fa-comment-quote"></i>
 							</a>
+							<a class="lnk mr2" href="../data/pub/poster/conf/C131.neurips23.multimix.pdf" title="Poster">
+								<i class="fal fa-person-chalkboard"></i>
+							</a>
 						</div>
 						<div class="part nw">
 								<a class="lnk ext mr2" href="https://scholar.google.com/citations?view_op=view_citation&citation_for_view=AF2SxG0AAAAJ:7H_MAutzIkAC" title="@ Google Scholar">
@@ -9402,6 +9405,60 @@
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
+						<a class="anchor" id="R46"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R46" id="tog-R46">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							PowMix: a Versatile Regularizer for Multimodal Sentiment Analysis
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">E. Georgiou, Y. Avrithis, A. Potamianos</span>
+						</div>
+						<div class="part nw">
+							<a class="acro but mr" href="https://arxiv.org/abs/2312.12334" title="Open access">arXiv,&nbsp;2023</a>
+							<a class="lnk mr" href="../data/pub/pdf/report/R046.2312.12334v1.powmix.pdf" title="Paper PDF">
+								<i class="faa fa-file-pdf2"></i>
+							</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../data/pub/bib/report/R46.bib" title="BibTeX citation">
+								<i class="fal fa-comment-quote"></i>
+							</a>
+							<a class="lnk mr2" href="../data/pub/src/report/R046.2312.12334v1.powmix.tar.gz" title="Paper source">
+								<i class="fal fa-file-zipper"></i>
+							</a>
+						</div>
+						<div class="part nw">
+						</div>
+
+					</div>
+					<div class="collapse" id="col-R46">
+						<div class="pub-ref">
+							<em>arXiv preprint arXiv:2312.12334</em>  <span class="bull"></span> Dec 2023
+						</div>
+						<div class="pub-detail">
+							<a href="../data/pub/thumb/wide/report/R046.2312.12334.powmix.png"><img src="../data/pub/thumb/wide/report/R046.2312.12334.powmix.png" alt="R46 thumbnail" loading="lazy"></a>
+							<div class="just">
+								<p>
+									Multimodal sentiment analysis (MSA) leverages heterogeneous data sources to interpret the complex nature of human sentiments. Despite significant progress in multimodal architecture design, the field lacks comprehensive regularization methods. This paper introduces PowMix, a versatile embedding space regularizer that builds upon the strengths of unimodal mixing-based regularization approaches and introduces novel algorithmic components that are specifically tailored to multimodal tasks. PowMix is integrated before the fusion stage of multimodal architectures and facilitates intra-modal mixing, such as mixing text with text, to act as a regularizer. PowMix consists of five components: 1) a varying number of generated mixed examples, 2) mixing factor reweighting, 3) anisotropic mixing, 4) dynamic mixing, and 5) cross-modal label mixing. Extensive experimentation across benchmark MSA datasets and a broad spectrum of diverse architectural designs demonstrate the efficacy of PowMix, as evidenced by consistent performance improvements over baselines and existing mixing methods. An in-depth ablation study highlights the critical contribution of each PowMix component and how they synergistically enhance performance. Furthermore, algorithmic analysis demonstrates how PowMix behaves in different scenarios, particularly comparing early versus late fusion architectures. Notably, PowMix enhances overall performance without sacrificing model robustness or magnifying text dominance. It also retains its strong performance in situations of limited data. Our findings position PowMix as a promising versatile regularization strategy for MSA. Code will be made available.
+								</p>
+							</div>
+							<figure class="pub-bib highlight">
+								<pre><code>@article{R46,
+   title = {{PowMix}: A Versatile Regularizer for Multimodal Sentiment Analysis},
+   author = {Georgiou, Efthymios and Avrithis, Yannis and Potamianos, Alexandros},
+   journal = {arXiv preprint arXiv:2312.12334},
+   month = {12},
+   year = {2023}
+}</code></pre>
+							</figure>
+						</div>
+					</div>
+				</div>
+
+				<div class="pub-entry">
+					<div class="pub-title">
 						<a class="anchor" id="R45"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-R45" id="tog-R45">
 							<i class="left-60 tog far fa-chevron-down"></i>
@@ -9447,7 +9504,7 @@
 									On sequence data, we further extend to Dense MultiMix. We densely interpolate features and target labels at each spatial location and also apply the loss densely. To mitigate the lack of dense labels, we inherit labels from examples and weight interpolation factors by attention as a measure of confidence.
 								</p>
 								<p>
-									Overall, we increase the number of loss terms per mini-batch by orders of magnitude at little additional cost. This is only possible because of interpolating in the embedding space. We empirically show that our solutions yield significant improvement over state-of-the-art mixup methods on four different benchmarks, despite interpolation being only linear. By analyzing the embedding space, we show that the classes are more tightly clustered and uniformly spread over the embedding space, thereby explaining the improved behavior. 
+									Overall, we increase the number of loss terms per mini-batch by orders of magnitude at little additional cost. This is only possible because of interpolating in the embedding space. We empirically show that our solutions yield significant improvement over state-of-the-art mixup methods on four different benchmarks, despite interpolation being only linear. By analyzing the embedding space, we show that the classes are more tightly clustered and uniformly spread over the embedding space, thereby explaining the improved behavior.
 								</p>
 							</div>
 							<figure class="pub-bib highlight">
@@ -15415,7 +15472,7 @@
 			<span class="bull"></span>
 			Domain by <a href="https://www.name.com/">name.com</a>
 			<span class="bull"></span>
-			Last updated <span class="bright">Nov 10, 2023</span>
+			Last updated <span class="bright">Dec 21, 2023</span>
 		</p>
 		<p>
 			Copyright notice applies to all <a href="../pub/#copyright">publications</a>
