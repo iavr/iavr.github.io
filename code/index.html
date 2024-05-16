@@ -262,6 +262,49 @@
 				</h2>
 				<div class="pub-entry">
 					<div class="pub-title">
+						<a class="anchor" id="dora"></a>
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-dora" id="tog-dora">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							multi-object Discovery and tRAcking
+						</a>
+					</div>
+					<div class="pub-author">
+						<div class="part mr">
+							<span class="author">
+								S. Venkataramanan
+								(<span class="ref">advised by</span> J. Carreira, Y.M. Asano, Y. Avrithis)
+							</span>
+						</div>
+						<div class="part nw">
+							<a class="acro but mr" href="https://github.com/shashankvkt/DoRA_ICLR24" title="Code repository">DoRA</a>
+						</div>
+						<div class="part nw">
+							<a class="lnk mr2" href="../pub/#C134" title="Conference paper">
+								<i class="fal fa-books"></i>
+							</a>
+						</div>
+
+					</div>
+					<div class="collapse" id="col-dora">
+						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
+							based on <a href="https://github.com/facebookresearch/dino">DINO</a> <span class="bull"></span>
+							published in <a href="/pub/#C134">ICLR 2024</a> <span class="bull"></span>
+							2024
+						</div>
+						<div class="pub-detail">
+							<a href="../data/code/thumb/wide/code/dora.svg"><img src="../data/code/thumb/wide/code/dora.svg" alt="dora thumbnail" loading="lazy"></a>
+							<div class="just">
+								<p>
+									DoRA is a self-supervised image pretraining method tailored for learning from continuous videos. It leverages the attention from the [CLS] token of distinct heads in a vision transformer to identify and consistently track multiple objects within a given frame across temporal sequences. On these, a teacher-student distillation loss is then applied. Importantly, we do not use any off-the-shelf object tracker or optical flow network. This keeps our pipeline simple and does not require any additional data or training. The code allows the reproduction of the results of our <a href="/pub/#C134">ICLR 2024 paper</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pub-entry">
+					<div class="pub-title">
 						<a class="anchor" id="ut-kd"></a>
 						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-ut-kd" id="tog-ut-kd">
 							<i class="left-60 tog far fa-chevron-down"></i>
@@ -287,6 +330,7 @@
 					</div>
 					<div class="collapse" id="col-ut-kd">
 						<div class="pub-ref">
+							<a href="https://pytorch.org/">PyTorch</a> <span class="bull"></span>
 							published in <a href="/pub/#R51">arXiv 2024</a> <span class="bull"></span>
 							2024
 						</div>
