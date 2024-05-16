@@ -764,6 +764,8 @@ h2.pub {
 .cite {
 	font-size: 80%;
 }
+.award { color: red; }
+a.award:hover { color: red; opacity: .7; }
 
 
 /* timeline*/
