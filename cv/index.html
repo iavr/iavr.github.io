@@ -220,7 +220,7 @@
 					<i class="faa fa-file-pdf2"></i>
 					<div class="cv-ref">
 						Last updated:
-						Sep 15, 2024
+						Sep 27, 2024
 					</div>
 				</a>
 				<h1 class="cv rule">
@@ -1464,30 +1464,78 @@
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">
-						<a class="anchor" id="phd-2020-psomas"></a>
+						<a class="anchor" id="phd-2024-psomas"></a>
 						<div class="cv-year">
-							2020-
+							2020-2024
 						</div>
 					</div>
 					<div class="col-sm">
 						<div class="cv-title">
 							<a href="http://users.ntua.gr/psomasbill/">Bill Psomas</a>
 						</div>
-						Incremental learning
+						<a class="rel toggle collapsed" data-toggle="collapse" href="#col-phd-2024-psomas">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Learning Visual and Multimodal Representations
+						</a>
+						<div class="collapse" id="col-phd-2024-psomas">
+							<div class="cv-detail just">
+								<p>
+									Representations lie at the heart of artificial intelligence, enabling machines to perceive, interpret and interact with the world. Visual representations, extracted from images or videos, enable tasks such as image classification, image retrieval, and object detection. Visual-textual representations, bridging the gap between the visual and linguistic domains, enable tasks like image captioning, visual question answering, and cross-modal retrieval. The ability to learn and manipulate these representations is paramount for advancing the state-of-the-art in computer vision and beyond. In this dissertation, we investigate novel methods for learning both visual (unimodal) and visual-textual (multimodal) representations, focusing mainly on applications in deep metric learning, image classification, and composed image retrieval. We address the challenges of learning representations from both data-centric and model-centric perspectives, aiming to unlock new capabilities for visual understanding and interaction.
+								</p>
+								<p>
+									In visual representation learning, we first focus on data and introduce Metrix, a deep metric learning method utilizing mixup for data augmentation. Metrix addresses the challenge of interpolating both examples and target labels, overcoming the non-additive nature of traditional metric learning loss functions. By generalizing existing loss functions to incorporate mixup, Metrix enhances learning and explores new embedding space regions. We introduce a novel metric, utilization, to measure this exploration. Experiments on four benchmark datasets, including various mixup settings, show that Metrix significantly outperforms state-of-the-art methods, improving robustness and generalization. This work exemplifies our aim to advance visual representation learning through innovative data augmentation.
+								</p>
+								<p>
+									Next, we shift our focus to the model architecture, introducing SimPool, a simple attention-based pooling method at the end of network designed to replace the default one in both convolutional neural networks (CNNs) and vision transformers (ViTs). We develop a generic pooling framework and formulate existing pooling methods as its instantiations, allowing us to analyze, compare and discuss their properties. Through this, we finally derive SimPool, which improves performance in supervised and self-supervised settings on standard benchmarks and downstream tasks. SimPool generates high-quality attention maps that accurately delineate object boundaries, significantly enhancing object localization and robustness to background changes. It improves object discovery metrics and performs efficiently, even when removing ViT blocks, thus optimizing the balance between performance and model complexity. This work exemplifies our aim to advance visual representation learning through innovative model architecture component.
+								</p>
+								<p>
+									Transitioning to visual-textual representations, we introduce FreeDom, a training-free method for zero-shot composed image retrieval in open-world domain conversion. FreeDom leverages the descriptive power of a frozen vision-language model (VLM) and employs textual inversion, enabling flexible image and text query composition. Unlike traditional methods that invert query images to the continuous latent space of tokens, FreeDom’s inversion into the discrete input space of text is pivotal for its success. Experiments on four benchmark domain conversion datasets, including three newly introduced by us, demonstrate its superior performance. Additionally, FreeDom performs on par with the best methods in generic composed image retrieval. This work exemplifies our aim to advance multimodal representation learning through innovative discrete-space textual inversion.
+								</p>
+								<p>
+									Expanding on visual-textual representations, we now focus on their applications in remote sensing to introduce a novel task: remote sensing composed image retrieval (RSCIR). This task aims to provide a more expressive and flexible search capability within the remote sensing domain. We explore and qualitatively evaluate the unique challenges and capabilities this task introduces. Users can now pair a query image with a query text specifying modifications related to color, shape, size, texture, density, context, quantity, or the presence of certain classes. To quantitatively assess this, we establish a benchmark, PatternCom, and an evaluation protocol focusing on shape, color, density, and quantity modifications. Our method, WeiCom, operates training-free by utilizing a frozen vision-language model and incorporates a modality control parameter for generating more image- or text-oriented results based on the specific search needs. This work exemplifies our aim to advance multimodal representation learning by introducing a flexible method that showcases the potential of this novel task in a new domain. 
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="row cv-row">
 					<div class="col-sm-auto cv-year-col">
-						<a class="anchor" id="phd-2020-figueroa"></a>
+						<a class="anchor" id="phd-2024-figueroa"></a>
 						<div class="cv-year">
-							2020-
+							2020-2024
 						</div>
 					</div>
 					<div class="col-sm">
 						<div class="cv-title">
 							<a href="https://ftorres11.github.io/">Felipe Torres Figueroa</a>
 						</div>
-						Learning discriminative representations to interpret image recognition models
+						<a class="rel toggle collapsed mr" data-toggle="collapse" href="#col-phd-2024-figueroa">
+							<i class="left-60 tog far fa-chevron-down"></i>
+							Learning discriminative representations to interpret image recognition models
+						</a>
+						<a class="lnk" href="../data/cv/pdf/phd/2024.figueroa.pdf"><i class="faa fa-file-pdf2 pdf-icon"></i></a>
+						<div class="collapse" id="col-phd-2024-figueroa">
+							<div class="cv-detail just">
+								<p>
+									Computer vision capabilities improved in the past decade. A better utilization of hardware enabled computers to process more images faster, ensuing the dawn of deep learning. Moreover, over this timespan, model architectures such as convolutional neural networks and transformers have been introduced, enabling computer vision applications to conduct more complex tasks. In particular, image recognition models are now capable of identifying and recognizing elements on an image, even on challenging conditions. These factors have contributed towards the introduction of these models into society.
+								</p>
+								<p>
+									With the permeation of deep learning technologies within society, a new requirement emerged for these methodologies. Since they are now interacting and affecting human lives directly, it is mandatory to understand their functioning and provide explanations. To address these questions a new research field has emerged: interpretability and explainable AI.
+								</p>
+								<p>
+									In this thesis, our goal is to understand and further develop interpretability models for state-of-the-art image recognition models. We introduce and briefly explain some of the most relevant high-performance image recognition models for both Convolutional Neural Networks and Transformers. Then, current interpretability approaches designed to provide explanations, as well as their evaluation protocols. We make observations upon these methods and evaluation protocols, highlighting difficulties upon them and suggesting ideas to address their limitations. In the following chapters we present our contributions.
+								</p>
+								<p>
+									Opti-CAM. Our first contribution builds upon the reasoning of Class Activation Mappings. In particular, this proposal optimizes the weighting coefficient required to compute a saliency map, generating a representation that maximizes class specific probability. This saliency map performs the best across interpretability metrics on multiple datasets. Plus, it highlights that context is relevant towards describing a prediction. Additionally, a novel metric to complement interpretability evaluation is unveiled, addressing shortcomings in this procedure.
+								</p>
+								<p>
+									Cross Attention Stream. Our second contribution is an addition to current image recognition models, enhancing interpretability measurements. Inspired by novel high performing models such as Transformers, we construct a stream that computes the interaction of an abstract class representation with deep features of convolutional neural networks. This representation is ultimately used to perform classification. Our Stream displays improvements on quantitative evaluation and preserves recognition performance across different models.
+								</p>
+								<p>
+									Gradient Denoising. Lastly, our final contribution presents a novel training paradigm for deep neural networks. Moreover, this paradigm denoises the gradient information of deep models in the input space. The guided backpropagation representation of the input image is used to regularize models during their training phase. As a result, our trained models display improvements for interpretable evaluation. We apply our paradigm to small architectures in a constrained setting, paving the way for future development for large scale datasets and more complex models. 
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="row cv-row">
@@ -5246,7 +5294,7 @@
 			<span class="bull"></span>
 			Domain by <a href="https://www.name.com/">name.com</a>
 			<span class="bull"></span>
-			Last updated <span class="bright">Sep 15, 2024</span>
+			Last updated <span class="bright">Sep 27, 2024</span>
 		</p>
 		<p>
 			Copyright notice applies to all <a href="../pub/#copyright">publications</a>
